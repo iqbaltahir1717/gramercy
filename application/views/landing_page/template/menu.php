@@ -1,40 +1,49 @@
     <body class="fontRubik">    
         <header id="header" class="fixed-top ">
             <div class="container d-flex align-items-center">
-
-            <h5 class="logo mr-auto" style="color:white;font-size:20px"><a href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/puskesmas.png"> Puskesmas Mekar</a> </h5>
+                <nav class="nav-menu d-none d-lg-block navbar navbar-expand-lg">
+                    <div class="container ms">
+                        <a class="navbar-brand" href="<?php echo base_url(); ?>">
+                            <img src="<?php echo base_url(); ?>assets/core-images/whatapp.svg" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="active">
+                                    <a href="<?php echo base_url(); ?>">Home</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('page/contact'); ?>">Unit Type</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('page/contact'); ?>">Siteplan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <a class="ml-2" style="color:white;font-size:20px" href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/logogramercy.svg"></a>
+                <nav class="nav-menu d-none d-lg-block navbar navbar-expand-lg">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="active">
+                                    <a href="<?php echo base_url(); ?>">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('page/contact'); ?>">Developer</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('page/contact'); ?>">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            <a class="ml-2" style="color:white;font-size:20px" href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/navigation-garis.svg"></a>
             
-
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="<?php echo base_url();?>">Home</a></li>
-                    <li class="drop-down"><a href="#">Profil</a>
-                        <ul>
-                            <li><a href="<?php echo site_url('profil/sejarah')?>">Sejarah</a></li>
-                            <li><a href="<?php echo site_url('profil/visi_misi')?>">Visi Misi</a></li>
-                            <li><a href="<?php echo site_url('profil/sambutan')?>">Kata Sambutan</a></li>
-                            <li><a href="<?php echo site_url('profil/tugas_pokok_fungsi')?>">Tugas Pokok & Fungsi</a></li>
-                            <li><a href="<?php echo site_url('profil/maklumat_pelayanan')?>">Maklumat Pelayanan</a></li>
-                            <li><a href="<?php echo site_url('profil/struktur_organisasi')?>">Struktur Organisasi</a></li>
-                        </ul>
-                    </li>
-                    <li class="drop-down"><a href="#">Informasi</a>
-                        <ul>
-                            <?php foreach($news_category as $nc){ ?>
-                            <li><a href="<?php echo site_url('page/information/'.$nc->news_category_id.'/1')?>"><?php echo $nc->news_category_name;?></a></li>
-                            <?php }?>
-                        </ul>
-                    </li>
-                    <li class="drop-down"><a href="#">Galeri</a>
-                        <ul>
-                            <li><a href="<?php echo site_url('page/gallery/photo')?>">Foto</a></li>
-                            <li><a href="<?php echo site_url('page/gallery/video')?>">Video</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="<?php echo site_url('page/contact')?>">Kontak</a></li>
-                    <li><a href="<?php echo site_url('auth')?>">e-medicord</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
 
             </div>
         </header><!-- End Header -->

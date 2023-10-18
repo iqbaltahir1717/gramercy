@@ -12,6 +12,27 @@ body {
 	font-family: "Open Sans", sans-serif;
 	color: #444444;
 }
+/* assets/css/custom.css */
+@font-face {
+    font-family: 'GambettaMedium';
+    src: url('../fonts/gambetta/Gambetta-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GambettaLight';
+    src: url('../fonts/gambetta/Gambetta-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GambettaReguler';
+    src: url('../fonts/gambetta/Gambetta-Reguler.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 a {
 	color: #0880e8;
@@ -119,7 +140,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-	height: 60px;
+	height: 90px;
 	font-size: 14px;
 	transition: all 0.5s;
 	overflow: hidden;
@@ -180,7 +201,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-	background: #6897bb !important;
+	background: #FFFFFF !important;
 	transition: all 0.5s;
 	z-index: 997;
 	padding: 15px 0;
@@ -189,25 +210,17 @@ h6 {
 
 #header.header-scrolled {
 	top: 0;
-	background: #6897bb !important;
+	background: #FFFFFF !important;
 }
 
-#header .logo {
-	font-size: 32px;
-	margin: 0;
-	padding: 0;
-	line-height: 1;
-	font-weight: 400;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
 
 #header .logo a {
 	color: #fff;
 }
 
-#header .logo img {
+#header .navbar-brand img {
 	max-height: 40px;
+	margin-left: -30px;
 }
 
 @media (max-width: 992px) {
@@ -233,40 +246,44 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.nav-menu ul {
+.nav-menu {
+	text-align: center;
+}
+.nav-menu .container > .collapse > ul {
+	text-align: center;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.nav-menu > ul {
+.nav-menu > .container > .collapse > ul {
 	display: flex;
 }
 
-.nav-menu > ul > li {
+.nav-menu > .container > .collapse > ul > li {
 	position: relative;
 	white-space: nowrap;
-	padding: 10px 0 10px 24px;
+	padding: 1px 0 10px 24px;
 }
 
 .nav-menu a {
 	display: block;
 	position: relative;
-	color: rgba(255, 255, 255, 0.7);
+	color: #131313;
 	transition: 0.3s;
 	font-size: 14px;
 	padding: 0 3px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "GambettaReguler";
 }
 
-.nav-menu > ul > li > a:before {
+.nav-menu > .container > .collapse > ul > li > a:before {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 2px;
 	bottom: -5px;
 	left: 0;
-	background-color: white;
+	background-color: #C2A058;
 	visibility: hidden;
 	width: 0px;
 	transition: all 0.3s ease-in-out 0s;
@@ -282,7 +299,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-	color: #fff;
+	color: #040403;
 }
 
 .nav-menu .drop-down ul {
@@ -480,6 +497,157 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+/* ===================NEW HERO=============================== */
+
+.hero-new{
+	padding-top: 100px;
+}
+
+.bulatan {
+	display: flex;
+	padding: 30px;
+}
+
+
+.bulatan-tombol svg{
+	width: 50px;
+	height: 50px;
+	color: #161616;
+	margin-left: 20px; 
+}
+.bannertext{
+	font-family: 'GambettaLight';
+	font-size: 55px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 85px; /* 100% */
+	letter-spacing: 2.55px;
+	color: #161616;
+}
+
+
+.baristwo .bannertext{
+	text-align: right;
+}
+
+
+.baristwo .my-text {
+    width: 1457px;
+    color: #6D6D6D;
+	margin-left: 91px;
+	margin-right: 61px;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.baristree .bannertext{
+	text-align: right;
+}
+
+/* Nex section 2 (hero-new-2) */
+.hero-new2{
+    width: 100%;
+    height: 680px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 60.07%, #000 96.53%), url(../../core-images/arma.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-new3 {
+    display: flex;
+    width: 100%;
+    height: 1089px;
+    padding: 0px 88px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 13.72%), url(../../core-images/taman-jalan.png);
+    background-color: lightgray;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.brand-logo-gramercy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.brand-logo-gramercy img {
+    display: block;
+    margin: 0 auto; 
+}
+
+.ourservice {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ourservice .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	margin-top: 30px;
+}
+
+.ourservice .col h3 {
+    color: #FFF;
+    font-family: Gambetta;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px; /* 150% */
+    letter-spacing: 1.02px;
+    text-transform: uppercase;
+}
+
+.ourservice .col h5 {
+    color: #B4B4B6;
+    width: 320px;
+    color: var(--foundation-dark-mode-light-active, #B4B4B6);
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 150% */
+}
+
+
+.ourservice p {
+    color: var(--foundation-dark-mode-light-active, #B4B4B6);
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 48px; /* 342.857% */
+}
+
+
+
+
+
+
+
+
+
+
+/* ===================END NEW HERO=============================== */
+
 #hero {
 	width: 100%;
 	height: 92vh;
