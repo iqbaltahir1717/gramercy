@@ -81,6 +81,23 @@
             </div>
         </div>
     </section>
+    
+    <!-- --------------------------Section 4----------------------------------- -->
+    <section id="hero-new4" class="hero-new4 mt-0">
+        <div class="container section4 justify-content-center text-center">
+            <div class="row brand-logo-gramercy justify-content-center text-center">
+                <div class="col">
+                    <img src="assets/core-images/thegramercy.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="row lokasi justify-content-center text-center">
+                <p class="mt-5">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
+            </div>
+            <div class="row lokasi justify-content-center text-center mt-5">
+                <p class="mt-5">The last and most prestigious cluster locatedin favourite place of Alam Sutera “Green Tunnel”</p>
+            </div>
+        </div>
+    </section>
 
         <section id="blog" class="blog" style="background-color: #f1f8ff">
             <div class="container" data-aos="fade-up">
