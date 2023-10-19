@@ -12,22 +12,18 @@
 <body>
     <div id="auth">
         
-<div class="row h-100">
+<div class="row h-100 align-items-center">
     <div class="col-lg-5 col-12">
         <div id="auth-left">
-            <div class="row align-items-center">
-                <div class="col-4">
-                    <img src="<?php echo base_url() ?>assets/core-images/<?php echo $setting[0]->setting_logo; ?>" style="width:80px;" alt="Logo aplikasi">
+            <div class="row align-items-center text-center">
+                <div class="col-12 mb-4">
+                    <img src="<?php echo base_url() ?>assets/core-images/<?php echo $setting[0]->setting_logo; ?>" style="width:240px;" alt="Logo aplikasi">
                 </div>
-                <div class="col-8">
-                    <h3><?php echo $setting[0]->setting_short_appname; ?></h3>
-                </div>
-            </div>
-            <div class="row my-2">
                 <div class="col-12">
-                    <p class="auth-subtitle mb-3">Sign in untuk memulai aplikasi.</p>
+                    <p class="auth-subtitle mb-3">Sign in before using app.</p>
                 </div>
             </div>
+          
             
             <div class="row">
                 <div class="col-12 text-sm">
@@ -58,7 +54,7 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Sign in</button>
+                <button class="btn btn-success btn-block btn-lg shadow-lg mt-5">Sign in</button>
             </form>
             <?php echo form_close(); ?>
 
@@ -66,7 +62,7 @@
         <!-- footer form login -->
         <div>
             <p class="text-center">
-            Created by <a href="https://instagram.com/fadjrul00"><?php echo $setting[0]->setting_owner_name;?></a> <br><b>Copyright &copy; <?php echo date('Y'); ?> <?php echo $setting[0]->setting_short_appname; ?>, version 1.0</b>
+            Created by <a href="#"><?php echo $setting[0]->setting_owner_name;?></a> <br><b>Copyright &copy; <?php echo date('Y'); ?> <?php echo $setting[0]->setting_short_appname; ?></b>
             </p>
         </div>
     </div>
