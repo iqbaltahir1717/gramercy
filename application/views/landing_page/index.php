@@ -140,7 +140,7 @@
     </section>
     <!-- --------------------------Section 6----------------------------------- -->
 
-    <section id="hero-new6" class="hero-new6 mt-5">
+    <section id="hero-new6" class="hero-new6">
         <div class="container md-12">
             <div class="row align-items-center">
                 <div class="col-md-6 align-items-start">
@@ -168,7 +168,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/core-images/unitalca.svg" alt="Image 2">
+                    <img class="unitalca" src="assets/core-images/unitalca.svg" alt="Image 2">
                 </div>
             </div>
         </div>

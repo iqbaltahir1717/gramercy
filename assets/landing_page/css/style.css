@@ -725,6 +725,10 @@ h6 {
     border: none; /* Menghapus border */
     text-decoration: none; /* Menghapus efek underline pada tautan */
 }
+.hero-new6{
+	margin: 0px;
+	padding: 0px;
+}
 
 .hero-new6 button{
 	margin:inherit;
@@ -741,6 +745,7 @@ h6 {
 .hero-new6 h1{
 	font-size: 40px;
 }
+
 
 
 
