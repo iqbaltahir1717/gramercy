@@ -104,6 +104,75 @@
             </div>
         </div>
     </section>
+    
+    <!-- --------------------------Section 5----------------------------------- -->
+
+    <section id="hero-new5" class="hero-new5 mt-5">
+        <div class="container barisone md-12">
+            <div class="row align-items-end">
+                <div class="col-md-7">
+                    <h1 class="bannertext">FIND YOUR <br>LUXURY UNIT</h1>
+                </div>
+                <div class="prenext col-md-5 d-flex justify-content-end align-items-end">
+                    <div class="col">
+                        <ul class="pagination pagination-sm">
+                            <li class="page-item tombol-left"><a class="page-link  transparent-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                                </svg>                                
+                                Previous Unit</a></li>
+                            <li class="page-item tombol-right" aria-current="page">
+                            <span class="page-link  transparent-link">Next Unit
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                </svg>
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2 class="bannertext">1/4</h2>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------Section 6----------------------------------- -->
+
+    <section id="hero-new6" class="hero-new6 mt-5">
+        <div class="container md-12">
+            <div class="row align-items-center">
+                <div class="col-md-6 align-items-start">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 align-items-start">
+                            <img class="brand" src="assets/core-images/thegramercyhitam.png" alt="Image 2">
+                        </div>
+                        <div class="col-md-7 align-items-start">
+                            <h1>UNIT ALCA</h1>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Feugiat pellentesque aenean id ut massa dui proin ultrices. Id pharetra lorem ut id urna. Tempus metus ullamcorper enim purus libero amet ornare in. Tortor enim sed aliquam purus elementum purus commodo sit faucibus. Phasellus euismod porttitor sit enim vitae porta magna. Sagittis varius accumsan vulputate vulputate volutpat pulvinar integer pellentesque elit. Ultricies tellus arcu nunc leo dolor nullam risus ut. Dis integer vulputate pulvinar turpis vulputate duis mauris velit ac. Dictum scelerisque aliquet ac risus lacinia placerat sapien blandit. Proin sit non id duis scelerisque dui enim nisl gravida. Senectus est lacinia egestas sed cursus dolor. Aenean sed nisl quis amet cursus. Dictum mi sit id eleifend interdum in. Semper eu fringilla penatibus gravida.
+                        </p>
+                        <p>
+                            Ultricies tellus arcu nunc leo dolor nullam risus ut. Dis integer vulputate pulvinar turpis vulputate duis mauris velit ac. Dictum scelerisque aliquet ac risus lacinia placerat sapien blandit.
+                        </p>
+                    </div>
+                    <div class="row mt-2">
+                        <button type="button justify-align-start" class="btn btn-transparent btn-sm-">Location <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/core-images/unitalca.svg" alt="Image 2">
+                </div>
+            </div>
+        </div>
+    </section>
 
         <section id="blog" class="blog" style="background-color: #f1f8ff">
             <div class="container" data-aos="fade-up">

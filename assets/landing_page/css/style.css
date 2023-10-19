@@ -504,6 +504,17 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* ===================FONT NEW HERO=============================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "GambettaLight";
+	color: #333333;
+}
+
 
 /* ===================NEW HERO=============================== */
 
@@ -681,7 +692,55 @@ h6 {
 	font-size: 24px;
 }
 
+.hero-new5 h2{
+	color: #C2A058;
+	font-size: 70px;
+}
 
+.hero-new5 .panah {
+	line-height: 35px;
+}
+
+
+.hero-new5 .tombol-left a{
+	color: #999999;
+	width: 150px;
+	font-size: 18px;
+}
+.hero-new5 .tombol-right span{
+	color: #C2A058;
+	width: 150px;
+	font-size: 18px;
+}
+
+.hero-new5 .tombol-left svg{
+	color: #999999;
+}
+.hero-new5 .tombol-right svg{
+	color: #C2A058;
+}
+
+.hero-new5 .prenext .transparent-link {
+    background: none; /* Menghapus latar belakang */
+    border: none; /* Menghapus border */
+    text-decoration: none; /* Menghapus efek underline pada tautan */
+}
+
+.hero-new6 button{
+	margin:inherit;
+	align-items: start;
+	color: #C2A058;;
+	font-size: 24px;
+}
+
+.hero-new6 .brand{
+	margin:inherit;
+	align-items: start;
+}
+
+.hero-new6 h1{
+	font-size: 40px;
+}
 
 
 
