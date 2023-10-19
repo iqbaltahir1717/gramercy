@@ -91,9 +91,9 @@
                 </div>
             </div>
             <div class="row lokasi justify-content-center text-center">
-                <p class="mt-5">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
+                <p class="mt-3">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
             </div>
-            <div class="row lokasi justify-content-center text-center mt-3">
+            <div class="row lokasi justify-content-center text-center mt-2">
                 <button type="button" class="btn btn-transparent btn-sm-">Location <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                     </svg>
@@ -203,6 +203,38 @@
                     </div>
                 </div>
             </div>
+    </section>
+    <!-- --------------------------Section 8----------------------------------- -->
+    <section id="hero-new8" class="hero-new8 mt-0">
+        <div class="container section8 justify-content-center text-center">
+            <div class="row brand-logo-gramercy justify-content-center text-center">
+                <div class="col">
+                    <img src="assets/core-images/thegramercyhitam2.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="row brand-logo-gramercy justify-content-center text-center">
+                <h5>A center of development and a desirable place for better living due to its well-planned infrastructure, comprehensive amenities and a focus on creating a harmonious and green community</h5>
+            </div>
+            <div class="row g-5 project justify-content-center text-center mt-5">
+                <div class="col-md-6">
+                    <img class="project-1" src="assets/core-images/project-1.png" alt="Image 2">
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-5">
+                        <img class="project-2" src="assets/core-images/project-2.png" alt="Image 2">
+                    </div>
+                    <div class="row">
+                        <img  class="project-3" src="assets/core-images/project-3.png" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+            <div class="row button justify-content-center text-center mt-5">
+                <button>Download Brochure <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </section>
 
         <section id="blog" class="blog" style="background-color: #f1f8ff">
