@@ -2,42 +2,99 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 footer-info">
-                            <h3>Tentang Kami</h3>
-                            <p><?php echo $setting[0]->setting_about;?></p>
-                            <div class="social-links mt-3">
-                                <a href="<?php echo $setting[0]->setting_facebook;?>" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="<?php echo $setting[0]->setting_instagram;?>" class="instagram"><i class="bx bxl-instagram"></i></a>
-                                <a href="<?php echo $setting[0]->setting_youtube;?>" class="youtube"><i class="bx bxl-youtube"></i></a>
-                            </div>
+                        <div class="col-lg-4 col-md-6 footer-info">
+                            <img class="project-2" src="assets/core-images/logosocials.png" alt="Image 2">
                         </div>
 
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Link Terkait</h4>
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Menu</h4>
                             <ul>
-                                <?php foreach($link as $l){ ?>
-                                <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="<?php echo $l->link_url;?>"><?php echo $l->link_name;?></a></li>
-                                <?php }?>
+                                <li> <a href="">Home</a></li>
+                                <li><a href="">Unit Type</a></li>
+                                <li><a href="">Siteplan</a></li>
+                                <li><a href="">Developer</a></li>
+                                <li><a href="">News</a></li>
                             </ul>
                         </div>
-
-                    
-
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h4>Kontak Kami</h4>
-                            <p>
-                                <?php echo $setting[0]->setting_address;?> <br>
-                                <?php echo $setting[0]->setting_phone;?><br>
-                                <?php echo $setting[0]->setting_email;?><br>
-                            </p>
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="" class="arrowup d-inline-flex">
+                                    Projects Alam Sutera
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 17 17" fill="none">
+                                        <path d="M3.15015 13.8501L13.6501 3.3501M13.6501 3.3501L5.77515 3.3501M13.6501 3.3501V11.2251" stroke="#5C5F66" stroke-width="1.575" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></a>
+                                </li>
+                                <li><a href="">Other Projects</a></li>
+                                <li><a href="">Cluster Amenities</a></li>
+                                <li><a href="">Optimal Strategic Layout</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="" class="arrowup d-flex">Contact   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 17 17" fill="none">
+                                        <path d="M3.15015 13.8501L13.6501 3.3501M13.6501 3.3501L5.77515 3.3501M13.6501 3.3501V11.2251" stroke="#5C5F66" stroke-width="1.575" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></a>
+                                </li>
+                                <li><a href="" class="arrowup d-flex">Email Support   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 17 17" fill="none">
+                                        <path d="M3.15015 13.8501L13.6501 3.3501M13.6501 3.3501L5.77515 3.3501M13.6501 3.3501V11.2251" stroke="#5C5F66" stroke-width="1.575" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></a>
+                                </li>
+                                <li><a href="" class="arrowup d-flex">Phone Support   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 17 17" fill="none">
+                                        <path d="M3.15015 13.8501L13.6501 3.3501M13.6501 3.3501L5.77515 3.3501M13.6501 3.3501V11.2251" stroke="#5C5F66" stroke-width="1.575" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Movement</h4>
+                            <ul>
+                                <li><a href="">What Gramercy</a></li>
+                                <li><a href="">Support Us</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <strong><span><?php echo $setting[0]->setting_owner_name;?></span></strong>. All Rights Reserved
+                <div class="row barisbawah align-items-center justify-content-start">
+                    <div class="col-md-9 d-flex text-start">
+                        <div class="row">
+                            <div class="col-md-0">
+                                <div class="social-links d-flex">
+                                    <a href="<?php echo $setting[0]->setting_facebook;?>" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
+                                    <a href="<?php echo $setting[0]->setting_instagram;?>" class="instagram"><i class='bx bxl-instagram' ></i></a>
+                                    <a href="<?php echo $setting[0]->setting_youtube;?>" class="twitter"><i class='bx bxl-twitter' ></i></a>
+                                    <a href="<?php echo $setting[0]->setting_youtube;?>" class="linkedin"><i class='bx bxl-linkedin-square' ></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-2 text-start">
+                                <p>English</p>
+                            </div>  
+                            <div class="col-md-0 baris-3 circle">
+                                <i class='bx bxs-circle'></i>
+                            </div>
+                            <div class="col-md-3 baris-4">
+                                <p class="text-nowrap">Privacy Policy</p>
+                            </div>  
+                            <div class="col-md-0 baris-5 circle">
+                                <i class='bx bxs-circle'></i>
+                            </div>
+                            <div class="col-md-2 baris-6">
+                                <p class="text-nowrap">Term & Condition</p>
+                            </div>  
+                        </div>
+                    </div>              
+                    <div class="col-md-3 align-items-center">
+                        <div class="copyright align-items-center">
+                            &copy; 2023  Gramercy All Rights Reserved
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer><!-- End Footer -->

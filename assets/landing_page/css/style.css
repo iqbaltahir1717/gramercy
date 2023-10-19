@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "SatoshiLight";
 	color: #444444;
 }
 /* assets/css/custom.css */
@@ -30,6 +30,13 @@ body {
 @font-face {
     font-family: 'GambettaReguler';
     src: url('../fonts/gambetta/Gambetta-Reguler.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SatoshiLight';
+    src: url('../fonts/gambetta/Satoshi-Variable.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -497,6 +504,17 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* ===================FONT NEW HERO=============================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "GambettaLight";
+	color: #333333;
+}
+
 
 /* ===================NEW HERO=============================== */
 
@@ -605,7 +623,7 @@ h6 {
 
 .ourservice .col h3 {
     color: #FFF;
-    font-family: Gambetta;
+    font-family: 'GambettaMedium';
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -619,7 +637,7 @@ h6 {
     width: 320px;
     color: var(--foundation-dark-mode-light-active, #B4B4B6);
     text-align: center;
-    font-family: Satoshi;
+    font-family: 'SatoshiLight';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -630,7 +648,7 @@ h6 {
 .ourservice p {
     color: var(--foundation-dark-mode-light-active, #B4B4B6);
     text-align: center;
-    font-family: Satoshi;
+    font-family: 'SatoshiLight';
     font-size: 12px;
     font-style: italic;
     font-weight: 400;
@@ -641,14 +659,12 @@ h6 {
 #hero-new4 {
 	display: flex;
     width: 100%;
-    height: 1173px;
-    padding: 100px 88px;
+    height: 1373px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 8.85%), 
-	linear-gradient(192deg, rgba(0, 0, 0, 0.00) 13.36%, #000 72.14%), url(../../core-images/bersepeda.png);
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 8.85%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 24.73%, #000 62.34%), url(../../core-images/bersepeda.png);
     background-color: lightgray;
     background-size: cover;
     background-position: 50%;
@@ -656,15 +672,176 @@ h6 {
 
 }
 
+.hero-new4 .container{
+	padding: 88px 100px;
+
+}
+
 
 .row.lokasi p {
     color: var(--foundation-primary-green-light, #E6F6F4);
     text-align: center;
-    font-family: Satoshi;
+    font-family: 'SatoshiLight';
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
     line-height: 36px; /* 150% */
+}
+
+.lokasi .btn{
+	color: #C2A058;;
+	font-size: 24px;
+}
+
+.hero-new5 h2{
+	color: #C2A058;
+	font-size: 70px;
+}
+
+.hero-new5 .panah {
+	line-height: 35px;
+}
+
+
+.hero-new5 .tombol-left a{
+	color: #999999;
+	width: 150px;
+	font-size: 18px;
+}
+.hero-new5 .tombol-right span{
+	color: #C2A058;
+	width: 150px;
+	font-size: 18px;
+}
+
+.hero-new5 .tombol-left svg{
+	color: #999999;
+}
+.hero-new5 .tombol-right svg{
+	color: #C2A058;
+}
+
+.hero-new5 .prenext .transparent-link {
+    background: none; /* Menghapus latar belakang */
+    border: none; /* Menghapus border */
+    text-decoration: none; /* Menghapus efek underline pada tautan */
+}
+.hero-new6{
+	margin: 0px;
+	padding: 0px;
+}
+
+.hero-new6 button{
+	margin:inherit;
+	align-items: start;
+	color: #C2A058;;
+	font-size: 24px;
+}
+
+.hero-new6 .brand{
+	margin:inherit;
+	align-items: start;
+}
+
+.hero-new6 h1{
+	font-size: 40px;
+}
+
+#hero-new7 {
+	width: 100%;
+    height: 908px;
+    background: linear-gradient(279deg, rgba(0, 0, 0, 0.00) 43.67%, #000 100.01%), url(../../core-images/lush.png) center / cover no-repeat, lightgray 50% / cover no-repeat;
+    /* Ganti '<path-to-image>' dengan URL gambar yang sesuai */
+}
+
+.hero-new7 h1{
+	font-size: 80px;
+	color: #ffffff;
+}
+
+.hero-new7 p{
+	font-size: 24;
+	color: #333333;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: 'SatoshiLight';
+	align-self: stretch;
+}
+
+.hero-new7 .card{
+	display: flex;
+	width: 833px;
+	padding: 2px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.hero-new7 .card button{
+	margin: unset;
+	padding: 0px;
+	background: none;
+	border: none;
+	align-items: start;
+	color: #C2A058;;
+	font-size: 24px;
+}
+
+
+.hero-new8 h5{
+	color: #6D6D6D;
+    width: 550px;
+    color: var(--foundation-dark-mode-light-active, #B4B4B6);
+    text-align: center;
+    font-family: 'SatoshiLight';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+	margin-top: 30px;
+}
+
+.hero-new8 button{
+	margin: unset;
+	padding: 0px;
+	background: none;
+	border: none;
+	align-items: start;
+	color: #C2A058;;
+	font-size: 24px;
+}
+
+.hero-new8 .project-1{
+	width: 100%;
+	height: 500px;
+}
+
+.hero-new8 .project-2{
+	width: 100%;
+	padding-bottom: 24px;
+	height: 250px;
+}
+.hero-new8 .project-3{
+	width: 100%;
+	height: 250px;
+}
+
+.arrowup{
+	display: flex;
+    align-items: center;
+    gap: 9px;
+	text-decoration: none;
+}
+
+.arrowup svg{
+	width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: #5C5F66;
+    stroke-width: 1.575;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 
@@ -676,6 +853,25 @@ h6 {
 
 
 /* ===================END NEW HERO=============================== */
+
+/* ===================START FOOTER=============================== */
+footer .social-links i{
+	font-size: 28px;
+	margin-left: 18px;
+	color: #5C5F66;
+}
+
+
+
+footer .circle i{
+	margin-bottom: 20px;
+	font-size: 7px;
+}
+
+/* CSS untuk menghilangkan margin dari kolom terakhir */
+
+
+/* ===================END FOOTER=============================== */
 
 #hero {
 	width: 100%;
@@ -2587,15 +2783,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-	background: #6897bb;
+	background: #F7F7F7;
 	padding: 0 0 30px 0;
-	color: #fff;
+	color: #5C5F66;
 	font-size: 14px;
 }
 
 #footer .footer-newsletter {
 	padding: 50px 0;
-	background: #6897bb;
+	background: #F7F7F7;
 }
 
 #footer .footer-newsletter h4 {
@@ -2631,7 +2827,7 @@ section {
 	padding: 0 20px;
 	margin: 3px;
 	background: #ffc412;
-	color: #fff;
+	color: #101113;
 	transition: 0.3s;
 	border-radius: 50px;
 }
@@ -2641,7 +2837,7 @@ section {
 }
 
 #footer .footer-top {
-	background: #6897bb;
+	background: #F7F7F7;
 	padding: 60px 0 30px 0;
 }
 
@@ -2661,15 +2857,15 @@ section {
 	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 0;
-	font-family: "Raleway", sans-serif;
-	color: #fff;
+	font-family: "Satoshi";
+	color: #101113;
 }
 
 #footer .footer-top .social-links a {
-	font-size: 16px;
+	font-size: 14px;
 	display: inline-block;
 	background: rgba(255, 255, 255, 0.1);
-	color: #fff;
+	color: #5C5F66;
 	line-height: 1;
 	padding: 10px 0;
 	margin-right: 4px;
@@ -2687,11 +2883,11 @@ section {
 }
 
 #footer .footer-top h4 {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
-	color: #fff;
-	text-transform: uppercase;
+	color: #101113;
 	position: relative;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	padding-bottom: 12px;
 }
 
@@ -2723,14 +2919,16 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-	color: rgba(255, 255, 255, 0.75);
+	color: #5C5F66;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	transition: 0.3s;
+	font-size: 14px;
 	display: inline-block;
 	line-height: 1;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-	color: #fff;
+	color: #5C5F66;
 }
 
 #footer .footer-top .footer-contact {
@@ -2742,15 +2940,16 @@ section {
 }
 
 #footer .copyright {
-	text-align: center;
-	padding-top: 30px;
+	text-align: end;
+	font-weight: bold;
+	padding-bottom: 20px;
 }
 
 #footer .credits {
 	padding-top: 5px;
 	text-align: center;
 	font-size: 13px;
-	color: #fff;
+	color: #5C5F66;
 }
 
 #footer .credits a {
