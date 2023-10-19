@@ -173,6 +173,37 @@
             </div>
         </div>
     </section>
+    <!-- --------------------------Section 7----------------------------------- -->
+    <section id="hero-new7" class="hero-new7">
+            <div class="container md-12 align-items-center">
+                <div class="row align-items-start justify-align-center">
+                    <div class="col md-11">
+                        <div class="row mt-5">
+                            <img class="brand" src="assets/core-images/thegramercyputih.png" alt="Image 2">
+                        </div>
+                        <div class="row mt-5">
+                            <h1>LUSH COURTYARD SANCTUARY</h1>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <div class="card">
+                                <div class="card-body">
+                                    <p>A home where you want to be. Surround yourself with lush greenery that captivates your life’s gratitude. Brought to life by Karl Princic, the landscape architect with experience over 30 years in planning and designing of resorts, residential and hospitality projects worldwide. Now the paradise is yours.</p>
+                                    <button>Download Brochure <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-1">
+
+                    </div>
+                </div>
+            </div>
+    </section>
 
         <section id="blog" class="blog" style="background-color: #f1f8ff">
             <div class="container" data-aos="fade-up">

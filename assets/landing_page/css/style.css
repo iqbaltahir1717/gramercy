@@ -746,6 +746,50 @@ h6 {
 	font-size: 40px;
 }
 
+#hero-new7 {
+	width: 100%;
+    height: 908px;
+    background: linear-gradient(279deg, rgba(0, 0, 0, 0.00) 43.67%, #000 100.01%), url(../../core-images/lush.png) center / cover no-repeat, lightgray 50% / cover no-repeat;
+    /* Ganti '<path-to-image>' dengan URL gambar yang sesuai */
+}
+
+.hero-new7 h1{
+	font-size: 60px;
+	color: #ffffff;
+}
+
+.hero-new7 p{
+	font-size: 24;
+	color: #333333;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: 'SatoshiLight';
+	align-self: stretch;
+}
+
+.hero-new7 .card{
+	display: flex;
+	width: 833px;
+	padding: 2px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.hero-new7 .card button{
+	margin: unset;
+	padding: 0px;
+	background: none;
+	border: none;
+	align-items: start;
+	color: #C2A058;;
+	font-size: 24px;
+}
+
+
+
 
 
 
