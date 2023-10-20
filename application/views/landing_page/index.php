@@ -116,7 +116,7 @@
                 <div class="prenext col-md-5 d-flex justify-content-end align-items-end">
                     <div class="col">
                         <ul class="pagination pagination-sm">
-                            <li class="page-item tombol-left"><a class="page-link  transparent-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <li class="page-item tombol-left d-flex"><a class="page-link  transparent-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                                 </svg>                                
                                 Previous Unit</a></li>
@@ -167,7 +167,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 justify-align-center">
                     <img class="unitalca" src="assets/core-images/unitalca.svg" alt="Image 2">
                 </div>
             </div>
@@ -219,11 +219,11 @@
                 <div class="col-md-6">
                     <img class="project-1" src="assets/core-images/project-1.png" alt="Image 2">
                 </div>
-                <div class="col-md-6">
-                    <div class="row g-5">
+                <div class="col-md-6 justify-content-center">
+                    <div class="row g-5 justify-content-center">
                         <img class="project-2" src="assets/core-images/project-2.png" alt="Image 2">
                     </div>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <img  class="project-3" src="assets/core-images/project-3.png" alt="Image 2">
                     </div>
                 </div>
