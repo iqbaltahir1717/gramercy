@@ -7,7 +7,7 @@
     <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
             <div class="logo">
-                <a href="<?php echo site_url('dashboard')?>"><img src="<?php echo base_url()?>assets/core-images/<?php echo $setting[0]->setting_logo;?>" alt="Logo" srcset=""></a> <span class="text-info"><?php echo $setting[0]->setting_short_appname;?></span>
+                <?php echo $setting[0]->setting_short_appname;?>
             </div>
             
             <div class="sidebar-toggler x">
@@ -20,7 +20,7 @@
         <!-- Administrator menu -->
         <?php if($this->session->userdata('user_group')==1){?>
         <ul class="menu">
-            <li class="sidebar-title">DATA MEDICORD</li>
+            <li class="sidebar-title">LIST MENU</li>
             
             <li
                 class="sidebar-item <?= active_menu('dashboard'); ?>">
@@ -34,7 +34,7 @@
                 class="sidebar-item <?= active_menu('pasien'); ?>">
                 <a href="<?php echo site_url('pasien')?>" class='sidebar-link'>
                     <i class="fas fa-user-injured"></i>
-                    <span>Pasien</span>
+                    <span>Type Unit</span>
                 </a>
             </li>
 
@@ -42,7 +42,7 @@
                 class="sidebar-item <?= active_menu('dokter'); ?>">
                 <a href="<?php echo site_url('dokter')?>" class='sidebar-link'>
                     <i class="fas fa-user-md"></i>
-                    <span>Dokter</span>
+                    <span>Siteplan</span>
                 </a>
             </li>
 
@@ -50,63 +50,20 @@
                 class="sidebar-item <?= active_menu('pegawai'); ?>">
                 <a href="<?php echo site_url('pegawai')?>" class='sidebar-link'>
                     <i class="fas fa-user-nurse"></i>
-                    <span>Pegawai</span>
+                    <span>Projects</span>
                 </a>
             </li>
-
-            <li
-                class="sidebar-item <?= active_menu('poliklinik'); ?>">
-                <a href="<?php echo site_url('poliklinik')?>" class='sidebar-link'>
-                    <i class="fas fa-hospital"></i>
-                    <span>Poliklinik</span>
-                </a>
-            </li>
-            
-            <li
-                class="sidebar-item  has-sub">
-                <a href="#" class='sidebar-link'>
-                    <i class="fas fa-notes-medical"></i>
-                    <span>Rekam Medis</span>
-                </a>
-                <ul class="submenu ">
-                    <li class="submenu-item <?= active_menu('pengkajian_awal'); ?>">
-                        <a href="<?php echo site_url('pengkajian_awal')?>">Pengkajian Awal</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('riwayat_kunjungan_pasien'); ?>">
-                        <a href="<?php echo site_url('riwayat_kunjungan_pasien')?>">Riwayat Kunjungan Pasien</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('pemeriksaan_odontogram'); ?>">
-                        <a href="<?php echo site_url('pemeriksaan_odontogram')?>">Pemeriksaan Odontogram</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="sidebar-title">KONTEN DAN BERITA</li>
+            <li class="sidebar-title">Content & News</li>
 
             <li
                 class="sidebar-item  has-sub">
                 <a href="#" class='sidebar-link'>
                     <i class="fas fa-clinic-medical"></i>
-                    <span>Profil Puskesmas</span>
+                    <span>Profil Gramercy</span>
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item <?= active_menu('content/page/sejarah'); ?>">
-                        <a href="<?php echo site_url('content/page/sejarah')?>">Sejarah</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('content/page/visi'); ?>">
-                        <a href="<?php echo site_url('content/page/visi')?>">Visi Misi</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('content/page/sambutan'); ?>">
-                        <a href="<?php echo site_url('content/page/sambutan')?>">Sambutan</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('content/page/tupoksi'); ?>">
-                        <a href="<?php echo site_url('content/page/tupoksi')?>">Tugas dan Fungsi</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('content/page/maklumat'); ?>">
-                        <a href="<?php echo site_url('content/page/maklumat')?>">Maklumat Pelayanan</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('content/page/struktur'); ?>">
-                        <a href="<?php echo site_url('content/page/struktur')?>">Struktur Organisasi</a>
+                        <a href="<?php echo site_url('content/page/sejarah')?>">Developer</a>
                     </li>
                 </ul>
             </li>
@@ -115,37 +72,17 @@
                 class="sidebar-item  has-sub">
                 <a href="#" class='sidebar-link'>
                     <i class="bi bi-newspaper"></i>
-                    <span>Informasi</span>
+                    <span>News</span>
                 </a>
                 <ul class="submenu ">
                     <li class="submenu-item <?= active_menu('news'); ?>">
-                        <a href="<?php echo site_url('news')?>">Daftar Informasi</a>
+                        <a href="<?php echo site_url('news')?>">News</a>
                     </li>
                     <li class="submenu-item <?= active_menu('news_category'); ?>">
-                        <a href="<?php echo site_url('news_category')?>">Kategori Informasi</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('field'); ?>">
-                        <a href="<?php echo site_url('field')?>">Bidang Publikasi</a>
+                        <a href="<?php echo site_url('news_category')?>">Category</a>
                     </li>
                 </ul>
             </li>
-
-            <li
-                class="sidebar-item  has-sub">
-                <a href="#" class='sidebar-link'>
-                    <i class="bi bi-folder-fill"></i>
-                    <span>Galeri</span>
-                </a>
-                <ul class="submenu ">
-                    <li class="submenu-item <?= active_menu('gallery/data/photo'); ?>">
-                        <a href="<?php echo site_url('gallery/data/photo')?>">Foto</a>
-                    </li>
-                    <li class="submenu-item <?= active_menu('gallery/data/video'); ?>">
-                        <a href="<?php echo site_url('gallery/data/video')?>">Video</a>
-                    </li>
-                </ul>
-            </li>
-
             <li
                 class="sidebar-item <?= active_menu('slider'); ?>">
                 <a href="<?php echo site_url('slider')?>" class='sidebar-link'>
@@ -154,7 +91,7 @@
                 </a>
             </li>
 
-            <li class="sidebar-title">LAINNYA</li>
+            <li class="sidebar-title">Others</li>
 
             <li
                 class="sidebar-item <?= active_menu('user'); ?>">
@@ -163,15 +100,6 @@
                     <span>User</span>
                 </a>
             </li>
-
-            <li
-                class="sidebar-item <?= active_menu('group'); ?>">
-                <a href="<?php echo site_url('group')?>" class='sidebar-link'>
-                    <i class="bi bi-people-fill"></i>
-                    <span>User Group</span>
-                </a>
-            </li>
-
             <li
                 class="sidebar-item <?= active_menu('faq'); ?>">
                 <a href="<?php echo site_url('faq')?>" class='sidebar-link'>
@@ -179,15 +107,6 @@
                     <span>FAQ</span>
                 </a>
             </li>
-
-            <li
-                class="sidebar-item <?= active_menu('message'); ?>">
-                <a href="<?php echo site_url('message')?>" class='sidebar-link'>
-                    <i class="bi bi-envelope-fill"></i>
-                    <span>Pesan</span>
-                </a>
-            </li>
-
             <li
                 class="sidebar-item <?= active_menu('link'); ?>">
                 <a href="<?php echo site_url('link')?>" class='sidebar-link'>
@@ -195,15 +114,6 @@
                     <span>Link Terkait</span>
                 </a>
             </li>
-
-            <li
-                class="sidebar-item <?= active_menu('log'); ?>">
-                <a href="<?php echo site_url('log')?>" class='sidebar-link'>
-                    <i class="bi bi-arrow-repeat"></i>
-                    <span>Log</span>
-                </a>
-            </li>
-
             <li
                 class="sidebar-item <?= active_menu('setting'); ?>">
                 <a href="<?php echo site_url('setting')?>" class='sidebar-link'>
@@ -211,7 +121,6 @@
                     <span>Setting</span>
                 </a>
             </li>
-            
         </ul>
 
         <!-- Perekam Medis menu -->
@@ -327,7 +236,7 @@
         <?php }?>
     </div>
 </div>
-        </div>
+</div>
         <!-- Start navbar -->
         <div id="main" class='layout-navbar'>
             <header class='mb-3'>
