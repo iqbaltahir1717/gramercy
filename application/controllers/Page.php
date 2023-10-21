@@ -118,6 +118,32 @@ class Page extends CI_Controller {
 		TemplateLandingPage($data, $view, $viewCategory);
 	}
 
+	// UNIT TYPE
+    public function unittype(){
+		// DATA
+		$data['setting']             = getSetting();
+		$data['link']                = $this->m_link->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
+
+		// TEMPLATE
+		$view         = "landing_page/page/unittype";
+		$viewCategory = "all";
+		TemplateLandingPage($data, $view, $viewCategory);
+	}
+
+	// SITE PLAN
+    public function siteplan(){
+		// DATA
+		$data['setting']             = getSetting();
+		$data['link']                = $this->m_link->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
+
+		// TEMPLATE
+		$view         = "landing_page/page/siteplan";
+		$viewCategory = "all";
+		TemplateLandingPage($data, $view, $viewCategory);
+	}
+
     public function tracking(){
 		// DATA
 		$data['setting']             = getSetting();

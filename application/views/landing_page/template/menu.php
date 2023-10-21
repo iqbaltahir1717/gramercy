@@ -15,10 +15,10 @@
                                     <a href="<?php echo base_url(); ?>">Home</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/contact'); ?>">Unit Type</a>
+                                    <a href="<?php echo site_url('page/unittype'); ?>">Unit Type</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/contact'); ?>">Siteplan</a>
+                                    <a href="<?php echo site_url('page/siteplan'); ?>">Siteplan</a>
                                 </li>
                             </ul>
                         </div>
