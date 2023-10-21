@@ -2935,44 +2935,151 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+
+/* ========================UNIT TYPE====================================== */
+#mainuntitype{
+	background: #040403;
+}
+.unittype1 {
 	padding: 15px 0;
 	background: #040403;
-	margin-top: 70px;
+	margin-top: 100px;
 }
+
+.unittype1 {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 39.24%, #000 91.32%), linear-gradient(180deg, #000 8.67%, rgba(0, 0, 0, 0.00) 53.35%), url(../../core-images/header-unittype.png) lightgray 50% / cover no-repeat;
+}
+
+.unittext h1 {
+	height: 100px;
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center; /* Ini yang akan mengatur posisi vertikal tengah */
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Gambetta;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96.5px;
+    text-transform: uppercase;
+    margin-top: 170px;
+}
+.unitimg {
+    width: 100%;
+    height: 100%;
+}
+
+.unittype2 .slide h1{
+	color: #FFF;
+	text-align: center;
+	font-family: Gambetta;
+	font-size: 96px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 115.2px; /* 120% */
+	letter-spacing: 2.88px;
+}
+
+.unittype2 .slide .slidetextcenter .row{
+	padding: 20px;
+}
+
+.unittype2 .slide .kanan{
+	color: #999999;
+	font-size: 18px;
+}
+
+.unittype2 .slide .kiri{
+	color: #C2A058;
+	font-size: 18px;
+}
+.unittype2 .slide .kanan h4{
+	color: #999999;
+	font-size: 18px;
+}
+.unittype2 .slide .kiri h4{
+	color: #C2A058;
+	font-size: 18px;
+}
+
+/* ===========Unit Type 3============== */
+/* Mengubah latar belakang gambar pada class unittypeimg */
+.unittype3 {
+    width: 100%;
+    height: 750px;
+    background: url(../../core-images/typearma.png) lightgray 50% / cover no-repeat;
+    position: relative; /* Menambahkan ini untuk latar belakang relatif */
+}
+
+/* Mengubah properti h1 ARMA */
+.unittype3 .unittypeimg .overlay-text h1 {
+    position: absolute;
+    right: 198px;
+    bottom: 33px;
+    color: #FFF;
+    text-align: center;
+    font-family: Gambetta;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.2px; /* 120% */
+    letter-spacing: 2.88px;
+}
+
+.unittype4 img{
+	width: 90%;
+	height: 418px;
+}
+
+.unittype4 .list-group-item {
+	border: none; /* Menghilangkan semua garis kecuali garis bawah */
+	background: transparent; /* Mengatur latar belakang menjadi transparan */
+	padding: 1rem 0; /* Berikan padding di bawah item */
+	color: white; /* Mengatur teks menjadi putih */
+	border-bottom: 1px solid #676767; /* Garis bawah dengan warna #676767 */
+  }
+.unittype4 h4{
+	color: #fff;
+	font-size: 26px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.unittype4 .text{
+	color: #A3A3A3;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 42px;
+}
+
+.unittype4 .angka{
+	font-size: 26px;
+	margin-left: 10px;
+}
+
+.unittype4 svg{
+	margin-left: 50px;
+}
+
+.unittype4 circle svg{
+	margin-left: 0px;
+}
+
+  
 
 
 @media (max-width: 992px) {
-	.breadcrumbs {
+	.unittype1 .unittype2 {
 		margin-top: 50px;
 	}
 }
-
-.breadcrumbs h2 {
-	font-size: 26px;
-	font-weight: 600;
-	color: #043c6d;
-}
-
-.breadcrumbs ol {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0 0 10px 0;
-	margin: 0;
-	font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-	padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-	display: inline-block;
-	padding-right: 10px;
-	color: #ffc412;
-	content: "/";
-}
+/* ========================END UNIT TYPE====================================== */
 
 /*--------------------------------------------------------------
 # Portfolio Details
