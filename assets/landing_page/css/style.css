@@ -208,11 +208,14 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-	background: #FFFFFF !important;
+	background-color: transparent;
 	transition: all 0.5s;
 	z-index: 997;
 	padding: 15px 0;
 	/* top: 60px; */
+}
+#header .container{
+	background: transparent;
 }
 
 #header.header-scrolled {
@@ -2934,9 +2937,10 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
 	padding: 15px 0;
-	background: #ecf6fe;
+	background: #040403;
 	margin-top: 70px;
 }
+
 
 @media (max-width: 992px) {
 	.breadcrumbs {
