@@ -36,7 +36,7 @@
                                     <a href="<?php echo site_url('page/developer'); ?>">Developer</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/contact'); ?>">News</a>
+                                    <a href="<?php echo site_url('page/newsgramercy'); ?>">News</a>
                                 </li>
                             </ul>
                         </div>

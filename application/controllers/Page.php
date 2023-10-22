@@ -157,7 +157,7 @@ class Page extends CI_Controller {
 		TemplateLandingPage($data, $view, $viewCategory);
 	}
 
-	// PROJECT
+	// DEVELOPER
     public function developer(){
 		// DATA
 		$data['setting']             = getSetting();
@@ -166,6 +166,32 @@ class Page extends CI_Controller {
 
 		// TEMPLATE
 		$view         = "landing_page/page/developer";
+		$viewCategory = "all";
+		TemplateLandingPage($data, $view, $viewCategory);
+	}
+
+	// NEWS THE GRAMERCY
+    public function newsgramercy(){
+		// DATA
+		$data['setting']             = getSetting();
+		$data['link']                = $this->m_link->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
+
+		// TEMPLATE
+		$view         = "landing_page/page/newsgramercy";
+		$viewCategory = "all";
+		TemplateLandingPage($data, $view, $viewCategory);
+	}
+
+	// NEWS DETAIL THE GRAMERCY
+    public function newsdetailgramercy(){
+		// DATA
+		$data['setting']             = getSetting();
+		$data['link']                = $this->m_link->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
+
+		// TEMPLATE
+		$view         = "landing_page/page/newsdetailgramercy";
 		$viewCategory = "all";
 		TemplateLandingPage($data, $view, $viewCategory);
 	}
