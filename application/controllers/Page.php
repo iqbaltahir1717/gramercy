@@ -144,6 +144,32 @@ class Page extends CI_Controller {
 		TemplateLandingPage($data, $view, $viewCategory);
 	}
 
+	// PROJECT
+    public function project(){
+		// DATA
+		$data['setting']             = getSetting();
+		$data['link']                = $this->m_link->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
+
+		// TEMPLATE
+		$view         = "landing_page/page/project";
+		$viewCategory = "all";
+		TemplateLandingPage($data, $view, $viewCategory);
+	}
+
+	// PROJECT
+    public function developer(){
+		// DATA
+		$data['setting']             = getSetting();
+		$data['link']                = $this->m_link->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
+
+		// TEMPLATE
+		$view         = "landing_page/page/developer";
+		$viewCategory = "all";
+		TemplateLandingPage($data, $view, $viewCategory);
+	}
+
     public function tracking(){
 		// DATA
 		$data['setting']             = getSetting();

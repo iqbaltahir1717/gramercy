@@ -3356,6 +3356,145 @@ section {
 
 
 /* ========================END SITE PLAN====================================== */
+/* ========================STARTPROJECTS====================================== */
+
+#mainprojects{
+	background: #FFFFFF;
+}
+.projects1 {
+	padding: 15px 0;
+	background: #FFFFFF;
+	margin-top: 100px;
+}
+
+.projects1 {
+	display: flex;
+    width: 100%;
+    height: 516px;
+	background: url(../../core-images/banner-project.png) lightgray -92.136px -46.719px / 108.456% 109.058% no-repeat;
+}
+
+.projects1 h1{
+	color: #fff;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 90px; /* 125% */
+	letter-spacing: -2.3px;
+}
+
+.projects1 p{
+	color: #E7E7E7;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 42px; /* 175% */
+	letter-spacing: -0.3px;
+
+}
+
+.projects2 .logobrand{
+	width: 70%;
+	height: 216;
+}
+
+.projects2 .card-body h1{
+	color: #131313;
+	text-align: start;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px; /* 87.5% */
+	letter-spacing: -0.3px;
+}
+
+.projects2 .card{
+	border: none;
+}
+
+
+
+
+
+
+
+
+/* ========================END PROJECTS====================================== */
+/* ========================START DEVELOPER====================================== */
+
+
+#maindeveloper{
+	background: #040403;
+}
+
+.developer1 {
+	padding: 15px 0;
+	background: #040403;
+	margin-top: 100px;
+    width: 100%;
+    height: 600px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 17.88%, #000 74.51%), linear-gradient(180deg, #000 6.77%, rgba(0, 0, 0, 0.00) 57.47%), url(../../core-images/bannerdeveloper.png), lightgray 50% / cover no-repeat;
+}
+
+
+.developer1 h1 {
+	height: 100px;
+	width: 711px;
+	display: flex;
+    justify-content: center;
+    align-items: center; /* Ini yang akan mengatur posisi vertikal tengah */
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Gambetta;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96.5px;
+    text-transform: uppercase;
+    margin-top: 150px;
+	margin-left: 250px;
+}
+.developer1 .unitimg {
+    width: 100%;
+    height: 100%;
+}
+
+.developer1 p{
+	color: #E7E7E7;
+	text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 42px; /* 175% */
+	letter-spacing: -0.3px;
+	width: 990px;
+}
+
+.developer1 img{
+	margin-top: 200px;
+}
+
+.developer2 .dev1{
+	width: 606px;
+	height: 357px;
+}
+
+.developer2 p{
+	color: #A3A3A3;
+	width: 772px;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 160% */
+	letter-spacing: -0.3px;
+}
+
+
+
+
+
+/* ========================END DEVELOPER====================================== */
 
 
 /*--------------------------------------------------------------

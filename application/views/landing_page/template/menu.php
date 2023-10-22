@@ -30,10 +30,10 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav mx-auto">
                                 <li class="active">
-                                    <a href="<?php echo base_url(); ?>">Projects</a>
+                                    <a href="<?php echo site_url('page/project'); ?>">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/contact'); ?>">Developer</a>
+                                    <a href="<?php echo site_url('page/developer'); ?>">Developer</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo site_url('page/contact'); ?>">News</a>
