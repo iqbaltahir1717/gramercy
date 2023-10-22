@@ -31,30 +31,41 @@
             </li>
 
             <li
-                class="sidebar-item <?= active_menu('pasien'); ?>">
-                <a href="<?php echo site_url('pasien')?>" class='sidebar-link'>
+                class="sidebar-item <?= active_menu('unit'); ?>">
+                <a href="<?php echo site_url('unit')?>" class='sidebar-link'>
                     <i class="fas fa-user-injured"></i>
                     <span>Type Unit</span>
                 </a>
             </li>
-
             <li
-                class="sidebar-item <?= active_menu('dokter'); ?>">
-                <a href="<?php echo site_url('dokter')?>" class='sidebar-link'>
+                class="sidebar-item <?= active_menu('siteplan'); ?>">
+                <a href="<?php echo site_url('siteplan')?>" class='sidebar-link'>
                     <i class="fas fa-user-md"></i>
                     <span>Siteplan</span>
                 </a>
             </li>
-
             <li
-                class="sidebar-item <?= active_menu('pegawai'); ?>">
-                <a href="<?php echo site_url('pegawai')?>" class='sidebar-link'>
+                class="sidebar-item <?= active_menu('cluster'); ?>">
+                <a href="<?php echo site_url('cluster')?>" class='sidebar-link'>
+                    <i class="fas fa-user-md"></i>
+                    <span>Cluster Amenities</span>
+                </a>
+            </li>
+            <li
+                class="sidebar-item <?= active_menu('optical'); ?>">
+                <a href="<?php echo site_url('optical')?>" class='sidebar-link'>
+                    <i class="fas fa-user-md"></i>
+                    <span>Optical Layout</span>
+                </a>
+            </li>
+            <li class="sidebar-title">Content & News</li>
+            <li
+                class="sidebar-item <?= active_menu('project'); ?>">
+                <a href="<?php echo site_url('project')?>" class='sidebar-link'>
                     <i class="fas fa-user-nurse"></i>
                     <span>Projects</span>
                 </a>
             </li>
-            <li class="sidebar-title">Content & News</li>
-
             <li
                 class="sidebar-item  has-sub">
                 <a href="#" class='sidebar-link'>
@@ -62,12 +73,11 @@
                     <span>Profil Gramercy</span>
                 </a>
                 <ul class="submenu ">
-                    <li class="submenu-item <?= active_menu('content/page/sejarah'); ?>">
-                        <a href="<?php echo site_url('content/page/sejarah')?>">Developer</a>
+                    <li class="submenu-item <?= active_menu('content/page/developer'); ?>">
+                        <a href="<?php echo site_url('content/page/developer')?>">Developer</a>
                     </li>
                 </ul>
             </li>
-
             <li
                 class="sidebar-item  has-sub">
                 <a href="#" class='sidebar-link'>
@@ -93,6 +103,10 @@
 
             <li class="sidebar-title">Others</li>
 
+            <li
+                class="sidebar-item <?= active_menu('gallery_category'); ?>">
+                <a class='sidebar-link' href="<?php echo site_url('gallery_category')?>"><i class="fas fa-clinic-medical"></i> <span>Gallery Category</span></a>
+            </li>
             <li
                 class="sidebar-item <?= active_menu('user'); ?>">
                 <a href="<?php echo site_url('user')?>" class='sidebar-link'>
@@ -127,7 +141,6 @@
         <?php }elseif($this->session->userdata('user_group')==2){?>
         <ul class="menu">
             <li class="sidebar-title">DATA MEDICORD</li>
-            
             <li
                 class="sidebar-item <?= active_menu('dashboard'); ?>">
                 <a href="<?php echo site_url('dashboard')?>" class='sidebar-link'>
