@@ -26,7 +26,6 @@
     <!-- Page Content -->
     <div class="page-content">
         <section class="row">
-
                 <div class="col-12 col-md-12 col-lg-12">
                     <div class="row">
                         <div class="col-12 col-lg-3 col-md-3">
@@ -39,7 +38,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-8 d-flex justify-content-end">
-                                            <h3 class="font-extrabold mb-0"><?php echo $widget[0]->total_pasien;?></h3>
+                                            <h3 class="font-extrabold mb-0"><?php echo $unit[0]->total_unit;?></h3>
                                         </div>
                                         <div class="col-md-12 col-lg-12">
                                             <h6 class="text-muted font-semibold">Total Unit</h6>
@@ -58,10 +57,10 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-8 d-flex justify-content-end">
-                                            <h3 class="font-extrabold mb-0"><?php echo $widget2[0]->total_rm_pengkajian_awal;?></h3>
+                                            <h3 class="font-extrabold mb-0"><?php echo $gallery[0]->total_gallery;?></h3>
                                         </div>
                                         <div class="col-md-12 col-lg-12">
-                                            <h6 class="text-muted font-semibold">Total Pengunjung</h6>
+                                            <h6 class="text-muted font-semibold">Total Foto Galeri</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -77,10 +76,10 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-8 d-flex justify-content-end">
-                                            <h3 class="font-extrabold mb-0"><?php echo $widget4[0]->total_rm_riwayat_kunjungan_pasien;?></h3>
+                                            <h3 class="font-extrabold mb-0"></h3>
                                         </div>
                                         <div class="col-md-12 col-lg-12">
-                                            <h6 class="text-muted font-semibold">Total Berita</h6>
+                                            <h6 class="text-muted font-semibold">Total Projects</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -96,10 +95,10 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-8 d-flex justify-content-end">
-                                            <h3 class="font-extrabold mb-0"><?php echo $widget3[0]->total_rm_pemeriksaan_odontogram;?></h3>
+                                            <h3 class="font-extrabold mb-0"></h3>
                                         </div>
                                         <div class="col-md-12 col-lg-12">
-                                            <h6 class="text-muted font-semibold">Total Projects</h6>
+                                            <h6 class="text-muted font-semibold">Total News</h6>
                                         </div>
                                     </div>
                                 </div>

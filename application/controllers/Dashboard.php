@@ -3,12 +3,10 @@ class Dashboard extends CI_Controller {
 	function __construct() {
         parent::__construct();
 		// Load Model
-        $this->load->model('m_pasien');
-		$this->load->model('m_dokter');
-		$this->load->model('m_pengkajian_awal');
-		$this->load->model('m_pemeriksaan_odontogram');
-		$this->load->model('m_riwayat_kunjungan_pasien');
-		$this->load->model('m_message');
+        $this->load->model('m_unit');
+		$this->load->model('m_unit_gallery');
+		$this->load->model('m_unit_gallery_category');
+
         // check session data
 		if (!$this->session->userdata('user_id')) {
 			// ALERT
@@ -20,14 +18,12 @@ class Dashboard extends CI_Controller {
 	}
 		
 	public function index(){
+
 		// DATA
 		$data['setting'] = getSetting();
 		$data['title']   = 'Dashboard';
-		$data['widget']  = $this->m_pasien->widget();
-		$data['widget2']  = $this->m_pengkajian_awal->widget();
-		$data['widget3']  = $this->m_pemeriksaan_odontogram->widget();
-		$data['widget4']  = $this->m_riwayat_kunjungan_pasien->widget();
-		$data['message'] = $this->m_message->read(5,'','', '0');
+		$data['unit']  = $this->m_unit->widget();
+		$data['gallery']  = $this->m_unit_gallery->widget();
 
 		// TEMPLATE
 		$view         = "dashboard/index";
