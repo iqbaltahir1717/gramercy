@@ -1,0 +1,380 @@
+<main id="mainsiteplan">
+    <section id="siteplan1" class="siteplan1">
+        <div class="container">
+            <div class="row">
+                <div class="unitimg">
+                    <div class="row mouser mr-5 justify-content-end">
+                        <img src="<?php echo base_url(); ?>assets/core-images/mouse-indicatorsiteplan.svg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="siteplan2" class="siteplan2">
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="row m-5">
+                <p>Explore The Gramercy housing development's masterfully designed site plan, offering four unit types (ARMA Corner, ARMA, AERA, ALCA) and enticing amenities such as an elegant entrance gate. This secure and sophisticated community is also conveniently located near Binus ASO, BCA, Hotel Tentrem, Living World, ST. Laurensia School, Pasar 8, Flavor Bliss, Mercure Hotel, EMC, and The Gramercy Lounge sport center. This meticulously crafted site layout ensures residents have access to a variety of living options and facilities, creating a harmonious and vibrant living environment for all.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="siteplan3" class="siteplan3">
+        <div class="container">
+            <div class="row">
+                <div class="unitimg">
+                    <div class="row mouser mr-5 justify-content-end">
+                        <img src="<?php echo base_url(); ?>assets/core-images/mouse-indicatorsiteplan.svg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="siteplan4" class="siteplan4">
+        <div class="container md-12">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <h1>Cluster Amenities</h1>
+                    </div>
+                    <div class="row">
+                        <p>Experience The Gramercy's Cluster Amenities: shared fitness center, pristine pool, green spaces, and communal areas fostering a vibrant and luxurious community.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="<?php echo base_url(); ?>assets/core-images/Cluster-Amenities-1.png" alt="Logo">
+                            <div class="overlay">
+                                <div class="content">
+                                    <h3>Wellness</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo base_url(); ?>assets/core-images/Cluster-Amenities-2.png" alt="Logo">
+                            <div class="overlay">
+                                <div class="content">
+                                    <h3>Wellness</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo base_url(); ?>assets/core-images/Cluster-Amenities-3.png" alt="Logo">
+                            <div class="overlay">
+                                <div class="content">
+                                    <h3>Wellness</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo base_url(); ?>assets/core-images/Cluster-Amenities-4.png" alt="Logo">
+                            <div class="overlay">
+                                <div class="content">
+                                    <h3>Wellness</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo base_url(); ?>assets/core-images/Cluster-Amenities-5.png" alt="Logo">
+                            <div class="overlay">
+                                <div class="content">
+                                    <h3>Wellness</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo base_url(); ?>assets/core-images/Cluster-Amenities-6.png" alt="Logo">
+                            <div class="overlay">
+                                <div class="content">
+                                    <h3>Wellness</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="siteplan5" class="siteplan5">
+        <div class="container md-12">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <h1>Optimal Strategic Layout</h1>
+                    </div>
+                    <div class="row">
+                        <p>Optimal Strategic Layout is a tailored layout concept designed to provide ease of access and efficiency in various aspects of daily life. It emphasizes positions that facilitate mobility and the use of amenities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card dark">
+                        <img src="<?php echo base_url(); ?>assets/core-images/strategi-01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="text-section">
+                                <h5 class="card-title fw-bold">Binus ASO</h5>
+                                <!-- batas -->
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                        <path d="M12.75 12.625C12.75 13.6605 13.5895 14.5 14.625 14.5C15.6605 14.5 16.5 13.6605 16.5 12.625C16.5 11.5895 15.6605 10.75 14.625 10.75C13.5895 10.75 12.75 11.5895 12.75 12.625ZM12.75 12.625H4.625C3.7962 12.625 3.00134 12.2958 2.41529 11.7097C1.82924 11.1237 1.5 10.3288 1.5 9.5C1.5 8.6712 1.82924 7.87634 2.41529 7.29029C3.00134 6.70424 3.7962 6.375 4.625 6.375H12.125C12.788 6.375 13.4239 6.11161 13.8928 5.64277C14.3616 5.17393 14.625 4.53804 14.625 3.875C14.625 3.21196 14.3616 2.57607 13.8928 2.10723C13.4239 1.63839 12.788 1.375 12.125 1.375H4.625" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        2 km 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
+                                        <path d="M19.5 2.5C19.5 2.10218 19.342 1.72064 19.0607 1.43934C18.7794 1.15804 18.3978 1 18 1H14.25L19.5 10M4.5 1H7.125L12.375 10M15.9457 4H8.87503L4.5 10M23.25 10C23.25 12.0711 21.5711 13.75 19.5 13.75C17.4289 13.75 15.75 12.0711 15.75 10C15.75 7.92893 17.4289 6.25 19.5 6.25C21.5711 6.25 23.25 7.92893 23.25 10ZM8.25 10C8.25 12.0711 6.57107 13.75 4.5 13.75C2.42893 13.75 0.75 12.0711 0.75 10C0.75 7.92893 2.42893 6.25 4.5 6.25C6.57107 6.25 8.25 7.92893 8.25 10Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        15 mnt 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        5 mnt 
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card dark">
+                        <img src="<?php echo base_url(); ?>assets/core-images/strategi-02.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="text-section">
+                                <h5 class="card-title fw-bold">BCA</h5>
+                                <!-- batas -->
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                        <path d="M12.75 12.625C12.75 13.6605 13.5895 14.5 14.625 14.5C15.6605 14.5 16.5 13.6605 16.5 12.625C16.5 11.5895 15.6605 10.75 14.625 10.75C13.5895 10.75 12.75 11.5895 12.75 12.625ZM12.75 12.625H4.625C3.7962 12.625 3.00134 12.2958 2.41529 11.7097C1.82924 11.1237 1.5 10.3288 1.5 9.5C1.5 8.6712 1.82924 7.87634 2.41529 7.29029C3.00134 6.70424 3.7962 6.375 4.625 6.375H12.125C12.788 6.375 13.4239 6.11161 13.8928 5.64277C14.3616 5.17393 14.625 4.53804 14.625 3.875C14.625 3.21196 14.3616 2.57607 13.8928 2.10723C13.4239 1.63839 12.788 1.375 12.125 1.375H4.625" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        2 km 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
+                                        <path d="M19.5 2.5C19.5 2.10218 19.342 1.72064 19.0607 1.43934C18.7794 1.15804 18.3978 1 18 1H14.25L19.5 10M4.5 1H7.125L12.375 10M15.9457 4H8.87503L4.5 10M23.25 10C23.25 12.0711 21.5711 13.75 19.5 13.75C17.4289 13.75 15.75 12.0711 15.75 10C15.75 7.92893 17.4289 6.25 19.5 6.25C21.5711 6.25 23.25 7.92893 23.25 10ZM8.25 10C8.25 12.0711 6.57107 13.75 4.5 13.75C2.42893 13.75 0.75 12.0711 0.75 10C0.75 7.92893 2.42893 6.25 4.5 6.25C6.57107 6.25 8.25 7.92893 8.25 10Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        15 mnt 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        5 mnt 
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card dark">
+                        <img src="<?php echo base_url(); ?>assets/core-images/strategi-03.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="text-section">
+                                <h5 class="card-title fw-bold">Hotel Tentrem</h5>
+                                <!-- batas -->
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                        <path d="M12.75 12.625C12.75 13.6605 13.5895 14.5 14.625 14.5C15.6605 14.5 16.5 13.6605 16.5 12.625C16.5 11.5895 15.6605 10.75 14.625 10.75C13.5895 10.75 12.75 11.5895 12.75 12.625ZM12.75 12.625H4.625C3.7962 12.625 3.00134 12.2958 2.41529 11.7097C1.82924 11.1237 1.5 10.3288 1.5 9.5C1.5 8.6712 1.82924 7.87634 2.41529 7.29029C3.00134 6.70424 3.7962 6.375 4.625 6.375H12.125C12.788 6.375 13.4239 6.11161 13.8928 5.64277C14.3616 5.17393 14.625 4.53804 14.625 3.875C14.625 3.21196 14.3616 2.57607 13.8928 2.10723C13.4239 1.63839 12.788 1.375 12.125 1.375H4.625" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        2 km 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
+                                        <path d="M19.5 2.5C19.5 2.10218 19.342 1.72064 19.0607 1.43934C18.7794 1.15804 18.3978 1 18 1H14.25L19.5 10M4.5 1H7.125L12.375 10M15.9457 4H8.87503L4.5 10M23.25 10C23.25 12.0711 21.5711 13.75 19.5 13.75C17.4289 13.75 15.75 12.0711 15.75 10C15.75 7.92893 17.4289 6.25 19.5 6.25C21.5711 6.25 23.25 7.92893 23.25 10ZM8.25 10C8.25 12.0711 6.57107 13.75 4.5 13.75C2.42893 13.75 0.75 12.0711 0.75 10C0.75 7.92893 2.42893 6.25 4.5 6.25C6.57107 6.25 8.25 7.92893 8.25 10Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        15 mnt 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        5 mnt 
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card dark">
+                        <img src="<?php echo base_url(); ?>assets/core-images/strategi-04.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="text-section">
+                                <h5 class="card-title fw-bold">Living World</h5>
+                                <!-- batas -->
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                        <path d="M12.75 12.625C12.75 13.6605 13.5895 14.5 14.625 14.5C15.6605 14.5 16.5 13.6605 16.5 12.625C16.5 11.5895 15.6605 10.75 14.625 10.75C13.5895 10.75 12.75 11.5895 12.75 12.625ZM12.75 12.625H4.625C3.7962 12.625 3.00134 12.2958 2.41529 11.7097C1.82924 11.1237 1.5 10.3288 1.5 9.5C1.5 8.6712 1.82924 7.87634 2.41529 7.29029C3.00134 6.70424 3.7962 6.375 4.625 6.375H12.125C12.788 6.375 13.4239 6.11161 13.8928 5.64277C14.3616 5.17393 14.625 4.53804 14.625 3.875C14.625 3.21196 14.3616 2.57607 13.8928 2.10723C13.4239 1.63839 12.788 1.375 12.125 1.375H4.625" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        2 km 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
+                                        <path d="M19.5 2.5C19.5 2.10218 19.342 1.72064 19.0607 1.43934C18.7794 1.15804 18.3978 1 18 1H14.25L19.5 10M4.5 1H7.125L12.375 10M15.9457 4H8.87503L4.5 10M23.25 10C23.25 12.0711 21.5711 13.75 19.5 13.75C17.4289 13.75 15.75 12.0711 15.75 10C15.75 7.92893 17.4289 6.25 19.5 6.25C21.5711 6.25 23.25 7.92893 23.25 10ZM8.25 10C8.25 12.0711 6.57107 13.75 4.5 13.75C2.42893 13.75 0.75 12.0711 0.75 10C0.75 7.92893 2.42893 6.25 4.5 6.25C6.57107 6.25 8.25 7.92893 8.25 10Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        15 mnt 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        5 mnt 
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card dark">
+                        <img src="<?php echo base_url(); ?>assets/core-images/strategi-05.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="text-section">
+                                <h5 class="card-title fw-bold">ST. Laurensia School</h5>
+                                <!-- batas -->
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                        <path d="M12.75 12.625C12.75 13.6605 13.5895 14.5 14.625 14.5C15.6605 14.5 16.5 13.6605 16.5 12.625C16.5 11.5895 15.6605 10.75 14.625 10.75C13.5895 10.75 12.75 11.5895 12.75 12.625ZM12.75 12.625H4.625C3.7962 12.625 3.00134 12.2958 2.41529 11.7097C1.82924 11.1237 1.5 10.3288 1.5 9.5C1.5 8.6712 1.82924 7.87634 2.41529 7.29029C3.00134 6.70424 3.7962 6.375 4.625 6.375H12.125C12.788 6.375 13.4239 6.11161 13.8928 5.64277C14.3616 5.17393 14.625 4.53804 14.625 3.875C14.625 3.21196 14.3616 2.57607 13.8928 2.10723C13.4239 1.63839 12.788 1.375 12.125 1.375H4.625" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        2 km 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
+                                        <path d="M19.5 2.5C19.5 2.10218 19.342 1.72064 19.0607 1.43934C18.7794 1.15804 18.3978 1 18 1H14.25L19.5 10M4.5 1H7.125L12.375 10M15.9457 4H8.87503L4.5 10M23.25 10C23.25 12.0711 21.5711 13.75 19.5 13.75C17.4289 13.75 15.75 12.0711 15.75 10C15.75 7.92893 17.4289 6.25 19.5 6.25C21.5711 6.25 23.25 7.92893 23.25 10ZM8.25 10C8.25 12.0711 6.57107 13.75 4.5 13.75C2.42893 13.75 0.75 12.0711 0.75 10C0.75 7.92893 2.42893 6.25 4.5 6.25C6.57107 6.25 8.25 7.92893 8.25 10Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        15 mnt 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        5 mnt 
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card dark">
+                        <img src="<?php echo base_url(); ?>assets/core-images/strategi-06.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="text-section">
+                                <h5 class="card-title fw-bold">Pasar 8</h5>
+                                <!-- batas -->
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                        <path d="M12.75 12.625C12.75 13.6605 13.5895 14.5 14.625 14.5C15.6605 14.5 16.5 13.6605 16.5 12.625C16.5 11.5895 15.6605 10.75 14.625 10.75C13.5895 10.75 12.75 11.5895 12.75 12.625ZM12.75 12.625H4.625C3.7962 12.625 3.00134 12.2958 2.41529 11.7097C1.82924 11.1237 1.5 10.3288 1.5 9.5C1.5 8.6712 1.82924 7.87634 2.41529 7.29029C3.00134 6.70424 3.7962 6.375 4.625 6.375H12.125C12.788 6.375 13.4239 6.11161 13.8928 5.64277C14.3616 5.17393 14.625 4.53804 14.625 3.875C14.625 3.21196 14.3616 2.57607 13.8928 2.10723C13.4239 1.63839 12.788 1.375 12.125 1.375H4.625" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        2 km 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
+                                        <path d="M19.5 2.5C19.5 2.10218 19.342 1.72064 19.0607 1.43934C18.7794 1.15804 18.3978 1 18 1H14.25L19.5 10M4.5 1H7.125L12.375 10M15.9457 4H8.87503L4.5 10M23.25 10C23.25 12.0711 21.5711 13.75 19.5 13.75C17.4289 13.75 15.75 12.0711 15.75 10C15.75 7.92893 17.4289 6.25 19.5 6.25C21.5711 6.25 23.25 7.92893 23.25 10ZM8.25 10C8.25 12.0711 6.57107 13.75 4.5 13.75C2.42893 13.75 0.75 12.0711 0.75 10C0.75 7.92893 2.42893 6.25 4.5 6.25C6.57107 6.25 8.25 7.92893 8.25 10Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        15 mnt 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                            <circle cx="2" cy="2" r="2" fill="#B0E4DD"/>
+                                        </svg>
+                                        5 mnt 
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="siteplan6" class="siteplan6 mt-0">
+        <div class="container section3 justify-content-center text-center">
+            <div class="row brand-logo-gramercy justify-content-center text-center">
+                <div class="col">
+                    <img src="<?php echo base_url(); ?>assets/core-images/alam-sutera.png" alt="Image 1">
+                </div>
+                <div class="col">
+                    <img src="<?php echo base_url(); ?>assets/core-images/thegramercy.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="row ourservice justify-content-center text-center">
+                <div class="col md-1">
+                    <h3>GRATITUDE</h3>
+                    <h5>Alam Sutere gives back to it’s  greater community by developing a sanctuary for serene living. A surprise gift for gratitude</h5>
+                </div>
+                <div class="col md-1">
+                    <h3>FELLOWSHIP</h3>
+                    <h5>Build Opennes of heart with others who share common interest to learn. Grow and enjoy life</h5>
+                </div>
+                <div class="col md-1">
+                    <h3>FREEDOM</h3>
+                    <h5>Creation of curated gratitude community and well designed environment</h5>
+                </div>
+            </div>
+            <div class="row ourservice justify-content-center text-center mt-5">
+                <p class="mt-5">The last and most prestigious cluster locatedin favourite place of Alam Sutera “Green Tunnel”</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="siteplan7" class="siteplan7">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row">
+                        <h1>EXCEPTIONAL EXPERIENCE</h1>
+                    </div>
+                    <div class="row text">
+                        <p>We are committed to providing top quality creations. from complete facilities to enjoyable entertainment centers. Reimagine your life at a higher standard.</p>
+                    </div>
+                    <div class="row dev">
+                        <button type="button">About Developers <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="<?php echo base_url(); ?>assets/core-images/developerpeople.svg" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    </main>

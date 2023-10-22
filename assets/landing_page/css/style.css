@@ -208,11 +208,14 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-	background: #FFFFFF !important;
+	background-color: transparent;
 	transition: all 0.5s;
 	z-index: 997;
 	padding: 15px 0;
 	/* top: 60px; */
+}
+#header .container{
+	background: transparent;
 }
 
 #header.header-scrolled {
@@ -388,7 +391,103 @@ h6 {
 		content: "\ea9d";
 	}
 }
+/* ========================NEW MENU======================================= */
 
+@media (max-width: 1280px){
+	header{
+		padding: 14px 2%; 
+		transition: .2s;
+	}
+	.nav-menu a{
+		padding: 5px 0;
+		margin: 0px 10px;
+	}
+	.logogramercy img{
+		width: 90%;
+		height: 85px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 1164px){
+	header{
+		padding: 8px 2%; 
+		transition: .2s;
+	}
+	.nav-menu a{
+		padding: 3px 0;
+		margin: 0px 5px;
+	}
+	.logogramercy img{
+		width: 100%;
+		height: 75px;
+	}
+
+}
+
+@media (max-width: 1008px){
+	header{
+		padding: 8px 2%; 
+		transition: .2s;
+	}
+	.nav-menu a{
+		padding: 3px 0;
+		margin: 0px 5px;
+	}
+	.logogramercy img{
+		width: 100%;
+		height: 75px;
+	}
+	
+}
+
+@media (max-width: 990px){
+	header{
+		padding: 8px 2%; 
+		transition: .2s;
+	}
+	header #menu-icon img{
+		margin-left: 200px;
+		display: block;
+	}
+	.navbar-nav{
+		position: absolute;
+		top: 100%;
+		right: 3%;
+		width: 350px;
+		height: 40vh;
+		background: #C2A058;
+
+	}
+	header #menu-icon{
+		display: block;
+	}
+	.logogramercy img{
+		width: 100%;
+		height: 70px;
+		margin-right: 200px;
+		justify-content: start;
+	}
+	
+}
+
+@media (max-width: 440px){
+	header{
+		padding: 8px 2%; 
+		transition: .2s;
+	}
+	header #menu-icon img{
+		margin-right: 400px;
+	}
+	.logogramercy img{
+		width: 90%;
+		height: 40px;
+		align-items: start;
+	}
+}
+
+
+
+/* ========================END MENU======================================= */
 /* Mobile Navigation */
 .mobile-nav-toggle {
 	position: fixed;
@@ -595,14 +694,14 @@ h6 {
     background-repeat: no-repeat;
 }
 
-.brand-logo-gramercy {
+.hero-new3 .brand-logo-gramercy {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 80px;
 }
-.brand-logo-gramercy img {
+.hero-new3 .brand-logo-gramercy img {
     display: block;
     margin: 0 auto; 
 }
@@ -846,11 +945,731 @@ h6 {
 
 
 
+/* ====================================RESPONSIF HERO============================= */
+
+@media (max-width: 900px){
+	
+.bulatan {
+	display: flex;
+	padding: 30px;
+}
+
+
+.bulatan-tombol svg{
+	width: 30px;
+	height: 30px;
+	color: #161616;
+	margin-left: 20px; 
+}
+.bannertext{
+	font-family: 'GambettaLight';
+	font-size: 35px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 65px; /* 100% */
+	letter-spacing: 1.55px;
+	color: #161616;
+}
+
+
+.baristwo .bannertext{
+	text-align: right;
+}
+
+
+.baristwo .my-text {
+    width: 1257px;
+    color: #6D6D6D;
+	margin-left: 71px;
+	margin-right: 41px;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.baristree .bannertext{
+	text-align: right;
+}
+
+/* Nex section 2 (hero-new-2) */
+.hero-new2{
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 60.07%, #000 96.53%), url(../../core-images/arma.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-new3 {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    padding: 0px 88px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 13.72%),linear-gradient(180deg, rgba(0, 0, 0, 0.00) 78.3%, #000 91.32%), url(../../core-images/taman-jalan.png);
+    background-color: lightgray;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.hero-new3 .brand-logo-gramercy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.hero-new3 .brand-logo-gramercy img {
+    display: block;
+    margin: 0 auto; 
+}
+
+.ourservice {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ourservice .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	margin-top: 30px;
+}
+
+.ourservice .col h3 {
+    color: #FFF;
+    font-family: 'GambettaMedium';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    letter-spacing: 0.50px;
+    text-transform: uppercase;
+}
+
+.ourservice .col h5 {
+    color: #B4B4B6;
+    width: 220px;
+    color: var(--foundation-dark-mode-light-active, #B4B4B6);
+    text-align: center;
+    font-family: 'SatoshiLight';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 150% */
+}
+
+
+.ourservice p {
+    color: var(--foundation-dark-mode-light-active, #B4B4B6);
+    text-align: center;
+    font-family: 'SatoshiLight';
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 38px; /* 342.857% */
+}
+
+
+#hero-new4 {
+	display: flex;
+    width: 100%;
+    height: 1173px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 8.85%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 24.73%, #000 62.34%), url(../../core-images/bersepeda.png);
+    background-color: lightgray;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+.hero-new4 .container{
+	padding: 88px 100px;
+
+}
+
+.lokasi img{
+	width: 100%;
+	height: 400px;
+}
+
+.hero-new4 .brand-logo-gramercy img{
+	width: 60%;
+	height: 130px;
+}
+
+
+.row.lokasi p {
+    color: var(--foundation-primary-green-light, #E6F6F4);
+    text-align: center;
+    font-family: 'SatoshiLight';
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px; /* 150% */
+}
+
+.lokasi .btn{
+	color: #C2A058;;
+	font-size: 18px;
+}
+
+.hero-new5 h2{
+	color: #C2A058;
+	font-size: 50px;
+}
+
+.hero-new5 .panah {
+	line-height: 25px;
+}
+
+
+.hero-new5 .tombol-left a{
+	color: #999999;
+	width: 100px;
+	font-size: 16px;
+}
+.hero-new5 .tombol-right span{
+	color: #C2A058;
+	width: 100px;
+	font-size: 16px;
+}
+
+.hero-new5 .tombol-left svg{
+	color: #999999;
+}
+.hero-new5 .tombol-right svg{
+	color: #C2A058;
+}
+
+.hero-new5 .prenext .transparent-link {
+    background: none; /* Menghapus latar belakang */
+    border: none; /* Menghapus border */
+    text-decoration: none; /* Menghapus efek underline pada tautan */
+}
+.hero-new6{
+	margin: 0px;
+	padding: 0px;
+}
+
+.hero-new6 button{
+	margin:inherit;
+	align-items: start;
+	color: #C2A058;;
+	font-size: 18px;
+}
+
+.hero-new6 .brand{
+	margin:inherit;
+	width: 90%;
+	height: 40px;
+	align-items: start;
+}
+
+.hero-new6 h1{
+	font-size: 22px;
+}
+
+.hero-new6 .unitalca{
+	width: 150%;
+	justify-items: end;
+	height: 800px;
+}
+
+#hero-new7 {
+	width: 100%;
+    height: 738px;
+    background: linear-gradient(279deg, rgba(0, 0, 0, 0.00) 43.67%, #000 100.01%), url(../../core-images/lush.png) center / cover no-repeat, lightgray 50% / cover no-repeat;
+    /* Ganti '<path-to-image>' dengan URL gambar yang sesuai */
+}
+
+.hero-new7 h1{
+	font-size: 50px;
+	color: #ffffff;
+}
+
+.hero-new7 p{
+	font-size: 12;
+	color: #333333;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	font-family: 'SatoshiLight';
+	align-self: stretch;
+}
+
+.hero-new7 .card{
+	display: flex;
+	width: 600px;
+	padding: 2px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.hero-new7 .card button{
+	margin: unset;
+	padding: 0px;
+	background: none;
+	border: none;
+	align-items: start;
+	color: #C2A058;;
+	font-size: 18px;
+}
+
+
+.hero-new8 h5{
+	color: #6D6D6D;
+    width: 550px;
+    color: var(--foundation-dark-mode-light-active, #B4B4B6);
+    text-align: center;
+    font-family: 'SatoshiLight';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+	margin-top: 30px;
+}
+
+.hero-new8 button{
+	margin: unset;
+	padding: 0px;
+	background: none;
+	border: none;
+	align-items: start;
+	color: #C2A058;;
+	font-size: 18px;
+}
+
+.hero-new8 .project-1{
+	width: 100%;
+	height: 300px;
+}
+
+.hero-new8 .project-2{
+	width: 100%;
+	padding-bottom: 24px;
+	height: 150px;
+}
+.hero-new8 .project-3{
+	width: 100%;
+	height: 150px;
+}
+
+.arrowup{
+	display: flex;
+    align-items: center;
+    gap: 9px;
+	text-decoration: none;
+}
+
+.arrowup svg{
+	width: 10px;
+    height: 10px;
+    fill: none;
+    stroke: #5C5F66;
+    stroke-width: 1.575;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.hero-new8 .brand-logo-gramercy img{
+	width: 45%;
+	height: 120px;
+}
 
 
 
 
+}
 
+/* ====================================RESPONSIF HERO============================= */
+
+@media (max-width: 540px){
+	
+	.bulatan {
+		display: flex;
+		padding: 30px;
+	}
+	
+	
+	.bulatan-tombol svg{
+		width: 20px;
+		height: 20px;
+		color: #161616;
+		margin-left: 10px; 
+	}
+	.bannertext{
+		font-family: 'GambettaLight';
+		font-size: 25px;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 35px; /* 100% */
+		letter-spacing: 0.3px;
+		color: #161616;
+	}
+	
+	
+	.baristwo .bannertext{
+		text-align: right;
+	}
+	
+	
+	.baristwo .my-text {
+		width: 957px;
+		color: #6D6D6D;
+		margin-left: 71px;
+		margin-right: 41px;
+		font-family: 'Satoshi', sans-serif;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px;
+	}
+	
+	.baristree .bannertext{
+		text-align: right;
+	}
+	
+	/* Nex section 2 (hero-new-2) */
+	.hero-new2{
+		width: 100%;
+		height: 300px;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 60.07%, #000 96.53%), url(../../core-images/arma.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#hero-new3 {
+		display: flex;
+		width: 100%;
+		height: 700px;
+		padding: 0px 88px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+		background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 13.72%),linear-gradient(180deg, rgba(0, 0, 0, 0.00) 78.3%, #000 91.32%), url(../../core-images/taman-jalan.png);
+		background-color: lightgray;
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+	
+	.hero-new3 .brand-logo-gramercy {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+	}
+	.hero-new3 .brand-logo-gramercy img {
+		display: block;
+		margin: 0 auto; 
+		width: 80%;
+		height: 80px;
+	}
+	
+	.ourservice {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	.ourservice .col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	.ourservice .col h3 {
+		color: #FFF;
+		font-family: 'GambettaMedium';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 150% */
+		letter-spacing: 0.50px;
+		text-transform: uppercase;
+	}
+	
+	.ourservice .col h5 {
+		color: #B4B4B6;
+		width: 220px;
+		color: var(--foundation-dark-mode-light-active, #B4B4B6);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px; /* 150% */
+	}
+	
+	
+	.ourservice p {
+		color: var(--foundation-dark-mode-light-active, #B4B4B6);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 8px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 18px; /* 342.857% */
+	}
+	
+	
+	#hero-new4 {
+		display: flex;
+		width: 100%;
+		height: 973px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 8.85%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 24.73%, #000 62.34%), url(../../core-images/bersepeda.png);
+		background-color: lightgray;
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	
+	}
+	
+	.hero-new4 .container{
+		padding: 88px 100px;
+	
+	}
+	
+	.lokasi img{
+		width: 100%;
+		height: 300px;
+	}
+	
+	.hero-new4 .brand-logo-gramercy img{
+		width: 60%;
+		height: 80px;
+	}
+	
+	
+	.row.lokasi p {
+		color: var(--foundation-primary-green-light, #E6F6F4);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 16px;
+		font-style: normal;
+		line-height: 18px; /* 150% */
+	}
+	
+	.lokasi .btn{
+		color: #C2A058;;
+		font-size: 14px;
+	}
+	
+	.hero-new5 h2{
+		color: #C2A058;
+		font-size: 35px;
+	}
+	
+	.hero-new5 .panah {
+		line-height: 18px;
+	}
+	
+	
+	.hero-new5 .tombol-left a{
+		color: #999999;
+		width: 100px;
+		font-size: 12px;
+	}
+	.hero-new5 .tombol-right span{
+		color: #C2A058;
+		width: 100px;
+		font-size: 12px;
+	}
+	
+	.hero-new5 .tombol-left svg{
+		color: #999999;
+	}
+	.hero-new5 .tombol-right svg{
+		color: #C2A058;
+	}
+	
+	.hero-new5 .prenext .transparent-link {
+		background: none; /* Menghapus latar belakang */
+		border: none; /* Menghapus border */
+		text-decoration: none; /* Menghapus efek underline pada tautan */
+	}
+	.hero-new6{
+		margin: 0px;
+		padding: 0px;
+	}
+	.hero-new6 p{
+		margin: 20px;
+		font-size: 12px;
+	}
+	
+	.hero-new6 button{
+		margin-left: 10px;
+		align-items: start;
+		color: #C2A058;;
+		font-size: 14px;
+	}
+	
+	.hero-new6 .brand{
+		margin:inherit;
+		width: 20%;
+		height: 50px;
+		align-items: start;
+	}
+	
+	.hero-new6 h1{
+		font-size: 18px;
+	}
+	
+	.hero-new6 .unitalca{
+		width: 120%;
+		justify-items: end;
+		height: 700px;
+	}
+	
+	#hero-new7 {
+		width: 100%;
+		height: 700px;
+		background: linear-gradient(279deg, rgba(0, 0, 0, 0.00) 43.67%, #000 100.01%), url(../../core-images/lush.png) center / cover no-repeat, lightgray 50% / cover no-repeat;
+		/* Ganti '<path-to-image>' dengan URL gambar yang sesuai */
+	}
+
+	.hero-new7 .brand{
+		margin: 0px 150px;
+		width: 40%;
+		height: 70px;
+	}
+	
+	.hero-new7 h1{
+		font-size: 20px;
+		text-align: center;
+		margin: 0px 150px;
+		color: #ffffff;
+	}
+	
+	.hero-new7 p{
+		font-size: 10;
+		color: #333333;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px;
+		font-family: 'SatoshiLight';
+		align-self: stretch;
+	}
+	
+	.hero-new7 .card{
+		display: flex;
+		width: 400px;
+		margin: 0px 40px;
+		padding: 2px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+	}
+	
+	.hero-new7 .card button{
+		margin: unset;
+		padding: 0px;
+		background: none;
+		border: none;
+		align-items: start;
+		color: #C2A058;;
+		font-size: 14px;
+	}
+	
+	
+	.hero-new8 h5{
+		color: #6D6D6D;
+		width: 550px;
+		color: var(--foundation-dark-mode-light-active, #B4B4B6);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px; 
+		margin-top: 30px;
+	}
+	
+	.hero-new8 button{
+		padding: 0px;
+		background: none;
+		border: none;
+		color: #C2A058;;
+		font-size: 18px;
+	}
+	
+	.hero-new8 .project-1{
+		padding-bottom: 24px;
+		width: 43%;
+		height: 140px;
+	}
+	
+	.hero-new8 .project-2{
+		width: 40%;
+		padding-bottom: 24px;
+		height: 120px;
+	}
+	.hero-new8 .project-3{
+		width: 40%;
+		height: 120px;
+	}
+
+	
+	.arrowup{
+		display: flex;
+		align-items: center;
+		gap: 9px;
+		text-decoration: none;
+	}
+	
+	.arrowup svg{
+		width: 8px;
+		height: 8px;
+		fill: none;
+		stroke: #5C5F66;
+		stroke-width: 1.575;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+	
+	.hero-new8 .brand-logo-gramercy img{
+		width: 40%;
+		height: 90px;
+	}
+	
+	
+	
+	
+	}
+
+
+/* ===========================Akhri Responsif=============================== */
 
 /* ===================END NEW HERO=============================== */
 
@@ -867,9 +1686,6 @@ footer .circle i{
 	margin-bottom: 20px;
 	font-size: 7px;
 }
-
-/* CSS untuk menghilangkan margin dari kolom terakhir */
-
 
 /* ===================END FOOTER=============================== */
 
@@ -2119,43 +2935,567 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+
+/* ========================UNIT TYPE====================================== */
+#mainunittype{
+	background: #040403;
+}
+.unittype1 {
 	padding: 15px 0;
-	background: #ecf6fe;
-	margin-top: 70px;
+	background: #040403;
+	margin-top: 100px;
 }
 
+.unittype1 {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 39.24%, #000 91.32%), linear-gradient(180deg, #000 8.67%, rgba(0, 0, 0, 0.00) 53.35%), url(../../core-images/header-unittype.png) lightgray 50% / cover no-repeat;
+}
+
+.unittext h1 {
+	height: 100px;
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center; /* Ini yang akan mengatur posisi vertikal tengah */
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Gambetta;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96.5px;
+    text-transform: uppercase;
+    margin-top: 170px;
+}
+.unitimg {
+    width: 100%;
+    height: 100%;
+}
+
+.unittype2 .slide h1{
+	color: #FFF;
+	text-align: center;
+	font-family: Gambetta;
+	font-size: 96px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 115.2px; /* 120% */
+	letter-spacing: 2.88px;
+}
+
+.unittype2 .slide .slidetextcenter .row{
+	padding: 20px;
+}
+
+.unittype2 .slide .kanan{
+	color: #999999;
+	font-size: 18px;
+}
+
+.unittype2 .slide .kiri{
+	color: #C2A058;
+	font-size: 18px;
+}
+.unittype2 .slide .kanan h4{
+	color: #999999;
+	font-size: 18px;
+}
+.unittype2 .slide .kiri h4{
+	color: #C2A058;
+	font-size: 18px;
+}
+
+/* ===========Unit Type 3============== */
+/* Mengubah latar belakang gambar pada class unittypeimg */
+.unittype3 {
+    width: 100%;
+    height: 750px;
+    background: url(../../core-images/typearma.png) lightgray 50% / cover no-repeat;
+    position: relative; /* Menambahkan ini untuk latar belakang relatif */
+}
+
+/* Mengubah properti h1 ARMA */
+.unittype3 .unittypeimg .overlay-text h1 {
+    position: absolute;
+    right: 198px;
+    bottom: 33px;
+    color: #FFF;
+    text-align: center;
+    font-family: Gambetta;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.2px; /* 120% */
+    letter-spacing: 2.88px;
+}
+
+.unittype4 img{
+	width: 90%;
+	height: 418px;
+}
+
+.unittype4 .list-group-item {
+	border: none; /* Menghilangkan semua garis kecuali garis bawah */
+	background: transparent; /* Mengatur latar belakang menjadi transparan */
+	padding: 1rem 0; /* Berikan padding di bawah item */
+	color: white; /* Mengatur teks menjadi putih */
+	border-bottom: 1px solid #676767; /* Garis bawah dengan warna #676767 */
+  }
+.unittype4 h4{
+	color: #fff;
+	font-size: 26px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.unittype4 .text{
+	color: #A3A3A3;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 42px;
+}
+
+.unittype4 .angka{
+	font-size: 26px;
+	margin-left: 10px;
+}
+
+.unittype4 svg{
+	margin-left: 50px;
+}
+
+.unittype4 circle svg{
+	margin-left: 0px;
+}
+
+  
+
+
 @media (max-width: 992px) {
-	.breadcrumbs {
+	.unittype1 .unittype2 {
 		margin-top: 50px;
 	}
 }
+/* ========================END UNIT TYPE====================================== */
 
-.breadcrumbs h2 {
-	font-size: 26px;
-	font-weight: 600;
-	color: #043c6d;
+
+/* ========================SITE PLAN====================================== */
+
+#mainsiteplan{
+	background: #FFFFFF;
+}
+.siteplan1 {
+	padding: 15px 0;
+	background: #FFFFFF;
+	margin-top: 100px;
 }
 
-.breadcrumbs ol {
+.siteplan1 {
+    width: 100%;
+    height: 1200px;
+	background: url(../../core-images/siteplanmain.png) lightgray -92.136px -46.719px / 108.456% 109.058% no-repeat;
+}
+.siteplan1 .mouser img{
+	align-items: end;
+	margin-top: 200px;
+}
+
+.siteplan2 p{
+	color: #6D6D6D;
+	font-family: Satoshi;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 42px; 
+}
+
+.siteplan3{
+	width: 100%;
+	height: 851px;
+	flex-shrink: 0;
+	background: url(../../core-images/locationmap.png), lightgray 50% / cover no-repeat;
+}
+
+.siteplan3 img{
+	margin-top: 550px;
+}
+
+/* Site Plan 4 */
+
+.siteplan4 .slider{
+	transition: filter 0.3s, opacity 0.3s;
+	height: 357px;
+	margin: auto;
+	position: relative;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.siteplan4 .slide-track{
 	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0 0 10px 0;
-	margin: 0;
-	font-size: 14px;
+	width: calc(250px *18);
+	animation: scroll 40s linear infinite;
 }
 
-.breadcrumbs ol li + li {
-	padding-left: 10px;
+@keyframes scroll{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px *9));
+	}
 }
 
-.breadcrumbs ol li + li::before {
-	display: inline-block;
-	padding-right: 10px;
-	color: #ffc412;
-	content: "/";
+.siteplan4 .slide{
+	height: 300px;
+	width: 500px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	perspective: 100px;
+
 }
+
+.siteplan4 .slide img{
+	width: 100%;
+	transition: transform 1s;
+}
+
+.siteplan4 .slider img:hover{
+	opacity: 0.7;
+	transform: translateZ(20px);
+}
+
+/* gradient shadow */
+.siteplan4 .slider::before,
+.siteplan4 .slider::after{
+	background: linear-gradient(to right, rgba(255,255,255,1), 0%,rgba(255,255,255,0), 100%);
+	content: '';
+	height: 100%;
+	position: absolute;
+	width: 15%;
+	z-index: 2;
+}
+
+.siteplan4 .slider::before{
+	left: 0;
+	top: 0;
+}
+
+.siteplan4 .slider::after{
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.siteplan4 .slide:hover .overlay {
+	background: rgb(0, 0, 0);
+	transition: background 0.3s;
+  }
+  .siteplan4 .slide img {
+	width: 100%;
+	transition: transform 1s;
+  }
+  
+  .siteplan4 .slide:hover .content {
+	opacity: 1;
+	transition: opacity 0.3s;
+  }
+  
+  .siteplan4 .content {
+	opacity: 0;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(0, 0, 0);
+  }
+
+
+/* Site Plan 5 */
+.siteplan5 .card {
+	flex-direction: row;
+	max-width: 50em;
+	border: 0;
+  }
+  .siteplan5 .card img {
+	max-width: 20%;
+	margin: auto;
+	border-radius: 0.2em;
+  }
+  .siteplan5 .card-body {
+	max-width: 120%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+  .siteplan5  .text-section {
+	max-width: 100%;
+  }
+  .siteplan5 .cta-section {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+  }
+  .siteplan5 .cta-section .btn {
+	padding: 0.2em 0.5em;
+	font-size: 1em;
+	color: #696969;
+  }
+  .siteplan5 .card-text {
+	letter-spacing: 0.1em;
+	color: #999999;
+  }
+  .siteplan5 .card-title{
+	color: var(--Gray-7, #2A282F);
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px; /* 175% */
+	letter-spacing: -0.3px;
+  }
+
+
+
+
+/* Site Plan 6 */
+
+#siteplan6 {
+    display: flex;
+    width: 100%;
+    height: 1089px;
+    padding: 0px 88px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 13.72%),linear-gradient(180deg, rgba(0, 0, 0, 0.00) 78.3%, #000 91.32%), url(../../core-images/taman-jalan.png);
+    background-color: lightgray;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.siteplan6 .brand-logo-gramercy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.siteplan6 .brand-logo-gramercy img {
+	width: 50%;
+	height: 200px;
+    display: block;
+    margin: 0 auto; 
+}
+
+/* Site Plan 7 */
+
+.siteplan7{
+	display: flex;
+    width: 100%;
+    height: 963px;
+    padding: 0px 88px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background: url(../../core-images/blurlocation.svg);
+    background-color: lightgray;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.siteplan7 h1{
+	color: #FFF;
+	font-family: 'GambettaLight';
+	font-size: 75px;
+	font-style: normal;
+	font-weight: 0;
+	line-height: 85px; /* 100% */
+	letter-spacing: 2.55px;
+}
+
+.siteplan7 p{
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	line-height: 37px;
+}
+
+.siteplan7 .text{
+	padding-top: 40px;
+	width: 726px;
+}
+
+.siteplan7 .dev button{
+	padding-top: 40px;
+	color: #C2A058;
+	font-size: 24px;
+	margin: inherit;
+	background: transparent;
+	border: 1px solid transparent;
+}
+
+
+
+
+
+
+
+
+/* ========================END SITE PLAN====================================== */
+/* ========================STARTPROJECTS====================================== */
+
+#mainprojects{
+	background: #FFFFFF;
+}
+.projects1 {
+	padding: 15px 0;
+	background: #FFFFFF;
+	margin-top: 100px;
+}
+
+.projects1 {
+	display: flex;
+    width: 100%;
+    height: 516px;
+	background: url(../../core-images/banner-project.png) lightgray -92.136px -46.719px / 108.456% 109.058% no-repeat;
+}
+
+.projects1 h1{
+	color: #fff;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 90px; /* 125% */
+	letter-spacing: -2.3px;
+}
+
+.projects1 p{
+	color: #E7E7E7;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 42px; /* 175% */
+	letter-spacing: -0.3px;
+
+}
+
+.projects2 .logobrand{
+	width: 70%;
+	height: 216;
+}
+
+.projects2 .card-body h1{
+	color: #131313;
+	text-align: start;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px; /* 87.5% */
+	letter-spacing: -0.3px;
+}
+
+.projects2 .card{
+	border: none;
+}
+
+
+
+
+
+
+
+
+/* ========================END PROJECTS====================================== */
+/* ========================START DEVELOPER====================================== */
+
+
+#maindeveloper{
+	background: #040403;
+}
+
+.developer1 {
+	padding: 15px 0;
+	background: #040403;
+	margin-top: 100px;
+    width: 100%;
+    height: 600px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 17.88%, #000 74.51%), linear-gradient(180deg, #000 6.77%, rgba(0, 0, 0, 0.00) 57.47%), url(../../core-images/bannerdeveloper.png), lightgray 50% / cover no-repeat;
+}
+
+
+.developer1 h1 {
+	height: 100px;
+	width: 711px;
+	display: flex;
+    justify-content: center;
+    align-items: center; /* Ini yang akan mengatur posisi vertikal tengah */
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Gambetta;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96.5px;
+    text-transform: uppercase;
+    margin-top: 150px;
+	margin-left: 250px;
+}
+.developer1 .unitimg {
+    width: 100%;
+    height: 100%;
+}
+
+.developer1 p{
+	color: #E7E7E7;
+	text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 42px; /* 175% */
+	letter-spacing: -0.3px;
+	width: 990px;
+}
+
+.developer1 img{
+	margin-top: 200px;
+}
+
+.developer2 .dev1{
+	width: 606px;
+	height: 357px;
+}
+
+.developer2 p{
+	color: #A3A3A3;
+	width: 772px;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 160% */
+	letter-spacing: -0.3px;
+}
+
+
+
+
+
+/* ========================END DEVELOPER====================================== */
+
 
 /*--------------------------------------------------------------
 # Portfolio Details

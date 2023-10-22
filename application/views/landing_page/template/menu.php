@@ -1,4 +1,4 @@
-    <body class="fontRubik">    
+<body class="fontRubik">    
         <header id="header" class="fixed-top ">
             <div class="container d-flex align-items-center">
                 <nav class="nav-menu d-none d-lg-block navbar navbar-expand-lg">
@@ -15,25 +15,25 @@
                                     <a href="<?php echo base_url(); ?>">Home</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/contact'); ?>">Unit Type</a>
+                                    <a href="<?php echo site_url('page/unittype'); ?>">Unit Type</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/contact'); ?>">Siteplan</a>
+                                    <a href="<?php echo site_url('page/siteplan'); ?>">Siteplan</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-                <a class="ml-2" style="color:white;font-size:20px" href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/logogramercy.svg"></a>
+                <a class="ml-2 logogramercy" href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/logogramercy.svg"></a>
                 <nav class="nav-menu d-none d-lg-block navbar navbar-expand-lg">
                     <div class="container">
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav mx-auto">
                                 <li class="active">
-                                    <a href="<?php echo base_url(); ?>">Projects</a>
+                                    <a href="<?php echo site_url('page/project'); ?>">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/contact'); ?>">Developer</a>
+                                    <a href="<?php echo site_url('page/developer'); ?>">Developer</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo site_url('page/contact'); ?>">News</a>
@@ -42,8 +42,7 @@
                         </div>
                     </div>
                 </nav>
-            <a class="ml-2" style="color:white;font-size:20px" href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/navigation-garis.svg"></a>
-            
-
+            <a id="menu-icon" type="button" class="ml-2 align-items-end" style="color:white;font-size:20px" href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/navigation-garis.svg"></a>
             </div>
         </header><!-- End Header -->
+</body>
