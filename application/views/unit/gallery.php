@@ -191,7 +191,7 @@
                                                                                 <input type="hidden" name="unit_id" value="<?php echo $this->uri->segment(3);?>">
                                                                                 <input type="hidden" name="gallery_id" value="<?= $key->gallery_id; ?>">
                                                                                 <input type="hidden" name="unit_id" value="<?php echo $this->uri->segment(3);?>">
-                                                                                <input type="hidden" name="gallery_image_old" value="<?= $key->gallery_image_old; ?>">
+                                                                                <input type="hidden" name="gallery_image_old" value="<?= $key->gallery_image; ?>">
                                                                             </div>
                                                                         </div>
                                                                     </div>

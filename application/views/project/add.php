@@ -10,7 +10,7 @@
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="<?php echo site_url('dashboard');?>"> Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="<?php echo site_url('unit');?>"> Project Data</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo site_url('project');?>"> Project Data</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php echo $title;?></li>
                     </ol>
                 </nav>

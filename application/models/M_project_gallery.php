@@ -15,7 +15,7 @@ class M_project_gallery extends CI_Model
         $this->db->join('tbl_project b','a.project_id=b.project_id','LEFT');
         $this->db->where("a.project_id = ", $id);
 
-        $this->db->order_by('a.gallery_id', 'DESC');
+        $this->db->order_by('a.project_gallery_id', 'DESC');
         
         $query = $this->db->get();
         if ($query->num_rows() > 0) {
@@ -49,10 +49,44 @@ class M_project_gallery extends CI_Model
         return $query->result();
     }
 
+    // ==================================================================================
+    public function read_gallery($limit, $start, $key, $gallery) {
+        $this->db->select('*');
+        $this->db->from('tbl_project_gallery');
+        $this->db->where('project_gallery_id', $gallery);
+        
+        if($key!=''){
+            $this->db->like("project_gallery_image", $key);
+        }
+
+        if($limit !="" OR $start !=""){
+            $this->db->limit($limit, $start);
+        }
+
+        $this->db->order_by("project_gallery_id", "DESC");
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            foreach ($query->result() as $row) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+        return null;
+    }
+    
+
+    public function create_gallery($data) {
+        $this->db->insert('tbl_project_gallery', $data);
+    }
+    
+    public function delete_gallery($token) {
+        $this->db->delete('tbl_project_gallery', array('project_gallery_token' => $token));
+    }
+
     public function widget()
     {
         $query  = $this->db->query(" SELECT
-            (SELECT count(project_gallery_id) FROM tbl_project_gallery) as total_project_gallery
+            (SELECT count(project_gallery_id) FROM tbl_project_gallery) as tbl_project_gallery
         ");
         return $query->result();
     }

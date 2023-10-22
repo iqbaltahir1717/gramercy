@@ -56,7 +56,7 @@ class Unit extends CI_Controller
         $data['unit']        = $this->m_unit->get($this->uri->segment(3));
         $data['gallery']        = $this->m_unit_gallery->read('','',$this->uri->segment(3));
 
-        $data['gallery_category']        = $this->m_unit_gallery_category->read('','','');
+        $data['gallery_category']        = $this->m_unit_gallery->read('','','');
 
         // TEMPLATE
         $view         = "unit/gallery";

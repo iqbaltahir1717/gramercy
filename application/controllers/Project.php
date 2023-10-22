@@ -47,15 +47,28 @@ class Project extends CI_Controller
         TemplateApp($data, $view, $viewCategory);
     }
 
+    
+    public function add_photos()
+    {
+        //DATA
+        $data['setting']       = getSetting();
+        $data['title']         = 'Add Photos';
+
+        $data['project']        = $this->m_project->get($this->uri->segment(3));
+
+        // TEMPLATE
+        $view         = "project/add_photos";
+        $viewCategory = "all";
+        TemplateApp($data, $view, $viewCategory);
+    }
+
     public function gallery_page()
     {
         //DATA
         $data['setting']       = getSetting();
-        $data['title']         = 'Gallery project';
+        $data['title']         = 'Gallery Project';
         $data['project']        = $this->m_project->get($this->uri->segment(3));
         $data['gallery']        = $this->m_project_gallery->read('','',$this->uri->segment(3));
-
-        $data['gallery_category']        = $this->m_project_gallery_category->read('','','');
 
         // TEMPLATE
         $view         = "project/gallery";
@@ -220,116 +233,54 @@ class Project extends CI_Controller
         redirect('project');
     }
 
-    // CREATE DATA project GALLERY
-    public function add_gallery()
-    {
-        csrfValidate();
-
-        $filename_1              = "gallery-".$this->input->post('project_id').'-'.date('YmdHis');
-        $config['upload_path']   = "./upload/project_gallery/";
-        $config['allowed_types'] = "jpg|png|jpeg";
-        $config['overwrite']     = "true";
-        $config['max_size']      = "2000";
-        $config['max_width']     = "10000";
-        $config['max_height']    = "10000";
-        $config['file_name']     = '' . $filename_1;
-        $this->upload->initialize($config);
-        if (!$this->upload->do_upload('gallery_image')) {
-            // ALERT
-            $alertStatus  = "failed";
-            $alertMessage = $this->upload->display_errors();
-            getAlert($alertStatus, $alertMessage);
-            redirect('project/gallery_page/' .  $this->input->post('project_id'));
-        } else {
-            $dat  = $this->upload->data();
-            $data['gallery_image']       = $dat['file_name'];
-        }
-
-        // POST
-        $data['gallery_id']   = "";
-        $data['gallery_name'] = $this->input->post('gallery_name');
-        $data['gallery_description'] = $this->input->post('gallery_description');
-        $data['project_id'] = $this->input->post('project_id');
-        $data['gallery_category_id'] = $this->input->post('gallery_category_id');
-        $data['createtime']  = date('Y-m-d H:i:s');
-        $this->m_project_gallery->create($data);
-
-        // LOG
-        $message    = $this->session->userdata('user_fullname') . " menambah data project " . $this->input->post('project_name'). " gallery dengan ID - nama : " . $data['gallery_id'] . " - " . $data['gallery_name'];
-        createLog($message);
-
-        // ALERT
-        $alertStatus  = "success";
-        $alertMessage = "Berhasil menambah data foto project " . $this->input->post('project_name'). " dengan nama : " . $data['gallery_name'];
-        getAlert($alertStatus, $alertMessage);
-
-        redirect('project/gallery_page/' .  $this->input->post('project_id'));
-    }
-
-    public function update_gallery()
-    {
-
-        csrfValidate();
-
-        if($_FILES['gallery_image']['name']!=""){  
-            $filename_1              = "gallery-".$this->input->post('project_id').'-'.date('YmdHis');
-            $config['upload_path']   = "./upload/project_gallery/";
-            $config['allowed_types'] = "jpg|png|jpeg";
-            $config['overwrite']     = "true";
-            $config['max_size']      = "2000";
-            $config['max_width']     = "10000";
-            $config['max_height']    = "10000";
-            $config['file_name']     = '' . $filename_1;
-            $this->upload->initialize($config);
-            if (!$this->upload->do_upload('gallery_image')) {
-                // ALERT
-                $alertStatus  = "failed";
-                $alertMessage = $this->upload->display_errors();
-                getAlert($alertStatus, $alertMessage);
-                redirect('project/gallery_page/'. $this->input->post('project_id'));
-            } else {
-                $dat  = $this->upload->data();
-                $data['gallery_image']  = $dat['file_name'];
-                unlink('./upload/project_galery/'. $this->input->post('gallery_image_old'));
-            }
-        }
-
-        // POST
-        $data['gallery_id']   = $this->input->post('gallery_id');
-        $data['gallery_name'] = $this->input->post('gallery_name');
-        $data['gallery_description'] = $this->input->post('gallery_description');
-        $data['project_id'] = $this->input->post('project_id');
-        $data['gallery_category_id'] = $this->input->post('gallery_category_id');
-        $this->m_project_gallery->update($data);
-
-         // LOG
-        $message    = $this->session->userdata('user_fullname') . " mengubah data gallery project : " . $data['gallery_name'];
-        createLog($message);
-
-        // ALERT
-        $alertStatus  = "success";
-        $alertMessage = "Berhasil mengubah data gallery project dengan nama : " . $data['gallery_name'];
-        getAlert($alertStatus, $alertMessage);
-
-        redirect('project/gallery_page/' .  $this->input->post('project_id'));
-    }
-
     // DELETE DATA Gallery
     public function delete_gallery()
     {
         csrfValidate();
         // POST
-        $this->m_project_gallery->delete($this->input->post('gallery_id'));
+        $this->m_project_gallery->delete($this->input->post('project_gallery_id'));
      
         // LOG
-        $message    = $this->session->userdata('user_fullname') . " menghapus data gallery dengan ID : " . $this->input->post('gallery_id');
+        $message    = $this->session->userdata('user_fullname') . " menghapus data gallery dengan ID : " . $this->input->post('project_gallery_id');
         createLog($message);
 
         // ALERT
         $alertStatus  = "failed";
-        $alertMessage = "Menghapus data gallery dengan ID : " . $this->input->post('gallery_id') . " Judul : " . $this->input->post('gallery_name') ;
+        $alertMessage = "Menghapus data gallery dengan ID : " . $this->input->post('project_gallery_id') . " - " . $this->input->post('project_gallery_image') ;
         getAlert($alertStatus, $alertMessage);
 
         redirect('project/gallery_page/' .  $this->input->post('project_id'));
     }
+
+    // AJAX
+   
+	public function ajaxupload(){
+        $config['upload_path']   = './upload/project_gallery';
+        $config['allowed_types'] = 'jpeg|jpg|png';
+        $config['file_name']     = 'photo'.$this->uri->segment(3).'-'.date('YmdHis')."-".rand(1000,9999);
+        $this->upload->initialize($config);
+        if($this->upload->do_upload('userfile')){
+        	
+        	$data['project_gallery_image']  = $this->upload->data('file_name');
+        	$data['project_gallery_token'] = $this->input->post('token');
+        	$data['project_id']          = $this->uri->segment(3);
+        	$data['createtime']          = date('Y-m-d H:i:s');
+        	$this->m_project_gallery->create_gallery($data);
+        }
+	}
+
+    public function ajaxremove(){
+		$token = $this->input->post('token');
+		$image = $this->db->get_where('tbl_project_gallery', array('project_gallery_token'=>$token));
+
+		if($image->num_rows()>0){
+			$getImage    = $image->row();
+			$geImageName = $getImage->project_gallery_image;
+			if(file_exists($file='./upload/project_gallery/'.$geImageName)){
+				unlink($file);
+			}
+			$this->m_project_gallery->delete_gallery($token);
+		}
+		echo "{}";
+	}
 }
