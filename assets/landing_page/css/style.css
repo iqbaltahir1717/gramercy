@@ -3501,11 +3501,14 @@ section {
 	letter-spacing: -0.2px;
 }
 
+.news2 .card .row{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .news2 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
-	padding-right: 15px;
-    padding-left: 15px;
 	border: none;
 	&:hover {
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
