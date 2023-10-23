@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <?php } } else {?>
-                            DATA TIDAK ADA
+                            <div class="text-danger"> <b>DATA TIDAK ADA</b></div>
                         <?php }?>
                     </div>
                 </div>
