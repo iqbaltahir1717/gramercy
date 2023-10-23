@@ -12,6 +12,10 @@ body {
 	font-family: "SatoshiLight";
 	color: #444444;
 }
+
+p, h1,h2,h3,h4,h5 {
+	margin-bottom: 0;
+}
 /* assets/css/custom.css */
 @font-face {
     font-family: 'GambettaMedium';
@@ -428,7 +432,7 @@ h6 {
 }
 .bannertext{
 	font-family: 'GambettaLight';
-	font-size: 55px;
+	font-size:75px;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 85px; /* 100% */
@@ -4445,4 +4449,18 @@ section {
 
 #footer .credits a {
 	color: #ffc412;
+}
+
+
+@media (min-width: 1200px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl{
+		max-width: 1348px;
+	}
+}
+
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-nav .nav-link{
+		padding-right: 0;
+		padding-left: 0;
+	}
 }

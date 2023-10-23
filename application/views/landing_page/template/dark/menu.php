@@ -55,6 +55,11 @@
                     <li class="nav-item">
                     <a class="nav-link active" href="<?php echo site_url('blog-news'); ?>">News</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url(); ?>">
+                            <img src="<?php echo base_url(); ?>assets/core-images/icon/instagram-white.svg" alt="Logo">
+                        </a>
+                    </li>
                 </ul>
                 </div>
             </nav>
