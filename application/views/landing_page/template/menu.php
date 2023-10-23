@@ -24,7 +24,7 @@
                         <a class="nav-link active" href="<?php echo site_url('unit-house'); ?>">Unit Type</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" href="<?php echo site_url('siteplan'); ?>">Siteplan</a>
+                        <a class="nav-link active" href="<?php echo site_url('page/siteplan'); ?>">Siteplan</a>
                         </li>
                     </ul>
                     </div>

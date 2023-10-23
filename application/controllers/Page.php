@@ -5,6 +5,7 @@ class Page extends CI_Controller {
     function __construct() {
 		parent::__construct();
 		$this->load->model('m_news');
+		$this->load->model('m_news_category');
 		$this->load->model('m_gallery');
 		$this->load->model('m_field');
 		$this->load->model('m_siteplan');
@@ -150,6 +151,7 @@ class Page extends CI_Controller {
     public function project(){
 		// DATA
 		$data['setting']             = getSetting();
+		$data['project']       = $this->m_project->read('','','');
 
 		// TEMPLATE
 		$view         = "landing_page/page/project";
@@ -161,7 +163,6 @@ class Page extends CI_Controller {
     public function developer(){
 		// DATA
 		$data['setting']             = getSetting();
-		$data['link']                = $this->m_link->read('','','');
 		$data['news_category']       = $this->m_news_category->read('','','');
 
 		// TEMPLATE
@@ -174,7 +175,6 @@ class Page extends CI_Controller {
     public function newsgramercy(){
 		// DATA
 		$data['setting']             = getSetting();
-		$data['link']                = $this->m_link->read('','','');
 		$data['news_category']       = $this->m_news_category->read('','','');
 
 		// TEMPLATE
@@ -187,7 +187,6 @@ class Page extends CI_Controller {
     public function newsdetailgramercy(){
 		// DATA
 		$data['setting']             = getSetting();
-		$data['link']                = $this->m_link->read('','','');
 		$data['news_category']       = $this->m_news_category->read('','','');
 
 		// TEMPLATE
