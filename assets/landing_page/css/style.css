@@ -239,15 +239,44 @@ h6 {
 	align-items: center;
 	gap: 10px;
 }
-.nav-link{
+
+.nav-link {
 	font-family: 'GambettaLight';
 	color: #131313;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
-}
-
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-item {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+  }
+  
+  /* Gaya saat tautan dihover */
+  .nav-link:hover {
+	color: #131313; /* Mengubah warna teks saat dihover */
+  }
+  
+  .nav-link.active::before {
+	content: '';
+	display: block;
+	width: 0;
+	position: absolute;
+	bottom: 0;
+	height: 11px; /* Sesuaikan dengan keinginan Anda */
+	background: #C2A058; /* Warna garis bawah saat tautan aktif */
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::before {
+	width: 30%;
+  }
+  
 
 
 
