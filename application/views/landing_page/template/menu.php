@@ -1,6 +1,6 @@
 <body class="fontRubik">    
         <header id="header" class="fixed-top">
-            <div class="container" style="padding: 0;">
+            <div class="container-md-12" style="padding: 0;">
                 <nav class="navbar navbar-white navbar-expand-lg bg-white" style="padding: 0.5rem 0;">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -20,8 +20,17 @@
                         <li class="nav-item">
                         <a class="nav-link active" href="<?php echo base_url(); ?>">Home</a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link active" href="<?php echo site_url('unit-house'); ?>">Unit Type</a>
+                        <li class="nav-item dropdown">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Unit Type</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Opsi 1</a>
+                                    <a class="dropdown-item" href="#">Opsi 2</a>
+                                    <a class="dropdown-item" href="#">Opsi 3</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link active" href="<?php echo site_url('page/siteplan'); ?>">Siteplan</a>
