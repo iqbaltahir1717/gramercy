@@ -575,15 +575,16 @@ h6 {
 .row.lokasi p {
     color: var(--foundation-primary-green-light, #E6F6F4);
     text-align: center;
-    font-family: 'SatoshiLight';
-    font-size: 24px;
+    /* font-family: 'SatoshiLight'; */
+    font-size: 20px;
     font-style: normal;
     line-height: 36px; /* 150% */
 }
 
 .lokasi .btn{
 	color: #C2A058;;
-	font-size: 24px;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .hero-new5 h2{

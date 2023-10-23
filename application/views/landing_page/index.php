@@ -53,23 +53,23 @@
         </div>
         <div class="container  pl-5 pr-5 barisone md-12">
             <div class="row ourservice justify-content-center text-center">
-                    <div class="col-md-4 bagian">
-                        <h3>GRATITUDE</h3>
+                    <div class="col-md-4 bagian" data-aos="fade-up">
+                        <h3 class="mb-4">GRATITUDE</h3>
                         <h5>Alam Sutere gives back to it’s  greater community by developing a sanctuary for serene living. A surprise gift for gratitude</h5>
                     </div>
-                    <div class="col-md-4 bagian">
-                        <h3>FELLOWSHIP</h3>
+                    <div class="col-md-4 bagian"  data-aos="fade-up">
+                        <h3 class="mb-4">FELLOWSHIP</h3>
                         <h5>Build Opennes of heart with others who share common interest to learn. Grow and enjoy life</h5>
                     </div>
-                    <div class="col-md-4 bagian">
-                        <h3>FREEDOM</h3>
+                    <div class="col-md-4 bagian"  data-aos="fade-up">
+                        <h3 class="mb-4">FREEDOM</h3>
                         <h5>Creation of curated gratitude community and well designed environment</h5>
                     </div>
                 </div>
         </div>
         <div class="container">
             <div class="row ourservice justify-content-center text-center mt-5">
-                <p class="mt-5">The last and most prestigious cluster locatedin favourite place of Alam Sutera “Green Tunnel”</p>
+                <p class="mt-5" data-aos="fade-up">The last and most prestigious cluster locatedin favourite place of Alam Sutera “Green Tunnel”</p>
             </div>
         </div>
     </section>
@@ -83,10 +83,10 @@
                 </div>
             </div>
             <div class="row lokasi justify-content-center text-center">
-                <p class="mt-3">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
+                <p class="mt-3" data-aos="fade-up">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
             </div>
-            <div class="row lokasi justify-content-center text-center mt-2">
-                <button type="button" class="btn btn-transparent btn-sm-">Location <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <div class="row lokasi justify-content-center text-center mt-4">
+                <button type="button" class="btn btn-transparent btn-sm-">Location Project &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                     </svg>
                 </button>

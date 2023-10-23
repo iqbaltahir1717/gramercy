@@ -106,7 +106,7 @@
                         </div>
                         <div class="row">
                             <?php if($category) { foreach($category as $c){ ?>
-                            <div class="col-lg-12" style="padding-left:0; padding-right:0">
+                            <div class="col-lg-12" style="padding-left:0; padding-right:0" >
                                 <a href="<?php echo site_url('unit-house'); ?>">
                                     <div class="list-group-item d-flex justify-content-between align-items-start">
                                         <h4 class="text-wrap"><?= $c->gallery_category_name ?></h4>
