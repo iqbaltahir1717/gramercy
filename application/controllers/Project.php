@@ -80,7 +80,7 @@ class Project extends CI_Controller
     {
         //DATA
         $data['setting']     = getSetting();
-        $data['title']       = 'Ubah Data';
+        $data['title']       = 'Upodate Data';
         $data['project']        = $this->m_project->get($this->uri->segment(3));
 
         // TEMPLATE
@@ -145,8 +145,8 @@ class Project extends CI_Controller
 
         csrfValidate();
 
-        if($_FILES['project_preview1']['name']!=""){  
-            $filename_1              = "project-preview-1".'-'.date('YmdHis');
+        if($_FILES['project_cover']['name']!=""){  
+            $filename_1              = "project-".date('YmdHis');
             $config['upload_path']   = "./upload/project/";
             $config['allowed_types'] = "jpg|png|jpeg";
             $config['overwrite']     = "true";
@@ -155,7 +155,7 @@ class Project extends CI_Controller
             $config['max_height']    = "10000";
             $config['file_name']     = '' . $filename_1;
             $this->upload->initialize($config);
-            if (!$this->upload->do_upload('project_preview1')) {
+            if (!$this->upload->do_upload('project_cover')) {
                 // ALERT
                 $alertStatus  = "failed";
                 $alertMessage = $this->upload->display_errors();
@@ -163,36 +163,14 @@ class Project extends CI_Controller
                 redirect('project/update_page/'. $this->input->post('project_id'));
             } else {
                 $dat  = $this->upload->data();
-                $data['project_preview1']  = $dat['file_name'];
-                unlink('./upload/project/'. $this->input->post('project_preview1_old'));
-            }
-        }
-        
-        if($_FILES['project_preview2']['name']!=""){  
-            $filename_2              = "project-preview-2".'-'.date('YmdHis');
-            $config2['upload_path']   = "./upload/project/";
-            $config2['allowed_types'] = "jpg|png|jpeg";
-            $config2['overwrite']     = "true";
-            $config2['max_size']      = "2000";
-            $config2['max_width']     = "10000";
-            $config2['max_height']    = "10000";
-            $config2['file_name']     = '' . $filename_2;
-            $this->upload->initialize($config2);
-            if (!$this->upload->do_upload('project_preview2')) {
-                // ALERT
-                $alertStatus  = "failed";
-                $alertMessage = $this->upload->display_errors();
-                getAlert($alertStatus, $alertMessage);
-                redirect('project/update_page/'. $this->input->post('project_id'));
-            } else {
-                $dat2  = $this->upload->data();
-                $data['project_preview2']   = $dat2['file_name'];
-                unlink('./upload/project/'. $this->input->post('project_preview2_old'));
+                $data['project_cover']  = $dat['file_name'];
+                unlink('./upload/project/'. $this->input->post('project_cover_old'));
             }
         }
 
         $data['project_id']   = $this->input->post('project_id');
         $data['project_name'] = $this->input->post('project_name');
+        $data['project_price'] = $this->input->post('project_price');
         $data['project_bedroom'] = $this->input->post('project_bedroom');
         $data['project_bathroom'] = $this->input->post('project_bathroom');
         $data['project_luas'] = $this->input->post('project_luas');

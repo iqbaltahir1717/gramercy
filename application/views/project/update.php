@@ -10,7 +10,7 @@
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="<?php echo site_url('dashboard'); ?>"> Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="<?php echo site_url('unit'); ?>"> Data Unit Rumah</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo site_url('project'); ?>"> Projects Data</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php echo $title;?></li>
                     </ol>
                 </nav>
@@ -31,11 +31,11 @@
             <div class="row" id="table-hover-row">
                 <div class="col-12">
                     <div class="card">
-                        <!-- Data Unit Header -->
+                        <!-- Data Project Header -->
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-12 text-center">
-                                    <h3>Data Unit Rumah</h3>
+                                    <h3>Data Project Form</h3>
                                 </div>
                                 <hr>
                             </div>
@@ -44,67 +44,64 @@
                         <div class="card-content">
                             <div class="row me-4 mt-1">
                                 <div class="col-md-12 col-12 text-end">
-                                    <a href="<?php echo site_url('unit')?>" class="btn btn-warning btn-sm" title="Kembali ke halaman sebelumya"><i class="bi bi-arrow-left"></i> Kembali</a>
+                                    <a href="<?php echo site_url('project')?>" class="btn btn-warning btn-sm" title="Kembali ke halaman sebelumya"><i class="bi bi-arrow-left"></i> Back</a>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <!-- Form Create Data Unit -->
-                                <?php echo form_open_multipart("unit/update")?>
+                                <!-- Form Create Data Project -->
+                                <?php echo form_open_multipart("project/update")?>
                                     <form class="form">
                                     <?php echo csrf();?>
-                                        <div class="row justify-content-around">
+                                    <div class="row justify-content-around">
                                             <div class="col-lg-5">
                                                 <div class="row"> 
                                                     <div class="mb-3 form-group">
-                                                        <label for="unit_name" class="mb-2">Nama Unit Rumah</label>
-                                                        <input type="text" class="form-control" placeholder="Enter Unit Name" name="unit_name" required="required" value="<?= $unit[0]->unit_name ?>">
-                                                    </div>
-                                                    <div class="mb-3 form-group">
-                                                        <label for="unit_bedroom" class="mb-2">Jumlah Kamar Tidur</label>
+                                                        <label for="project_name" class="mb-2">Project Name</label>
                                                         <input type="text" class="form-control"
-                                                        name="unit_bedroom" placeholder="Enter Number of Bedroom" value="<?= $unit[0]->unit_bedroom ?>">
+                                                            placeholder="Enter Project Name" name="project_name" required="required" value="<?= $project[0]->project_name; ?>">
                                                     </div>
                                                     <div class="mb-3 form-group">
-                                                        <label for="unit_bathroom" class="mb-2">Jumlah Kamar Mandi</label>
+                                                        <label for="project_bedroom" class="mb-2">Number of Bedroom</label>
                                                         <input type="text" class="form-control"
-                                                        name="unit_bathroom" placeholder="Enter Number of Bathrrom" value="<?= $unit[0]->unit_bathroom ?>">
+                                                        name="project_bedroom" placeholder="Enter Number of Bedroom" value="<?= $project[0]->project_bedroom; ?>">
                                                     </div>
                                                     <div class="mb-3 form-group">
-                                                        <label for="unit_luas" class="mb-2">Luas Rumah (sqm)</label>
+                                                        <label for="project_bathroom" class="mb-2">Number of Bathrooms</label>
+                                                        <input type="text" class="form-control"
+                                                        name="project_bathroom" placeholder="Enter Number of Bathroom" value="<?= $project[0]->project_bathroom; ?>">
+                                                    </div>
+                                                    <div class="mb-3 form-group">
+                                                        <label for="project_luas" class="mb-2">Size (sqm)</label>
                                                         <input type="number" class="form-control"
-                                                        name="unit_luas" placeholder="Enter Value of House Area" value="<?= $unit[0]->unit_luas ?>">
-                                                    </div>
-                                                    <div class="mb-3 form-group">
-                                                        <label for="unit_description" class="mb-2">Description</label>
-                                                        <textarea class="form-control" name="unit_description" placeholder="Enter Description" rows="5" required="required"><?= $unit[0]->unit_description ?></textarea>
+                                                        name="project_luas" placeholder="Enter Size" value="<?= $project[0]->project_luas; ?>">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="row">
                                                     <div class="mb-3 form-group">
-                                                        <label for="unit_preview1" class="mb-2">Image 1 (maxsize 2MB)</label>
-                                                        <br>
-                                                        <img style="width: 120px; height:120px; object-fit: cover;" src="<?= base_url(); ?>/upload/unit/<?= $unit[0]->unit_preview1; ?>" alt="preview1" class="mb-3">
-                                                        <input type="file" class="form-control" placeholder="Cover/Thumbnail Unit" name="unit_preview1" accept=".png, .jpeg, .jpg">
+                                                        <label for="project_price" class="mb-2">Project Price (Rp.)</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Project Price" id="rupiah" name="project_price" required="required" value="<?= $project[0]->project_price; ?>"/>
                                                     </div>
                                                     <div class="mb-3 form-group">
-                                                        <label for="unit_name" class="mb-2">Image 2 (maxsize 2MB)</label>
-                                                        <br>
-                                                        <img style="width: 120px; height:120px; object-fit: cover;" src="<?= base_url(); ?>/upload/unit/<?= $unit[0]->unit_preview2; ?>" alt="preview2" class="mb-3">
-                                                        <input type="file" class="form-control" placeholder="Cover/Thumbnail Unit" name="unit_preview2" accept=".png, .jpeg, .jpg">
+                                                        <label for="project_cover" class="mb-2">Image Preview (maxsize 2MB)</label>
+                                                        <input type="file" class="form-control" placeholder="Cover/Thumbnail Project" name="project_cover" accept=".png, .jpeg, .jpg">
+                                                    </div>
+                                                    <div class="mb-3 form-group">
+                                                        <label for="project_description" class="mb-2">Description</label>
+                                                        <textarea class="form-control" name="project_description" placeholder="Enter Description" rows="5" required="required"><?= $project[0]->project_description; ?>"</textarea>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <!-- input id -->
-                                        <input type="hidden" class="form-control" name="unit_id" required="required" value="<?php echo $unit[0]->unit_id;?>">
-                                        <input type="hidden" class="form-control" name="unit_preview1_old" required="required" value="<?php echo $unit[0]->unit_preview1;?>">
-                                        <input type="hidden" class="form-control" name="unit_preview2_old" required="required" value="<?php echo $unit[0]->unit_preview2;?>">
+                                        <input type="hidden" class="form-control" name="project_id" required="required" value="<?php echo $project[0]->project_id;?>">
+                                        <input type="hidden" class="form-control" name="project_cover_old" required="required" value="<?php echo $project[0]->project_cover;?>">
                                         
                                         <div class="col-12 d-flex justify-content-end mt-2">
-                                            <button type="submit" class="btn btn-primary btn-sm me-1 mb-1" title="Update"><i class="bi bi-save2"></i> Simpan</button>
+                                            <button type="submit" class="btn btn-primary btn-sm me-1 mb-1" title="Update"><i class="bi bi-save2"></i> Update</button>
                                             <button type="reset" class="btn btn-light-secondary btn-sm me-1 mb-1" title="reset"><i class="bi bi-x-square"></i> Reset</button>    
                                         </div>
                                     </form>

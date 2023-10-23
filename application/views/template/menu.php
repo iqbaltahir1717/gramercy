@@ -93,20 +93,12 @@
                     </li>
                 </ul>
             </li>
-            <li
-                class="sidebar-item <?= active_menu('slider'); ?>">
-                <a href="<?php echo site_url('slider')?>" class='sidebar-link'>
-                    <i class="fas fa-image"></i>
-                    <span>Slider Landing Page</span>
-                </a>
-            </li>
 
             <li class="sidebar-title">Others</li>
-
-            <li
+            <!-- <li
                 class="sidebar-item <?= active_menu('gallery_category'); ?>">
                 <a class='sidebar-link' href="<?php echo site_url('gallery_category')?>"><i class="fas fa-clinic-medical"></i> <span>Gallery Category</span></a>
-            </li>
+            </li> -->
             <li
                 class="sidebar-item <?= active_menu('user'); ?>">
                 <a href="<?php echo site_url('user')?>" class='sidebar-link'>
@@ -114,7 +106,7 @@
                     <span>User</span>
                 </a>
             </li>
-            <li
+            <!-- <li
                 class="sidebar-item <?= active_menu('faq'); ?>">
                 <a href="<?php echo site_url('faq')?>" class='sidebar-link'>
                     <i class="bi bi-question-circle-fill"></i>
@@ -127,7 +119,7 @@
                     <i class="bi bi-arrow-right-circle-fill"></i>
                     <span>Link Terkait</span>
                 </a>
-            </li>
+            </li> -->
             <li
                 class="sidebar-item <?= active_menu('setting'); ?>">
                 <a href="<?php echo site_url('setting')?>" class='sidebar-link'>

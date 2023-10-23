@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<title>Puskesmas Mekar</title>
+		<title><?php echo $setting[0]->setting_appname;?></title>
+		<!-- Favicons -->
+		<link href="<?php echo base_url();?>assets/core-images/<?php echo $setting[0]->setting_logo;?>" rel="icon">
 		
 		<meta name="title" content="<?php echo $setting[0]->setting_appname;?>">
 		<meta name="description" content="<?php echo $setting[0]->setting_about;?>">

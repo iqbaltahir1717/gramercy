@@ -103,7 +103,7 @@
                                                                     <i aria-hidden="true" class="ki ki-close"></i>
                                                                 </button>
                                                             </div>
-                                                            <?php echo form_open("project/delete_gallery") ?>
+                                                            <?php echo form_open("project/delete") ?>
                                                             <div class="modal-body">
                                                             Are you sure you want to delete project : <?php echo $key->project_name; ?> ?
                                                                 <?php echo csrf(); ?>
