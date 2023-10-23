@@ -37,7 +37,6 @@ class Page extends CI_Controller {
 		$data['news']                = $this->m_news->read($perPage, $page,'', $this->uri->segment(3),$this->uri->segment(4));
 		$data['field']               = $this->m_field->read('','','');
 		$data['recent']              = $this->m_news->read(4,0,'',1,'');
-		$data['link']                = $this->m_link->read('','','');
 		$data['news_category']       = $this->m_news_category->read('','','');
 		$data['news_category_name']  = $this->m_news_category->get($this->uri->segment(3));
 
@@ -168,139 +167,15 @@ class Page extends CI_Controller {
     public function developer(){
 		// DATA
 		$data['setting']             = getSetting();
-		$data['news_category']       = $this->m_news_category->read('','','');
+		$data['developer']       = $this->m_content->get();
 
 		// TEMPLATE
 		$view         = "landing_page/page/developer";
 		$viewCategory = "all";
-		if($this->uri->segment(1) == 'unit-house'){
+		if($this->uri->segment(1) == 'developer'){
 			TemplateLandingPageBlack($data, $view, $viewCategory);
 		} else {
 			TemplateLandingPage($data, $view, $viewCategory);}
 	}
 
-	// NEWS THE GRAMERCY
-    public function newsgramercy(){
-		// DATA
-		$data['setting']             = getSetting();
-		$data['news_category']       = $this->m_news_category->read('','','');
-
-		// TEMPLATE
-		$view         = "landing_page/page/newsgramercy";
-		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
-	}
-
-	// NEWS DETAIL THE GRAMERCY
-    public function newsdetailgramercy(){
-		// DATA
-		$data['setting']             = getSetting();
-		$data['news_category']       = $this->m_news_category->read('','','');
-
-		// TEMPLATE
-		$view         = "landing_page/page/newsdetailgramercy";
-		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
-	}
-
-    public function tracking(){
-		// DATA
-		$data['setting']             = getSetting();
-		$data['tracking']            = "";
-		$data['link']                = $this->m_link->read('','','');
-		$data['news_category']       = $this->m_news_category->read('','','');
-
-		// TEMPLATE
-		$view         = "landing_page/page/contact_tracking";
-		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
-	}
-
-    public function tracking_search(){
-		// DATA
-		$data['setting']             = getSetting();
-		$data['tracking']            = $this->m_message->getByCode($this->input->post('key'));
-		$data['link']                = $this->m_link->read('','','');
-		$data['news_category']       = $this->m_news_category->read('','','');
-
-		// TEMPLATE
-		$view         = "landing_page/page/contact_tracking";
-		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
-	}
-
-	public function create_message() {
-        csrfValidate();
-        // POST
-        $data['message_id']      = '';
-        $data['message_name']    = $this->input->post('message_name');
-        $data['message_email']   = $this->input->post('message_email');
-        $data['message_phone']   = $this->input->post('message_phone');
-        $data['message_subject'] = $this->input->post('message_subject');
-        $data['message_text']    = $this->input->post('message_text');
-        $data['message_reply']   = "";
-        $data['message_code']    = "M-".date('YmdHis');
-        $data['message_status']  = 0;
-        $data['message_date']    = date('Y-m-d');
-        $data['createtime']      = date('Y-m-d H:i:s');
-        $this->m_message->create($data);
-
-    
-        // ALERT
-        $alertStatus  = "success";
-        $alertMessage = "Pesan Anda berhasil di terima oleh kami. Pesan akan kami proses. Untuk mengetahui progress dari pesan anda silahkan melakukan tracking dengan code berikut : <b style='color:red;'>".$data['message_code']."</b>, pastikan anda menyimpan kode tersebut untuk mengecek progress pesan anda. Atas perhatiannya kami ucapkan Terima Kasih";
-        getAlert($alertStatus, $alertMessage);
-
-        redirect('page/contact');
-    }
-
-    // GALLERY VIDEO
-    public function gallery(){
-
-        // PAGINATION
-        $baseUrl    = base_url() . "page/gallery/".$this->uri->segment(3)."/";
-        $totalRows  = count((array) $this->m_gallery->read('','','',$this->uri->segment(3)));
-        $perPage    = 10;
-        $uriSegment = 4;
-        $paging     = generatePaginationBlog($baseUrl, $totalRows, $perPage, $uriSegment);
-        $page       = ($this->uri->segment($uriSegment)) ? $this->uri->segment($uriSegment) : 0;
-        
-        $data['numbers']    = $paging['numbers'];
-        $data['links']      = $paging['links'];
-        $data['total_data'] = $totalRows ;
-        
-		// DATA
-		$data['setting']             = getSetting();
-		$data['gallery']             = $this->m_gallery->read($perPage, $page,'', $this->uri->segment(3));
-		$data['field']               = $this->m_field->read('','','');
-		$data['recent']              = $this->m_news->read(4,0,'',1,'');
-		$data['link']                = $this->m_link->read('','','');
-		$data['news_category']       = $this->m_news_category->read('','','');
-
-		// TEMPLATE
-        if($this->uri->segment(3) == 'photo'){
-            $view         = "landing_page/page/gallery_photo";
-        }else{
-            $view         = "landing_page/page/gallery_video";
-        }
-		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
-	}
-
-    public function gallery_detail(){
-		// DATA
-		$data['setting']             = getSetting();
-		$data['gallery']             = $this->m_gallery->read_gallery('', '','', $this->uri->segment(4));
-		$data['field']               = $this->m_field->read('','','');
-		$data['recent']              = $this->m_news->read(4,0,'',1,'');
-		$data['link']                = $this->m_link->read('','','');
-		$data['news_category']       = $this->m_news_category->read('','','');
-		$data['gallery_name']        = $this->m_gallery->get($this->uri->segment(4));
-
-        $view         = "landing_page/page/detail_gallery_photo";
-		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
-	}
-
-	
 }

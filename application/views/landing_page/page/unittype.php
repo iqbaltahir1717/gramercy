@@ -44,7 +44,7 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-12 slidetextcenter">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center top-fixed">
                             <h1><?= strtoupper($u->unit_name); ?></h1>
                         </div>
                     </div>

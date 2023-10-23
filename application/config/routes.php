@@ -61,4 +61,6 @@ $route['unit-house'] = 'page/unit_type';
 $route['page/siteplan'] = 'page/siteplan';
 $route['project'] = 'page/project';
 $route['developer'] = 'page/developer';
-$route['blog-news'] = 'page/newsgramercy';
+$route['blog-news'] = 'page/information';
+$route['blog-news/detail'] = 'page/information/detail';
+$route['blog-news/search'] = 'page/information/search';

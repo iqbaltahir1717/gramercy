@@ -9,12 +9,18 @@
     .unittype1{
         margin-top: 0;
     }
+    #header{
+        background: #040403;
+    }
+    .developer1{
+        margin-top: 0;
+    }
 </style>
 
 <body>    
     <header id="header">
-        <div class="container-md-12">
-            <nav class="navbar pl-5 pr-5 navbar-white navbar-expand-md">
+        <div class="container">
+            <nav class="navbar navbar-white navbar-expand-md">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path d="M5 24H27" stroke="#fffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>

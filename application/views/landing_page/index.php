@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-md-12 pr-5 baristwo md-12">
+        <div class="container pr-5 baristwo md-12">
             <div class="row align-items-start">
                 <div class="col-md-7 mb-4">
                     <h1 class="bannertext" data-aos="fade-right">LUXURY HOMES</h1>
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-md-12 pr-5 baristree md-12">
+        <div class="container pr-5 baristree md-12">
             <div class="row align-items-center">
                 <div class="col-md-12 justify-content-end" >
                     <h1 class="bannertext" data-aos="fade-up">EXCLUSIVE  DREAMS</h1>
@@ -86,13 +86,13 @@
                 <p class="mt-3" data-aos="fade-up">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
             </div>
             <div class="row lokasi justify-content-center text-center mt-4">
-                <button type="button" class="btn btn-transparent btn-sm-">Location Project &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <button type="button" class="btn btn-transparent btn-sm-">Siteplan Gramercy &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                     </svg>
                 </button>
             </div>
             <div class="row lokasi justify-content-center text-center mt-5 mb-5">
-                <img src="assets/core-images/location.png" alt="Image 2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.176456324549!2d106.65575332476405!3d-6.2404601437478595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb47b0261701%3A0x6f2b5df2b62ca182!2sThe%20Gramercy%40Alam%20Sutera!5e0!3m2!1sen!2sid!4v1698069498361!5m2!1sen!2sid" style="border:0; width: 100%; height: 600px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -166,7 +166,7 @@
         </div>
     </section>
     <!-- --------------------------Section 7----------------------------------- -->
-    <section id="hero-new7" class="hero-new7" style="background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 13.72%),linear-gradient(180deg, rgba(0, 0, 0, 0.00) 78.3%, #000 91.32%), url(<?= base_url()."/assets/core-images/lush.png)"?> no-repeat center center fixed; background-size: cover; width: 100%;">
+    <section id="hero-new7" class="hero-new7" style="background: url(<?= base_url()."/assets/core-images/home/sanctuary.jpg)"?> no-repeat center center fixed; background-size: cover; width: 100%;">
             <div class="container-md-12 pl-5 align-items-start">
                 <div class="row pl-5 align-items-start justify-align-start">
                     <div class="col-md-12">
@@ -174,16 +174,16 @@
                             <img class="brand" src="assets/core-images/thegramercyputih.png" alt="Image 2">
                         </div>
                         <div class="row mt-5">
-                            <h1>LUSH COURTYARD SANCTUARY</h1>
+                            <h1>LUSH COURTYARD<br>SANCTUARY</h1>
                         </div>
                         <div class="row mt-5">
                             <div class="col pl-2">
                                 <div class="card">
                                 <div class="card-body">
-                                    <p>A home where you want to be. Surround yourself with lush greenery that captivates your life’s gratitude. Brought to life by Karl Princic, the landscape architect with experience over 30 years in planning and designing of resorts, residential and hospitality projects worldwide. Now the paradise is yours.</p>
+                                    <p class="mb-3">A home where you want to be. Surround yourself with lush greenery that captivates your life’s gratitude. Brought to life by Karl Princic, the landscape architect with experience over 30 years in planning and designing of resorts, residential and hospitality projects worldwide. Now the paradise is yours.</p>
                                     <button>Download Brochure <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                        </svg>
+                                    </svg>
                                     </button>
                                 </div>
                                 </div>

@@ -24,7 +24,7 @@
                         <a class="nav-link active" href="<?php echo site_url('unit-house'); ?>">Unit Type</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" href="<?php echo site_url('page/siteplan'); ?>">Siteplan</a>
+                        <a class="nav-link active activated" href="<?php echo site_url('page/siteplan'); ?>">Siteplan</a>
                         </li>
                     </ul>
                     </div>
@@ -40,7 +40,7 @@
                         <a class="nav-link active" href="<?php echo site_url('developer'); ?>">Developer</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" href="<?php echo site_url('blog-news'); ?>">News</a>
+                        <a class="nav-link active" href="<?php echo site_url('page/information/1/1'); ?>">News</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url(); ?>">

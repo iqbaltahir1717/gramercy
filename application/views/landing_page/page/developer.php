@@ -5,7 +5,7 @@
                 <div class="unitimg">
                     <div class="unittext">
                         <div class="row d-flex justify-content-center">
-                            <h1>A Great Place to Call “HOME”</h1>
+                            <h1>A Great<br>Place to Call<br>“HOME”</h1>
                         <div class="row d-flex justify-content-end">
                             <div class="col">
                                 <img  class="ml-auto d-block" src="<?php echo base_url(); ?>assets/core-images/mouse-indicator.svg" alt="Logo">
@@ -33,7 +33,9 @@
                     </div>
                     <div class="row">
                         <p>PT. Alam Sutera Realty Tbk (“the Company”) is an integrated property developer company that prioritize innovation to fulfill a quality living.  The business activities are focused on the development as well as management of residential areas, commercial districts; and also shopping centers, recreational and hotel areas (integrated area development).</p>
+                        <br>
                         <p>Opening the Jakarta-Merak toll road exit in 2009 was the catalyst to the development of the commercial area at Alam Sutera, as it offered easier connectivity to BSD, Tangerang, Jakarta and other areas. The commercial area continued to grow due to this location and access, with visibility from the toll road also proving an attractive incentive for investors such as IKEA and Alfaland Group.</p>
+                        <br>
                         <p>The journey as the leading property developer company in Indonesia began with the construction of the first project in an integrated area named Alam Sutera in 1994. This 800 hectares of land township is located in Serpong, Tangerang. Up to end of 2016, Alam Sutera had launched 37 residential clusters and 2 apartment buildings at Alam Sutera township. Each cluster comprises of 150 – 300 houses and is supported with a range of premium facilities, including: education, entertainment and healthcare centers as well as shopping center which has provided a convenient living.</p>
                     </div>
                 </div>
