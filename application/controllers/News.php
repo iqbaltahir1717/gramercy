@@ -27,7 +27,7 @@ class News extends CI_Controller {
         $data['title']   = 'Informasi';
         $data['news']    = $this->m_news->read('', '', '', '', '');
 		
-        
+
         // TEMPLATE
 		$view         = "news/data";
 		$viewCategory = "all";

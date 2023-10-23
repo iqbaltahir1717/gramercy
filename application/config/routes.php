@@ -57,7 +57,7 @@ $route['cluster'] = 'siteplan/cluster';
 $route['optical'] = 'siteplan/optical';
 
 // front
-$route['unit-house'] = 'page/unit_type';
+$route['page/unit_type'] = 'page/unit_type';
 $route['page/siteplan'] = 'page/siteplan';
 $route['project'] = 'page/project';
 $route['developer'] = 'page/developer';

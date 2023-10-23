@@ -28,6 +28,26 @@ class M_unit_gallery extends CI_Model
         return null;
     }
 
+    public function read_id( $id)
+    {
+        $this->db->select('a.*, b.*, c.*');
+        $this->db->from('tbl_gallery a');
+        $this->db->join('tbl_unit b','a.unit_id=b.unit_id','LEFT');
+        $this->db->join('tbl_gallery_category c','a.gallery_category_id=c.gallery_category_id','LEFT');
+        $this->db->where("a.unit_id = ", $id);
+
+        $this->db->order_by('a.gallery_id', 'DESC');
+        
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            foreach ($query->result() as $row) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+        return null;
+    }
+
     public function create($data)
     {
         $this->db->insert('tbl_gallery', $data);

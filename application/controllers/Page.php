@@ -12,8 +12,10 @@ class Page extends CI_Controller {
       $this->load->model('m_cluster');
 		$this->load->model('m_optical');
 		$this->load->model('m_unit');
+		$this->load->model('m_unit_gallery');
 		$this->load->model('m_unit_gallery_category');
 		$this->load->model('m_project');
+		$this->load->model('m_content');
 	}
 
 	// INFORMATION
@@ -23,7 +25,7 @@ class Page extends CI_Controller {
         // PAGINATION
         $baseUrl    = base_url() . "page/information/".$this->uri->segment(3)."/".$this->uri->segment(4)."/";
         $totalRows  = count((array) $this->m_news->read('','','',$this->uri->segment(3),$this->uri->segment(4)));
-        $perPage    = 10;
+        $perPage    = 12;
         $uriSegment = 5;
         $paging     = generatePaginationBlog($baseUrl, $totalRows, $perPage, $uriSegment);
         $page       = ($this->uri->segment($uriSegment)) ? $this->uri->segment($uriSegment) : 0;
@@ -39,6 +41,7 @@ class Page extends CI_Controller {
 		$data['recent']              = $this->m_news->read(4,0,'',1,'');
 		$data['news_category']       = $this->m_news_category->read('','','');
 		$data['news_category_name']  = $this->m_news_category->get($this->uri->segment(3));
+		$data['unit']       = $this->m_unit->read('','','');
 
 		// TEMPLATE
 		$view         = "landing_page/page/news";
@@ -70,11 +73,10 @@ class Page extends CI_Controller {
         //DATA
         $data['setting']             = getSetting();
         $data['news']                = $this->m_news->read($perPage, $page, $data['search'],$this->uri->segment(3), $this->uri->segment(4));
-        $data['field']               = $this->m_field->read('','','');
         $data['recent']              = $this->m_news->read(4,0,'',1,'');
-        $data['link']                = $this->m_link->read('','','');
         $data['news_category']       = $this->m_news_category->read('','','');
         $data['news_category_name']  = $this->m_news_category->get($this->uri->segment(3));
+		  $data['unit']       = $this->m_unit->read('','','');
         
 
 		// TEMPLATE
@@ -89,11 +91,10 @@ class Page extends CI_Controller {
 		// DATA
 		$data['setting']             = getSetting();
 		$data['news']                = $this->m_news->getBySlug($this->uri->segment(5));
-		$data['field']               = $this->m_field->read('','','');
 		$data['recent']              = $this->m_news->read(4,0,'',1,'');
-		$data['link']                = $this->m_link->read('','','');
 		$data['news_category']       = $this->m_news_category->read('','','');
-        $data['news_category_name']  = $this->m_news_category->get($this->uri->segment(3));
+      $data['news_category_name']  = $this->m_news_category->get($this->uri->segment(3));
+		$data['unit']       = $this->m_unit->read('','','');
 
 		// COUNT VIEW
 		$news['news_id']         = $data['news'][0]->news_id;
@@ -125,13 +126,15 @@ class Page extends CI_Controller {
     public function unit_type(){
 		// DATA
 		$data['setting']             = getSetting();
-		$data['unit']       = $this->m_unit->read('','','');
+		$data['unit']       = $this->m_unit->get($this->uri->segment(3));
+		$data['unit_gallery']       = $this->m_unit_gallery->read_id($this->uri->segment(3));
 		$data['category']       = $this->m_unit_gallery_category->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
 
 		// TEMPLATE
 		$view         = "landing_page/page/unittype";
 		$viewCategory = "all";
-		if($this->uri->segment(1) == 'unit-house'){
+		if($this->uri->segment(2) == 'unit_type'){
 			TemplateLandingPageBlack($data, $view, $viewCategory);
 		} else {
 			TemplateLandingPage($data, $view, $viewCategory);}
@@ -144,6 +147,8 @@ class Page extends CI_Controller {
 		$data['optical']       = $this->m_optical->read('','','');
 		$data['siteplan']      = $this->m_siteplan->read('','','');
 		$data['cluster']       = $this->m_cluster->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
+		$data['unit']       = $this->m_unit->read('','','');
 
 		// TEMPLATE
 		$view         = "landing_page/page/siteplan";
@@ -156,6 +161,8 @@ class Page extends CI_Controller {
 		// DATA
 		$data['setting']             = getSetting();
 		$data['project']       = $this->m_project->read('','','');
+		$data['unit']       = $this->m_unit->read('','','');
+		$data['news_category']       = $this->m_news_category->read('','','');
 
 		// TEMPLATE
 		$view         = "landing_page/page/project";
@@ -167,7 +174,9 @@ class Page extends CI_Controller {
     public function developer(){
 		// DATA
 		$data['setting']             = getSetting();
-		$data['developer']       = $this->m_content->get();
+		$data['developer']       = $this->m_content->get(7);
+		$data['news_category']       = $this->m_news_category->read('','','');
+		$data['unit']       = $this->m_unit->read('','','');
 
 		// TEMPLATE
 		$view         = "landing_page/page/developer";

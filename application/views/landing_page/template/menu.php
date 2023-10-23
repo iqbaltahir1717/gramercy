@@ -1,3 +1,4 @@
+
 <body>    
     <header id="header">
         <div class="container" style="padding: 0;">
@@ -13,15 +14,25 @@
                 <div class="navbar-collapse collapse dual-nav order-1 order-md-0">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>">
+                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=<?= $setting[0]->setting_phone ?>&text=Halo,%20saya%20ingin%20mendapatkan%20informasi%20lebih%20lanjut%20mengenai%20produk%20The%20Gramercy." target="_blank">
                             <img src="<?php echo base_url(); ?>assets/core-images/whatapp.svg" alt="Logo">
                         </a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" href="<?php echo base_url(); ?>">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                     <a class="nav-link active" href="<?php echo site_url('unit-house'); ?>">Unit Type</a>
+                    </li> -->
+                    <li class="drop-down">
+                        <a class="active" href="#">Unit Type</a>
+                        <ul>
+                            <?php if($unit) { foreach($unit as $u){ ?>
+                            <li><a href="<?php echo site_url('page/unit_type/'.$u->unit_id)?>"><?= $u->unit_name; ?></a></li>
+                            <?php }} else {?>
+                                <li><a href="#">TIDAK DATA</a></li>
+                            <?php } ?>
+                        </ul>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" href="<?php echo site_url('page/siteplan'); ?>">Siteplan</a>
@@ -29,7 +40,7 @@
                 </ul>
                 </div>
 
-                <a href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/logogramercy.svg" class="navbar-brand mx-auto order-0 order-md-5 p-2"></a>
+                <a href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/logogramercy.svg" class="navbar-brand"></a>
 
                 <div class="navbar-collapse collapse dual-nav order-4 order-md-4 justify-content-end">
                 <ul class="navbar-nav align-items-center">
@@ -39,11 +50,18 @@
                     <li class="nav-item">
                     <a class="nav-link active" href="<?php echo site_url('developer'); ?>">Developer</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo site_url('blog-news'); ?>">News</a>
+                    <li class="drop-down">
+                        <a class="active" href="#">News</a>
+                        <ul>
+                            <?php if($news_category) { foreach($news_category as $c){ ?>
+                            <li><a href="<?php echo site_url('page/information/'.$c->news_category_id . '/1')?>"><?= $c->news_category_name; ?></a></li>
+                            <?php }} else {?>
+                                <li><a href="#">TIDAK DATA</a></li>
+                            <?php } ?>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url(); ?>">
+                        <a class="nav-link" href="<?= $setting[0]->setting_instagram; ?>" target="_blank">
                             <img src="<?php echo base_url(); ?>assets/core-images/icon/instagram.svg" alt="Logo">
                         </a>
                     </li>

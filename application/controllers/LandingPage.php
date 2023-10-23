@@ -11,6 +11,7 @@ class LandingPage extends CI_Controller {
 		$this->load->model('m_gallery');
 		$this->load->model('m_news');
 		$this->load->model('m_news_category');
+		$this->load->model('m_unit');
 	}
 
 	public function index(){
@@ -23,6 +24,7 @@ class LandingPage extends CI_Controller {
 		$data['faq']                 = $this->m_faq->read('','','');
 		$data['gallery']             = $this->m_gallery->read('','','','photo');
 		$data['news_category']       = $this->m_news_category->read('','','');
+		$data['unit']       = $this->m_unit->read('','','');
 
 		// TEMPLATE
 		$view         = "landing_page/index";

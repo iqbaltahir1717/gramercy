@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section id="developer3" class="developer3 bg-light">
+    <!-- <section id="developer3" class="developer3 bg-light">
         <div class="container md-12">
             <div class="row justify-content-center">
                 <img src="<?php echo base_url(); ?>assets/core-images/gramercydevlogo.png" alt="Logo">
@@ -124,7 +124,6 @@
                 <div class="col-md-3">
                     <img src="<?php echo base_url(); ?>assets/core-images/Karl Princic.png" alt="Logo" class="img-fluid">
                 </div>
-                <!-- batas -->
                 <div class="col-md-9">
                     <div class="row flex-row flex-nowrap">
                         <div class="col-xs-3 cover-container">
@@ -161,11 +160,10 @@
                     </div>
                 </div>
             </div>
-            <!-- batas -->
         </div>
-    </section>
+    </section> -->
 
-    <section id="developer4" class="developer4">
+    <!-- <section id="developer4" class="developer4">
         <div class="container md-12">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-end">
@@ -191,31 +189,5 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- --------------------------Section 4----------------------------------- -->
-    <section id="hero-new4" class="hero-new4 mt-0">
-        <div class="container section4 justify-content-center text-center">
-            <div class="row brand-logo-gramercy justify-content-center text-center">
-                <div class="col">
-                    <img src="<?php echo base_url(); ?>assets/core-images/thegramercy.png" alt="Image 2">
-                </div>
-            </div>
-            <div class="row lokasi justify-content-center text-center">
-                <p class="mt-3">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
-            </div>
-            <div class="row lokasi justify-content-center text-center mt-2">
-                <button type="button" class="btn btn-transparent btn-sm-">Location <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="row lokasi justify-content-center text-center mt-5 mb-5">
-                <img src="<?php echo base_url(); ?>assets/core-images/location.png" alt="Image 2">
-            </div>
-        </div>
-    </section>
-
-
-
+    </section> -->
 </main>

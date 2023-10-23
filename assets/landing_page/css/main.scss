@@ -1,0 +1,265 @@
+.blog{
+	.entry{
+		padding: 0 !important;
+		box-shadow: none;
+		transition: 0.5s all;
+		cursor: pointer;
+		.entry-img{
+			margin: 0;
+			margin-bottom: 16px;
+			height: 180px;
+			overflow: hidden;
+			img{
+				object-fit: cover;
+				height: 180px;
+			}
+			
+		}
+		.entry-title{
+			margin-top: 12px;
+			a{
+				color: #131313 !important;
+				font-family: Gambetta;
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+		.entry-content{
+			color: #999999;
+			font-size: 12px;
+			font-family: Satoshi;
+		}
+		.entry-meta{
+			color: #999999;
+			font-size: 12px;
+			font-family: Satoshi;
+			margin-top: 12px;
+		}
+	}
+	
+	
+	.entry:hover{
+		box-shadow: 0px 46px 14px -29px rgba(0, 0, 0, 0.25);
+		a{
+			color: #C2A058 !important;
+		}
+		.entry-img{
+			img{
+				width: 12;
+			}
+		}
+	}
+}
+
+//drop-down
+/* Style for the dropdown container */
+.drop-down {
+	position: relative;
+	display: inline-block;
+	z-index: 99;
+	font-family: Gambetta;
+	width: 100px;
+	text-align: center;
+	.active{
+		color: #131313 ;
+		font-size: 18px !important;
+	}
+	ul{
+		list-style-type: none;
+		padding: 0;
+		position: absolute;
+		display: none;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		li {
+			margin: 0;
+			min-width: 180px;
+			border-bottom: 1px solid #dadada;
+			padding: 10px 0;
+			transition: 0.5s all;
+			background-color: #ffffff;
+			text-align: left;
+			a {
+				display: block;
+				padding: 10px 15px;
+				text-decoration: none;
+				color: #333 ;
+				
+			}
+		}
+		li:hover{
+			background-color: #C2A058;
+		}
+	}
+}
+
+.drop-down:hover ul {
+	display: block;
+}
+
+//glighbox
+.gslide-title{
+	font-family: Gambetta !important;
+	font-size: 34px !important;
+	text-align: center;
+	color: #fafafa !important;
+}
+.gslide-desc{
+	font-size: 18px;
+	font-family: Satoshi !important;
+	text-align: center;
+	color: #999999 !important;
+}
+
+.gslide-description{
+	background: #000 !important;
+}
+
+.gallery-feed{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+
+	.card-gallery {
+		cursor: pointer;
+		position: relative;
+		transition: 0.5s all;
+		img{
+			width: 300px;
+			height: 240px;
+			object-fit: cover;
+		}
+		.overlay{
+			position: absolute;
+			width: 300px;
+			height: 240px;
+			top: 0;
+			left: 0;
+			background: #ffffff00;
+			backdrop-filter: blur(0px);
+			transition: 0.5s all;
+			h2{
+				color: #ffffff00;
+				transition: 1s all;
+				position: absolute;
+				font-size: 24px;
+				text-align: center;
+				bottom: 20px;
+				font-family: Gambetta !important;
+				padding: 0 12px;
+			}
+		}
+	}
+	.card-gallery:hover {
+		.overlay{
+			background: #00000074;
+			backdrop-filter: blur(3px);
+			h2{
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+
+
+.news1{
+	.form-control:focus{
+		color: #C2A058;
+		font-family: Satoshi;
+	}
+	
+	.input-group{
+		background: rgba(0, 0, 0, 0.77);
+		backdrop-filter: blur(3px);
+		.form-control{
+			padding: 24px 32px !important;
+			background: none;
+		}
+	}
+}
+
+.blog{
+	.blog-pagination{
+		li{
+			.active{
+				background: #C2A058;
+			}
+		}
+	}
+}
+
+.sidebar{
+	box-shadow: none !important;
+	background: #131313;
+	margin: 0 !important;
+	.sidebar-title{
+		font-family: Gambetta;
+		color: #fafafa !important;
+	}
+	a{
+		color: #999999 !important;
+		font-family: Satoshi;
+	}
+	a:hover{
+		color: #C2A058 !important;
+	}
+}
+
+
+@media (min-width: 1200px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl{
+		max-width: 1348px;
+	}
+}
+
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-nav .nav-link{
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 542px){
+	.navbar{
+		.navbar-brand{
+			width: 240px !important;
+			padding-right: 30px;
+		}
+	}
+
+	.news1{
+		height: 200px;
+		h1{
+			font-size: 24px;
+			line-height: 32px;
+			text-align: center;
+		}
+		.unittext{
+			.col-md-2{
+				display: none !important;
+			}
+		}
+		.responsive{
+			display: none;
+		}
+	}
+	.blog{
+		padding: 0;
+		.entry-img{
+			height: 240px !important;
+			img{
+				height: 100% !important;
+				width: 100% !important;
+			}
+		}
+		.entry-meta{
+			.badge-success{
+				display: none;
+			}
+		}
+	}
+}

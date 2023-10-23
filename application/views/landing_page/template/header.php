@@ -32,12 +32,8 @@
 
 		<!-- CSS -->
 		<link href="<?php echo base_url()?>assets/landing_page/css/style.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+		<link href="<?php echo base_url()?>assets/landing_page/css/main.css" rel="stylesheet">
 		<style type="text/css">
-            .fontRubik{
-                font-family: 'Rubik', sans-serif;
-            }
-
             #map-canvas {
                 width: 100%;
                 height: 300px;
