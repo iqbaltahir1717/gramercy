@@ -55,3 +55,10 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['cluster'] = 'siteplan/cluster';
 $route['optical'] = 'siteplan/optical';
+
+// front
+$route['unit-house'] = 'page/unit_type';
+$route['siteplan'] = 'page/siteplan';
+$route['project'] = 'page/project';
+$route['developer'] = 'page/developer';
+$route['blog-news'] = 'page/newsgramercy';

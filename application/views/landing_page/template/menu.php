@@ -15,10 +15,10 @@
                                     <a href="<?php echo base_url(); ?>">Home</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/unittype'); ?>">Unit Type</a>
+                                    <a href="<?php echo site_url('unit-house'); ?>">Unit Type</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/siteplan'); ?>">Siteplan</a>
+                                    <a href="<?php echo site_url('siteplan'); ?>">Siteplan</a>
                                 </li>
                             </ul>
                         </div>
@@ -30,13 +30,13 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav mx-auto">
                                 <li class="active">
-                                    <a href="<?php echo site_url('page/project'); ?>">Projects</a>
+                                    <a href="<?php echo site_url('project'); ?>">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/developer'); ?>">Developer</a>
+                                    <a href="<?php echo site_url('developer'); ?>">Developer</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('page/newsgramercy'); ?>">News</a>
+                                    <a href="<?php echo site_url('blog-news'); ?>">News</a>
                                 </li>
                             </ul>
                         </div>

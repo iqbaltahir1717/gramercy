@@ -119,7 +119,7 @@ class Page extends CI_Controller {
 	}
 
 	// UNIT TYPE
-    public function unittype(){
+    public function unit_type(){
 		// DATA
 		$data['setting']             = getSetting();
 		$data['link']                = $this->m_link->read('','','');
