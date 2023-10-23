@@ -272,13 +272,13 @@ h6 {
 	width: 0;
 	position: absolute;
 	bottom: 10px;
-	height: 11px; /* Sesuaikan dengan keinginan Anda */
+	height: 5px; /* Sesuaikan dengan keinginan Anda */
 	background: #C2A058; /* Warna garis bawah saat tautan aktif */
 	transition: all 0.3s ease-in-out;
   }
   
   .nav-link:hover::before {
-	width: 30%;
+	width: 40%;
   }
 
 /* ========================END MENU======================================= */
@@ -3306,7 +3306,9 @@ section {
 }
 
 /* Developer 3 */
-
+.row.flex-row.flex-nowrap {
+    overflow-x: hidden;
+  }
 .developer3 p{
 	color: #6D6D6D;
 	font-size: 24px;

@@ -229,7 +229,7 @@
     <script>
         const textContainers = document.querySelectorAll('.hero-new .bannertext');
         const textOptions = [
-            ['A VERY LONG TERM LUXURY', 'LAVISH ABODES', 'LUXURY HOUSING MARKET'],
+            ['LONG TERM LUXURY', 'LAVISH ABODES', 'LUXURY HOUSING MARKET'],
             ['EASY LUXURY OF HOME', 'SIMPLE LIFE', 'OPULENT LIVING SPACES'],
             ['WHAT A CHARMING HOUSE', 'DELUXE HOUSES', 'HIGH-END RESIDENCES'],
             ['ELEVATE YOUR LIFESTYLE', 'LUXURY HOMES', 'EXCLUSIVE  DREAMS']
