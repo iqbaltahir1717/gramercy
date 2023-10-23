@@ -7,9 +7,9 @@ class Page extends CI_Controller {
 		$this->load->model('m_news');
 		$this->load->model('m_gallery');
 		$this->load->model('m_field');
-		$this->load->model('m_message');
-		$this->load->model('m_link');
-        $this->load->model('m_news_category');
+		$this->load->model('m_siteplan');
+      $this->load->model('m_cluster');
+		$this->load->model('m_optical');
 	}
 
 	// INFORMATION
@@ -135,9 +135,9 @@ class Page extends CI_Controller {
     public function siteplan(){
 		// DATA
 		$data['setting']             = getSetting();
-		$data['link']                = $this->m_link->read('','','');
-		$data['news_category']       = $this->m_news_category->read('','','');
-
+		$data['optical']       = $this->m_optical->read('','','');
+		$data['siteplan']       = $this->m_siteplan->read('','','');
+		$data['cluster']       = $this->m_cluster->read('','','');
 		// TEMPLATE
 		$view         = "landing_page/page/siteplan";
 		$viewCategory = "all";
