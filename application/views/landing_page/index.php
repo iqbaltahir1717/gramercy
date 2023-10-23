@@ -4,10 +4,10 @@
     <section id="hero-new" class="hero-new mt-2">
         <div class="container-md-12 pl-5 pr-5 barisone md-12">
             <div class="row pl-5 align-items-start">
-                <div class="col-md-11">
+                <div class="col-md-10">
                     <h1 class="bannertext">ELEVATE YOUR LIFESTYLE</h1>
                 </div>
-                <div class="bulatan col-md-1 d-flex justify-content-end">
+                <div class="bulatan col-md-2 d-flex justify-content-end">
                     <a class="bulatan-tombol mr-2" href="#" id="prevTextButton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
@@ -241,7 +241,7 @@
     <script>
         const textContainers = document.querySelectorAll('.hero-new .bannertext');
         const textOptions = [
-            ['A VERY LONG TERM LUXURY', 'LAVISH ABODES', 'LUXURY HOUSING MARKET'],
+            ['LONG TERM LUXURY', 'LAVISH ABODES', 'LUXURY HOUSING MARKET'],
             ['EASY LUXURY OF HOME', 'SIMPLE LIFE', 'OPULENT LIVING SPACES'],
             ['WHAT A CHARMING HOUSE', 'DELUXE HOUSES', 'HIGH-END RESIDENCES'],
             ['ELEVATE YOUR LIFESTYLE', 'LUXURY HOMES', 'EXCLUSIVE  DREAMS']
