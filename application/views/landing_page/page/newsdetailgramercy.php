@@ -66,18 +66,28 @@
                 <a href="#">
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/core-images/news-1.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Property Crime Rate</h5>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, 
-                    </p>
-                    <p class="card-text"><small class="text-muted"><svg class="jam" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
-                        <path d="M6.83033 1.50302C6.46453 1.50302 6.16799 1.20648 6.16799 0.840683C6.16799 0.474884 6.46453 0.178345 6.83033 0.178345H9.95262C10.3184 0.178345 10.615 0.474884 10.615 0.840683C10.615 1.20648 10.3184 1.50302 9.95262 1.50302H6.83033Z" fill="#999999"/>
-                        <path d="M3.76621 1.9021C4.02487 2.16076 4.02487 2.58013 3.76621 2.83879L1.55842 5.04659C1.29976 5.30524 0.880388 5.30524 0.621729 5.04659C0.36307 4.78793 0.36307 4.36856 0.621729 4.1099L2.82952 1.9021C3.08818 1.64344 3.50755 1.64344 3.76621 1.9021Z" fill="#999999"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.59657 2.81201C4.45085 2.81201 1.09007 6.17278 1.09007 10.3185C1.09007 14.4642 4.45085 17.825 8.59657 17.825C12.7423 17.825 16.1031 14.4642 16.1031 10.3185C16.1031 6.17278 12.7423 2.81201 8.59657 2.81201ZM13.0041 6.08906C13.1408 5.91328 13.1252 5.6632 12.9678 5.50574C12.8103 5.34828 12.5602 5.33271 12.3845 5.46942L9.5815 7.6495L7.74853 8.95876C7.41579 9.19643 7.21832 9.58016 7.21832 9.98906C7.21832 10.6883 7.78519 11.2552 8.48445 11.2552C8.89335 11.2552 9.27708 11.0577 9.51475 10.725L10.824 8.89201L13.0041 6.08906Z" fill="#999999"/>
-                        </svg>Senin, 19 Mei 2023 <svg class="garis" xmlns="http://www.w3.org/2000/svg" width="2" height="19" viewBox="0 0 2 19" fill="none">
-                        <path d="M1 19C0.447715 19 0 18.5523 0 18L0 1.67C0 1.11771 0.447715 0.669999 1 0.669999V0.669999C1.55228 0.669999 2 1.11771 2 1.67L2 18C2 18.5523 1.55228 19 1 19V19Z" fill="#999999"/>
-                        </svg> 23.34 WITA</small>
-                    </p>
+                    <div class="row">
+                        <h5 class="card-title">Property Crime Rate</h5>
+                    </div>
+                    <div class="row">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, 
+                        </p>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-0">
+                            <img class="card-img-top" style="height: 20px; width:20px;" src="<?php echo base_url(); ?>assets/core-images/icon/news-time.svg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-6">
+                            <small>Senin, 19 Mei 2023</small>
+                        </div>
+                        <div class="col-md-0">
+                            <img class="card-img-top" style="height: 18px; width:2px;" src="<?php echo base_url(); ?>assets/core-images/icon/news-rect.svg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-4">
+                            <small>23.34 WITA</small>
+                        </div>
+                    </div>
                 </div>
                 </a>
             </div>
@@ -85,18 +95,28 @@
                 <a href="#">
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/core-images/news-3.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Property Crime Rate</h5>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, 
-                    </p>
-                    <p class="card-text"><small class="text-muted"><svg class="jam" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
-                        <path d="M6.83033 1.50302C6.46453 1.50302 6.16799 1.20648 6.16799 0.840683C6.16799 0.474884 6.46453 0.178345 6.83033 0.178345H9.95262C10.3184 0.178345 10.615 0.474884 10.615 0.840683C10.615 1.20648 10.3184 1.50302 9.95262 1.50302H6.83033Z" fill="#999999"/>
-                        <path d="M3.76621 1.9021C4.02487 2.16076 4.02487 2.58013 3.76621 2.83879L1.55842 5.04659C1.29976 5.30524 0.880388 5.30524 0.621729 5.04659C0.36307 4.78793 0.36307 4.36856 0.621729 4.1099L2.82952 1.9021C3.08818 1.64344 3.50755 1.64344 3.76621 1.9021Z" fill="#999999"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.59657 2.81201C4.45085 2.81201 1.09007 6.17278 1.09007 10.3185C1.09007 14.4642 4.45085 17.825 8.59657 17.825C12.7423 17.825 16.1031 14.4642 16.1031 10.3185C16.1031 6.17278 12.7423 2.81201 8.59657 2.81201ZM13.0041 6.08906C13.1408 5.91328 13.1252 5.6632 12.9678 5.50574C12.8103 5.34828 12.5602 5.33271 12.3845 5.46942L9.5815 7.6495L7.74853 8.95876C7.41579 9.19643 7.21832 9.58016 7.21832 9.98906C7.21832 10.6883 7.78519 11.2552 8.48445 11.2552C8.89335 11.2552 9.27708 11.0577 9.51475 10.725L10.824 8.89201L13.0041 6.08906Z" fill="#999999"/>
-                        </svg>Senin, 19 Mei 2023 <svg class="garis" xmlns="http://www.w3.org/2000/svg" width="2" height="19" viewBox="0 0 2 19" fill="none">
-                        <path d="M1 19C0.447715 19 0 18.5523 0 18L0 1.67C0 1.11771 0.447715 0.669999 1 0.669999V0.669999C1.55228 0.669999 2 1.11771 2 1.67L2 18C2 18.5523 1.55228 19 1 19V19Z" fill="#999999"/>
-                        </svg> 23.34 WITA</small>
-                    </p>
+                    <div class="row">
+                        <h5 class="card-title">Property Crime Rate</h5>
+                    </div>
+                    <div class="row">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, 
+                        </p>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-0">
+                            <img class="card-img-top" style="height: 20px; width:20px;" src="<?php echo base_url(); ?>assets/core-images/icon/news-time.svg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-6">
+                            <small>Senin, 19 Mei 2023</small>
+                        </div>
+                        <div class="col-md-0">
+                            <img class="card-img-top" style="height: 18px; width:2px;" src="<?php echo base_url(); ?>assets/core-images/icon/news-rect.svg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-4">
+                            <small>23.34 WITA</small>
+                        </div>
+                    </div>
                 </div>
                 </a>
             </div>
@@ -104,18 +124,28 @@
                 <a href="#">
                 <img class="card-img-top" src="<?php echo base_url(); ?>assets/core-images/news-2.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Property Crime Rate</h5>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, 
-                    </p>
-                    <p class="card-text"><small class="text-muted"><svg class="jam" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
-                        <path d="M6.83033 1.50302C6.46453 1.50302 6.16799 1.20648 6.16799 0.840683C6.16799 0.474884 6.46453 0.178345 6.83033 0.178345H9.95262C10.3184 0.178345 10.615 0.474884 10.615 0.840683C10.615 1.20648 10.3184 1.50302 9.95262 1.50302H6.83033Z" fill="#999999"/>
-                        <path d="M3.76621 1.9021C4.02487 2.16076 4.02487 2.58013 3.76621 2.83879L1.55842 5.04659C1.29976 5.30524 0.880388 5.30524 0.621729 5.04659C0.36307 4.78793 0.36307 4.36856 0.621729 4.1099L2.82952 1.9021C3.08818 1.64344 3.50755 1.64344 3.76621 1.9021Z" fill="#999999"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.59657 2.81201C4.45085 2.81201 1.09007 6.17278 1.09007 10.3185C1.09007 14.4642 4.45085 17.825 8.59657 17.825C12.7423 17.825 16.1031 14.4642 16.1031 10.3185C16.1031 6.17278 12.7423 2.81201 8.59657 2.81201ZM13.0041 6.08906C13.1408 5.91328 13.1252 5.6632 12.9678 5.50574C12.8103 5.34828 12.5602 5.33271 12.3845 5.46942L9.5815 7.6495L7.74853 8.95876C7.41579 9.19643 7.21832 9.58016 7.21832 9.98906C7.21832 10.6883 7.78519 11.2552 8.48445 11.2552C8.89335 11.2552 9.27708 11.0577 9.51475 10.725L10.824 8.89201L13.0041 6.08906Z" fill="#999999"/>
-                        </svg>Senin, 19 Mei 2023 <svg class="garis" xmlns="http://www.w3.org/2000/svg" width="2" height="19" viewBox="0 0 2 19" fill="none">
-                        <path d="M1 19C0.447715 19 0 18.5523 0 18L0 1.67C0 1.11771 0.447715 0.669999 1 0.669999V0.669999C1.55228 0.669999 2 1.11771 2 1.67L2 18C2 18.5523 1.55228 19 1 19V19Z" fill="#999999"/>
-                        </svg> 23.34 WITA</small>
-                    </p>
+                    <div class="row">
+                        <h5 class="card-title">Property Crime Rate</h5>
+                    </div>
+                    <div class="row">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, 
+                        </p>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-0">
+                            <img class="card-img-top" style="height: 20px; width:20px;" src="<?php echo base_url(); ?>assets/core-images/icon/news-time.svg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-6">
+                            <small>Senin, 19 Mei 2023</small>
+                        </div>
+                        <div class="col-md-0">
+                            <img class="card-img-top" style="height: 18px; width:2px;" src="<?php echo base_url(); ?>assets/core-images/icon/news-rect.svg" alt="Card image cap">
+                        </div>
+                        <div class="col-md-4">
+                            <small>23.34 WITA</small>
+                        </div>
+                    </div>
                 </div>
                 </a>
             </div>
