@@ -12,6 +12,7 @@ class Page extends CI_Controller {
       $this->load->model('m_cluster');
 		$this->load->model('m_optical');
 		$this->load->model('m_unit');
+		$this->load->model('m_unit_gallery_category');
 		$this->load->model('m_project');
 	}
 
@@ -126,11 +127,15 @@ class Page extends CI_Controller {
 		// DATA
 		$data['setting']             = getSetting();
 		$data['unit']       = $this->m_unit->read('','','');
+		$data['category']       = $this->m_unit_gallery_category->read('','','');
 
 		// TEMPLATE
 		$view         = "landing_page/page/unittype";
 		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
+		if($this->uri->segment(1) == 'unit-house'){
+			TemplateLandingPageBlack($data, $view, $viewCategory);
+		} else {
+			TemplateLandingPage($data, $view, $viewCategory);}
 	}
 
 	// SITE PLAN
@@ -168,7 +173,10 @@ class Page extends CI_Controller {
 		// TEMPLATE
 		$view         = "landing_page/page/developer";
 		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
+		if($this->uri->segment(1) == 'unit-house'){
+			TemplateLandingPageBlack($data, $view, $viewCategory);
+		} else {
+			TemplateLandingPage($data, $view, $viewCategory);}
 	}
 
 	// NEWS THE GRAMERCY

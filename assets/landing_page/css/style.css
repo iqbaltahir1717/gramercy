@@ -434,7 +434,6 @@ h6 {
 	line-height: 85px; /* 100% */
 	letter-spacing: 2.55px;
 	color: #161616;
-	text-align: start;
 }
 
 
@@ -474,6 +473,7 @@ h6 {
     display: flex;
     width: 100%;
     height: 1089px;
+    padding: 0px 88px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -503,7 +503,7 @@ h6 {
     text-align: center;
 }
 
-.ourservice .bagian {
+.ourservice .col {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -511,7 +511,7 @@ h6 {
 	margin-top: 30px;
 }
 
-.ourservice .bagian h3 {
+.ourservice .col h3 {
     color: #FFF;
     font-family: 'GambettaMedium';
     font-size: 28px;
@@ -522,7 +522,7 @@ h6 {
     text-transform: uppercase;
 }
 
-.ourservice .bagian h5 {
+.ourservice .col h5 {
     color: #B4B4B6;
     width: 320px;
     color: var(--foundation-dark-mode-light-active, #B4B4B6);
@@ -660,16 +660,12 @@ h6 {
 
 .hero-new7 .card{
 	display: flex;
+	width: 833px;
+	padding: 2px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	gap: 24px;
-	width: 933px;
-	padding: 16px;
-	background-color: #ffffff;
-	border: 1px solid #e0e0e0;
-	border-radius: 8px;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero-new7 .card button{
@@ -708,17 +704,17 @@ h6 {
 
 .hero-new8 .project-1{
 	width: 100%;
-	height: 700px;
+	height: 500px;
 }
 
 .hero-new8 .project-2{
 	width: 100%;
 	padding-bottom: 24px;
-	height: 350px;
+	height: 250px;
 }
 .hero-new8 .project-3{
 	width: 100%;
-	height: 350px;
+	height: 250px;
 }
 
 .arrowup{
