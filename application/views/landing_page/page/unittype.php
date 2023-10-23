@@ -15,8 +15,8 @@
             <div class="row">
                 <div class="unitimg">
                     <div class="unittext">
-                        <div class="row">
-                            <h1>The<br>Expression of Gratitude</h1>
+                        <div class="row" Data-aos="fade-up">
+                            <h1>The<br>Expression<br>of Gratitude</h1>
                         </div>
                         <div class="row mouser mb-5 justify-content-end">
                             <img src="<?php echo base_url(); ?>assets/core-images/mouse-indicator.svg" alt="Logo">

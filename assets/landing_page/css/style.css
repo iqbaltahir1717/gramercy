@@ -216,7 +216,7 @@ h6 {
 	background-color: rgb(255, 255, 255);
 	transition: all 0.5s;
 	z-index: 997;
-	/* top: 60px; */
+	padding: 10px 0;
 }
 #header .container{
 	background: transparent;
@@ -412,7 +412,7 @@ h6 {
 /* ===================NEW HERO=============================== */
 
 .hero-new{
-	padding-top: 150px;
+	/* padding-top: 150px; */
 }
 
 .bulatan {
@@ -429,7 +429,7 @@ h6 {
 }
 .bannertext{
 	font-family: 'GambettaLight';
-	font-size:75px;
+	font-size: 75px;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 85px; /* 100% */
@@ -479,7 +479,6 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 80px;
-    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 13.72%),linear-gradient(180deg, rgba(0, 0, 0, 0.00) 78.3%, #000 91.32%), url(../../core-images/taman-jalan.png);
     background-color: lightgray;
     background-size: cover;
     background-position: 50%;
@@ -528,7 +527,6 @@ h6 {
     width: 320px;
     color: var(--foundation-dark-mode-light-active, #B4B4B6);
     text-align: center;
-    font-family: 'SatoshiLight';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -540,7 +538,7 @@ h6 {
     color: var(--foundation-dark-mode-light-active, #B4B4B6);
     text-align: center;
     font-family: 'SatoshiLight';
-    font-size: 12px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 400;
     line-height: 48px; /* 342.857% */
