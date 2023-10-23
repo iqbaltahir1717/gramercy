@@ -1,48 +1,50 @@
 <body class="fontRubik">    
         <header id="header" class="fixed-top ">
-            <div class="container d-flex align-items-center">
-                <nav class="nav-menu d-none d-lg-block navbar navbar-expand-lg">
-                    <div class="container ms">
-                        <a class="navbar-brand" href="<?php echo base_url(); ?>">
+            <div class="container-md-12">
+                <nav class="navbar pl-5 pr-5 navbar-white navbar-expand-md bg-white">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M5 24H27" stroke="#455468" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 16H27" stroke="#455468" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 8H27" stroke="#455468" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <div class="navbar-collapse collapse dual-nav order-1 order-md-0">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url(); ?>">
                             <img src="<?php echo base_url(); ?>assets/core-images/whatapp.svg" alt="Logo">
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav mx-auto">
-                                <li class="active">
-                                    <a href="<?php echo base_url(); ?>">Home</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('unit-house'); ?>">Unit Type</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('siteplan'); ?>">Siteplan</a>
-                                </li>
-                            </ul>
-                        </div>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url('unit-house'); ?>">Unit Type</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url('siteplan'); ?>">Siteplan</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <a href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/logogramercy.svg" class="navbar-brand mx-auto order-0 order-md-5 p-2"></a>
+
+                    <div class="navbar-collapse collapse dual-nav order-4 order-md-4 justify-content-end">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url('project'); ?>">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url('developer'); ?>">Developer</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url('blog-news'); ?>">News</a>
+                        </li>
+                    </ul>
                     </div>
                 </nav>
-                <a class="ml-2 logogramercy" href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/logogramercy.svg"></a>
-                <nav class="nav-menu d-none d-lg-block navbar navbar-expand-lg">
-                    <div class="container">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav mx-auto">
-                                <li class="active">
-                                    <a href="<?php echo site_url('project'); ?>">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('developer'); ?>">Developer</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('blog-news'); ?>">News</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            <a id="menu-icon" type="button" class="ml-2 align-items-end" style="color:white;font-size:20px" href="<?php echo base_url();?>" class="scrollto"><img src="<?php echo base_url()?>assets/core-images/navigation-garis.svg"></a>
             </div>
         </header><!-- End Header -->
 </body>
