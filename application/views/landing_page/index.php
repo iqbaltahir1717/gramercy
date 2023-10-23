@@ -27,7 +27,7 @@
                     <h1 class="bannertext">LUXURY HOMES</h1>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end">
-                    <p class="my-text text-center">
+                    <p class="my-text text-start">
                         A gift of gratitude, Alam Sutera offers a sanctuary for serene living in thanks for the achievements attained. Not just a house, The Gramercy is a home where you can express yourself, appreciate life, connect with others, and create life memories.
                     </p>
                 </div>
