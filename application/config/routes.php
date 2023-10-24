@@ -59,7 +59,7 @@ $route['optical'] = 'siteplan/optical';
 // front
 $route['page/unit_type'] = 'page/unit_type';
 $route['page/siteplan'] = 'page/siteplan';
-$route['project'] = 'page/project';
+$route['page/project'] = 'page/project';
 $route['developer'] = 'page/developer';
 $route['blog-news'] = 'page/information';
 $route['blog-news/detail'] = 'page/information/detail';

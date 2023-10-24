@@ -15,6 +15,7 @@ class Page extends CI_Controller {
 		$this->load->model('m_unit_gallery');
 		$this->load->model('m_unit_gallery_category');
 		$this->load->model('m_project');
+		$this->load->model('m_project_gallery');
 		$this->load->model('m_content');
 	}
 
@@ -167,7 +168,28 @@ class Page extends CI_Controller {
 		// TEMPLATE
 		$view         = "landing_page/page/project";
 		$viewCategory = "all";
-		TemplateLandingPage($data, $view, $viewCategory);
+		if($this->uri->segment(2) == 'project'){
+			TemplateLandingPageBlack($data, $view, $viewCategory);
+		} else {
+			TemplateLandingPage($data, $view, $viewCategory);}
+	}
+
+	// PROJECT
+	public function project_detail(){
+		// DATA
+		$data['setting']           = getSetting();
+		$data['project']       		= $this->m_project->get($this->uri->segment(3));
+		$data['project_gallery']       		= $this->m_project_gallery->read_id($this->uri->segment(3));
+		$data['unit']       			= $this->m_unit->read('','','');
+		$data['news_category']     = $this->m_news_category->read('','','');
+
+		// TEMPLATE
+		$view         = "landing_page/page/project_detail";
+		$viewCategory = "all";
+		if($this->uri->segment(2) == 'project_detail'){
+			TemplateLandingPageBlack($data, $view, $viewCategory);
+		} else {
+			TemplateLandingPage($data, $view, $viewCategory);}
 	}
 
 	// DEVELOPER

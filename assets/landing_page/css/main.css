@@ -1,3 +1,8 @@
+.btn-primary {
+  background-color: #000 !important;
+  color: #C2A058;
+}
+
 .blog .entry {
   padding: 0 !important;
   -webkit-box-shadow: none;
@@ -32,7 +37,7 @@
 }
 
 .blog .entry .entry-content {
-  color: #999999;
+  color: #444444;
   font-size: 12px;
   font-family: Satoshi;
 }

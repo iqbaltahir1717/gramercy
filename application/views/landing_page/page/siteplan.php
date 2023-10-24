@@ -4,7 +4,9 @@
             <div class="row">
                 <div class="unitimg">
                     <div class="row mouser mr-5 justify-content-end">
-                        <img src="<?php echo base_url(); ?>assets/core-images/mouse-indicatorsiteplan.svg" alt="Logo">
+                        <a href="<?= base_url()."/upload/siteplan/". $siteplan[0]->siteplan_image1 ?>" class="glightbox">
+                            <img src="<?php echo base_url(); ?>assets/core-images/mouse-indicatorsiteplan.svg" alt="Logo">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -12,8 +14,8 @@
     </section>
     
     <section id="siteplan2" class="siteplan2">
-        <div class="container-fluid" data-aos="fade-up">
-            <div class="row m-5">
+        <div class="container" data-aos="fade-up">
+            <div class="mt-5">
                 <p><?= $siteplan[0]->siteplan_image1_description ?></p>
             </div>
         </div>
@@ -24,7 +26,9 @@
             <div class="row">
                 <div class="unitimg">
                     <div class="row mouser mr-5 justify-content-end">
-                        <img src="<?php echo base_url(); ?>assets/core-images/mouse-indicatorsiteplan.svg" alt="Logo">
+                        <a href="<?= base_url()."/upload/siteplan/". $siteplan[0]->siteplan_image2 ?>" class="glightbox">
+                            <img src="<?php echo base_url(); ?>assets/core-images/mouse-indicatorsiteplan.svg" alt="Logo">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -32,23 +36,19 @@
     </section>
 
     <section id="siteplan2" class="siteplan2" >
-        <div class="container-fluid" data-aos="fade-up">
-            <div class="row m-5">
+        <div class="container" data-aos="fade-up">
+            <div class="mt-5">
                 <p><?= $siteplan[0]->siteplan_image2_description; ?></p>
             </div>
         </div>
     </section>
 
     <section id="siteplan4" class="siteplan4">
-        <div class="container md-12">
+        <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <h1>Cluster Amenities</h1>
-                    </div>
-                    <div class="row">
-                        <p><?= $siteplan[0]->siteplan_cluster; ?></p>
-                    </div>
+                <div class="col-lg-12">
+                    <h1 class="mb-4"><b>Cluster Amenities</b></h1>
+                    <p><?= $siteplan[0]->siteplan_cluster; ?></p>
                 </div>
             </div>
             <div class="row">
@@ -56,7 +56,7 @@
                     <div class="slide-track">
                         <?php if($cluster) { foreach($cluster as $c) {?>
                             <div class="slide">
-                            <img src="<?php echo base_url(); ?>upload/cluster/<?= $c->cluster_cover ?>" alt="Logo">
+                            <img style="cursor: pointer;" src="<?php echo base_url(); ?>upload/cluster/<?= $c->cluster_cover ?>" class="glightbox3" alt="<?= $c->cluster_name; ?>" >
                             <div class="overlay">
                                 <div class="content">
                                     <h3><?= $c->cluster_name; ?></h3>
@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col">
                     <div class="row">
-                        <h1>Optimal Strategic Layout</h1>
+                        <h1 class="mb-4"><b>Optimal Strategic Layout</b></h1>
                     </div>
                     <div class="row">
                         <p><?= $siteplan[0]->siteplan_optical; ?></p>
@@ -88,7 +88,7 @@
                 <?php if($optical) { foreach($optical as $o) {?>
                 <div class="col-md-4 mb-4">
                     <div class="card dark">
-                        <img src="<?php echo base_url(); ?>upload/optical/<?= $o->optical_cover?>" class="card-img-top" alt="...">
+                        <img src="<?php echo base_url(); ?>upload/optical/<?= $o->optical_cover?>" class="card-img-top glightbox2"  alt="<?= $o->optical_name; ?>">
                         <div class="card-body">
                             <div class="text-section">
                                 <h5 class="card-title fw-bold"><?= $o->optical_name; ?></h5>
@@ -125,30 +125,34 @@
         </div>
     </section>
 
-    <section id="siteplan6" class="siteplan6 mt-0">
-        <div class="container section3 justify-content-center text-center">
+    <section id="hero-new3" class="hero-new3" style="background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 13.72%),linear-gradient(180deg, rgba(0, 0, 0, 0.00) 78.3%, #000 91.32%), url(<?= base_url();?>/assets/core-images/home/taman-jalan.jpg)  no-repeat center center fixed; background-size: cover; width: 100%;">
+        <div class="container-md-12 pl-5 pr-5 barisone md-12">
             <div class="row brand-logo-gramercy justify-content-center text-center">
                 <div class="col">
-                    <img src="<?php echo base_url(); ?>assets/core-images/alam-sutera.png" alt="Image 1">
+                    <img src="<?= base_url(); ?>/assets/core-images/alam-sutera.png" alt="Image 1">
                 </div>
                 <div class="col">
-                    <img src="<?php echo base_url(); ?>assets/core-images/thegramercy.png" alt="Image 2">
+                    <img src="<?= base_url(); ?>/assets/core-images/thegramercy.png" alt="Image 2">
                 </div>
             </div>
+        </div>
+        <div class="container barisone md-12">
             <div class="row ourservice justify-content-center text-center">
-                <div class="col md-1">
-                    <h3>GRATITUDE</h3>
-                    <h5>Alam Sutere gives back to it’s  greater community by developing a sanctuary for serene living. A surprise gift for gratitude</h5>
+                    <div class="col-md-4 bagian">
+                        <h3 class="mb-4">GRATITUDE</h3>
+                        <h5>Alam Sutere gives back to it’s  greater community by developing a sanctuary for serene living. A surprise gift for gratitude</h5>
+                    </div>
+                    <div class="col-md-4 bagian">
+                        <h3 class="mb-4">FELLOWSHIP</h3>
+                        <h5>Build Opennes of heart with others who share common interest to learn. Grow and enjoy life</h5>
+                    </div>
+                    <div class="col-md-4 bagian">
+                        <h3 class="mb-4">FREEDOM</h3>
+                        <h5>Creation of curated gratitude community and well designed environment</h5>
+                    </div>
                 </div>
-                <div class="col md-1">
-                    <h3>FELLOWSHIP</h3>
-                    <h5>Build Opennes of heart with others who share common interest to learn. Grow and enjoy life</h5>
-                </div>
-                <div class="col md-1">
-                    <h3>FREEDOM</h3>
-                    <h5>Creation of curated gratitude community and well designed environment</h5>
-                </div>
-            </div>
+        </div>
+        <div class="container">
             <div class="row ourservice justify-content-center text-center mt-5">
                 <p class="mt-5">The last and most prestigious cluster locatedin favourite place of Alam Sutera “Green Tunnel”</p>
             </div>

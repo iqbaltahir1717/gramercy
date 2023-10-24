@@ -3,7 +3,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 footer-info">
-                            <img class="project-2" src="assets/core-images/logosocials.png" alt="Image 2">
+                            <img class="project-2" src="<?= base_url(); ?>/assets/core-images/logo-social.png" alt="Image 2">
                         </div>
 
                         <div class="col-lg-2 col-md-6 footer-links">

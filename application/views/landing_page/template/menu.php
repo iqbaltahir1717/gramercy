@@ -45,7 +45,7 @@
                 <div class="navbar-collapse collapse dual-nav order-4 order-md-4 justify-content-end">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo site_url('project'); ?>">Projects</a>
+                    <a class="nav-link active" href="<?php echo site_url('page/project'); ?>">Projects</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" href="<?php echo site_url('developer'); ?>">Developer</a>

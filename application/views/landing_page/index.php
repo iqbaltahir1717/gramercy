@@ -101,70 +101,51 @@
 
     <section id="hero-new5" class="hero-new5 mt-5">
         <div class="container-md-12 barisone">
-            <div class="row align-items-end">
-                <div class="col-md-7 pr-5 pl-5">
-                    <h1 class="bannertext pl-5">FIND YOUR <br>LUXURY UNIT</h1>
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <h1 class="bannertext pl-5 text-center">FIND YOUR <br>LUXURY UNIT</h1>
                 </div>
-                <div class="prenext col-md-5 pr-5 d-flex justify-content-end align-items-end  text-right">
-                    <div class="col-md-11 justify-content-end align-items-end  text-right">
-                        <ul class="pagination pagination-sm justify-content-end align-items-end  text-right">
-                            <li class="page-item tombol-left d-flex"><a class="page-link  transparent-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                                </svg>                                
-                                Previous Unit</a></li>
-                            <li class="page-item tombol-right" aria-current="page">
-                            <span class="page-link  transparent-link">Next Unit
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                </svg>
-                            </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-0 pr-5 justify-content-end align-items-end  text-right">
-                        <h2 class="bannertext justify-content-end align-items-end  text-right">1/4</h2>
-                    </div>
-
-                </div>
-
             </div>
+            <hr style="border:1px solid #dddddd">
         </div>
     </section>
-    <!-- --------------------------Section 6----------------------------------- -->
 
-    <section id="hero-new6" class="hero-new6">
+ 
+    <!-- --------------------------Section 6----------------------------------- -->
+    <?php foreach ($unit as $u){ ?>
+    <section id="hero-new6" class="hero-new6 mb-5 pb-5">
         <div class="container-md-12 pl-5 pr-5">
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-5">
                 <div class="col-md-6 align-items-start">
                     <div class="row align-items-start">
                         <div class="col-md-5 pl-5 justify-content-start align-items-start  text-left">
                             <img class="brand" src="assets/core-images/thegramercyhitam.png" alt="Image 2">
                         </div>
                         <div class="col-md-7 justify-content-start align-items-start  text-left">
-                            <h1>UNIT ALCA</h1>
+                            <h1 style="font-size: 56px;">UNIT <?= strtoupper( $u->unit_name);?></h1>
                         </div>
                     </div>
                     <div class="row mt-5 pl-5">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur. Feugiat pellentesque aenean id ut massa dui proin ultrices. Id pharetra lorem ut id urna. Tempus metus ullamcorper enim purus libero amet ornare in. Tortor enim sed aliquam purus elementum purus commodo sit faucibus. Phasellus euismod porttitor sit enim vitae porta magna. Sagittis varius accumsan vulputate vulputate volutpat pulvinar integer pellentesque elit. Ultricies tellus arcu nunc leo dolor nullam risus ut. Dis integer vulputate pulvinar turpis vulputate duis mauris velit ac. Dictum scelerisque aliquet ac risus lacinia placerat sapien blandit. Proin sit non id duis scelerisque dui enim nisl gravida. Senectus est lacinia egestas sed cursus dolor. Aenean sed nisl quis amet cursus. Dictum mi sit id eleifend interdum in. Semper eu fringilla penatibus gravida.
-                        </p>
-                        <p>
-                            Ultricies tellus arcu nunc leo dolor nullam risus ut. Dis integer vulputate pulvinar turpis vulputate duis mauris velit ac. Dictum scelerisque aliquet ac risus lacinia placerat sapien blandit.
+                            <?= $u->unit_description;?>
                         </p>
                     </div>
-                    <div class="row mt-2 pl-5">
-                        <button type="button justify-align-start" class="btn btn-transparent btn-sm-">Location <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <div class="row mt-5 pl-5">
+                        <a href="<?php echo site_url('page/unit_type/'.$u->unit_id)?>" class="btn btn-primary">See Detail Unit <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                             </svg>
-                        </button>
+                    </a>
                     </div>
                 </div>
                 <div class="col-md-6 pr-5 justify-content-end align-items-end  text-right">
-                    <img class="unitalca justify-content-end align-items-end  text-right" src="assets/core-images/unitalca.svg" alt="Image 2">
+                    <img style="height: 500px" class="unitalca glightbox" src="<?= base_url()."/upload/unit/". $u->unit_preview1?>">
                 </div>
             </div>
+            <hr style="border:1px solid #dddddd">
         </div>
     </section>
+    <?php } ?>
+
     <!-- --------------------------Section 7----------------------------------- -->
     <section id="hero-new7" class="hero-new7" style="background: url(<?= base_url()."/assets/core-images/home/sanctuary.jpg)"?> no-repeat center center fixed; background-size: cover; width: 100%;">
             <div class="container-md-12 pl-5 align-items-start">
@@ -218,11 +199,59 @@
                 </div>
             </div>
             <div class="row button justify-content-center text-center mt-5">
-                <button>Others Project at Alam Sutera <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <a href="<?php echo site_url('page/project'); ?>">
+                    <button>Others Project
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                     </svg>
-                </button>
+                    </button>
+                </a>
             </div>
+        </div>
+    </section>
+    <section id="blog" class="blog pt-5 mt-5 mb-5">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <h4 class="bannertext col-lg-12 text-center mb-3">RECENT NEWS</h4>
+                <p class="col-lg-12 text-center mb-5">Explore our collection of informative articles covering a wide range of topics, tailored to suit your interests</p>
+                <div class="col-lg-12 entries pt-5">
+                    <div class="row justify-content-center align-items-stretch">
+                    <?php 
+                        if($news){
+                            foreach($news as $n){ 
+                    ?>
+                        <div class="col-lg-3">
+                            <article class="entry">
+                                <div class="entry-img">
+                                    <img src="<?php echo base_url();?>upload/news/<?php echo $n->news_cover;?>" alt="" class="img-fluid">
+                                </div>
+
+                                <h2 class="entry-title">
+                                    <a href="<?php echo site_url('page/information_detail/'.$n->news_category_id.'/'.$n->field_id.'/'.$n->news_slug);?>"><?php echo $n->news_title;?></a>
+                                </h2>
+
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li class="d-flex align-items-center"> <i class="icofont-calendar"></i> <?php echo indonesiaDate($n->news_date)?> &nbsp;&nbsp;<i class="icofont-eye-alt"></i> <b><?php echo $n->news_count_view;?>x dilihat</b> &nbsp;&nbsp;<b class="badge badge-danger"><?php echo $n->news_category_name;?></b></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    <?php 
+                            }
+                        }else{ echo "Tidak Ada ".$news_category_name[0]->news_category_name; }
+                    ?>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                    <a class="btn btn-primary" href="<?php echo site_url('page/information/1/1'); ?>">
+                        Others Project
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </a>
+                </div>
         </div>
     </section>
     </main>
