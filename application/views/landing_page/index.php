@@ -75,23 +75,21 @@
     </section>
     
     <!-- --------------------------Section 4----------------------------------- -->
-    <section id="hero-new4" class="hero-new4 mt-0">
-        <div class="container section4 justify-content-center text-center">
+    <section id="hero-new4" class="hero-new4">
+        <div class="container-md-12 justify-content-center text-center">
             <div class="row brand-logo-gramercy justify-content-center text-center">
-                <div class="col">
-                    <img src="assets/core-images/thegramercy.png" alt="Image 2">
-                </div>
+                <img src="assets/core-images/thegramercy.png" alt="Image 2">
             </div>
             <div class="row lokasi justify-content-center text-center">
-                <p class="mt-3">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
+                <p class="tekslokasi">Located in Alam Sutera, South Tangerang, The Gramercy is an oasis from the bustling urban lifestyle. A well-built residential development, Alam Sutera offers a better quality of life, amidst mature greenery, complete sports facilities, office complexes, entertainment, and other support infrastructure like schools and a hospital. The Gramercy provides all your needs. A place to express gratitude and begin your story.</p>
             </div>
-            <div class="row lokasi justify-content-center text-center mt-4">
+            <div class="row lokasi justify-content-center text-center">
                 <button type="button" class="btn btn-transparent btn-sm-">Siteplan Gramercy &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                     </svg>
                 </button>
             </div>
-            <div class="row lokasi justify-content-center text-center mt-5 mb-5">
+            <div class="row lokasi justify-content-center text-center mt-3">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.176456324549!2d106.65575332476405!3d-6.2404601437478595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb47b0261701%3A0x6f2b5df2b62ca182!2sThe%20Gramercy%40Alam%20Sutera!5e0!3m2!1sen!2sid!4v1698069498361!5m2!1sen!2sid" style="border:0; width: 100%; height: 600px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -103,7 +101,7 @@
         <div class="container-md-12 barisone">
             <div class="row align-items-center">
                 <div class="col-md-12">
-                    <h1 class="bannertext pl-5 text-center">FIND YOUR <br>LUXURY UNIT</h1>
+                    <h1 class="bannertext text-center">FIND YOUR <br>LUXURY UNIT</h1>
                 </div>
             </div>
             <hr style="border:1px solid #dddddd">
@@ -114,30 +112,30 @@
     <!-- --------------------------Section 6----------------------------------- -->
     <?php foreach ($unit as $u){ ?>
     <section id="hero-new6" class="hero-new6 mb-5 pb-5">
-        <div class="container-md-12 pl-5 pr-5">
+        <div class="container-md-12">
             <div class="row align-items-center mb-5">
                 <div class="col-md-6 align-items-start">
                     <div class="row align-items-start">
-                        <div class="col-md-5 pl-5 justify-content-start align-items-start  text-left">
+                        <div class="col-md-5 justify-content-start align-items-start  text-left">
                             <img class="brand" src="assets/core-images/thegramercyhitam.png" alt="Image 2">
                         </div>
                         <div class="col-md-7 justify-content-start align-items-start  text-left">
                             <h1 style="font-size: 56px;">UNIT <?= strtoupper( $u->unit_name);?></h1>
                         </div>
                     </div>
-                    <div class="row mt-5 pl-5">
+                    <div class="row">
                         <p>
                             <?= $u->unit_description;?>
                         </p>
                     </div>
-                    <div class="row mt-5 pl-5">
+                    <div class="row mt-3">
                         <a href="<?php echo site_url('page/unit_type/'.$u->unit_id)?>" class="btn btn-primary">See Detail Unit <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                             </svg>
                     </a>
                     </div>
                 </div>
-                <div class="col-md-6 pr-5 justify-content-end align-items-end  text-right">
+                <div class="col-md-6 justify-content-end align-items-end  text-right">
                     <img style="height: 500px" class="unitalca glightbox" src="<?= base_url()."/upload/unit/". $u->unit_preview1?>">
                 </div>
             </div>

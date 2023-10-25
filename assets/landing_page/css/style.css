@@ -737,8 +737,110 @@ h6 {
 
 /* ====================================RESPONSIF HERO============================= */
 
+@media (min-width: 1280px) and (max-width: 1512px){
+	#hero-new {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	#hero-new4 {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+	#hero-new5 {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+
+	#hero-new6 {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+}
+
+
+@media (min-width: 991px) and (max-width: 1281px){
+	#hero-new {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	#hero-new4 {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+	#hero-new5 {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+
+	#hero-new6 {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+		
+	.hero-new3 .brand-logo-gramercy {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+	}
+	.hero-new3 .brand-logo-gramercy img {
+		display: block;
+		margin: 0 auto; 
+	}
+
+	.ourservice {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.ourservice .col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.ourservice .col h3 {
+		color: #FFF;
+		font-family: 'GambettaMedium';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 21px; /* 150% */
+		letter-spacing: 0.50px;
+		text-transform: uppercase;
+	}
+
+	.ourservice .col h5 {
+		color: #B4B4B6;
+		width: 200px;
+		color: var(--foundation-dark-mode-light-active, #B4B4B6);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px; /* 150% */
+	}
+
+
+	.ourservice p {
+		color: var(--foundation-dark-mode-light-active, #B4B4B6);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 10px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 38px; /* 342.857% */
+	}
+
+}
+
 @media (max-width: 900px){
-	
+
 .bulatan {
 	display: flex;
 	padding: 30px;
@@ -886,13 +988,10 @@ h6 {
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-
+	padding-left: 110px;
+	padding-right: 110px;
 }
 
-.hero-new4 .container{
-	padding: 88px 100px;
-
-}
 
 .lokasi img{
 	width: 100%;
@@ -952,16 +1051,22 @@ h6 {
     border: none; /* Menghapus border */
     text-decoration: none; /* Menghapus efek underline pada tautan */
 }
-.hero-new6{
-	margin: 0px;
-	padding: 0px;
-}
 
 .hero-new6 button{
 	margin:inherit;
 	align-items: start;
 	color: #C2A058;;
 	font-size: 18px;
+}
+
+#hero-new5 {
+	padding-left: 110px;
+	padding-right: 110px;
+}
+
+#hero-new6 {
+	padding-left: 110px;
+	padding-right: 110px;
 }
 
 .hero-new6 .brand{
@@ -1092,7 +1197,6 @@ h6 {
 /* ====================================RESPONSIF HERO============================= */
 
 @media (max-width: 540px){
-	
 	.bulatan {
 		display: flex;
 		padding: 30px;
@@ -1242,11 +1346,8 @@ h6 {
 		background-size: cover;
 		background-position: 50%;
 		background-repeat: no-repeat;
-	
-	}
-	
-	.hero-new4 .container{
-		padding: 88px 100px;
+		padding-left: 40px;
+		padding-right: 40px;
 	
 	}
 	
@@ -1257,17 +1358,17 @@ h6 {
 	
 	.hero-new4 .brand-logo-gramercy img{
 		width: 60%;
-		height: 80px;
+		height: 100px;
 	}
 	
 	
-	.row.lokasi p {
+	.tekslokasi {
 		color: var(--foundation-primary-green-light, #E6F6F4);
 		text-align: center;
 		font-family: 'SatoshiLight';
 		font-size: 16px;
 		font-style: normal;
-		line-height: 18px; /* 150% */
+		line-height: 18px;
 	}
 	
 	.lokasi .btn{
@@ -1308,9 +1409,14 @@ h6 {
 		border: none; /* Menghapus border */
 		text-decoration: none; /* Menghapus efek underline pada tautan */
 	}
-	.hero-new6{
-		margin: 0px;
-		padding: 0px;
+	#hero-new5 {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	
+	#hero-new6{
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 	.hero-new6 p{
 		margin: 20px;
@@ -1325,9 +1431,8 @@ h6 {
 	}
 	
 	.hero-new6 .brand{
-		margin:inherit;
-		width: 20%;
-		height: 50px;
+		width: 60%;
+		height: 100px;
 		align-items: start;
 	}
 	
@@ -1380,6 +1485,384 @@ h6 {
 		justify-content: center;
 		align-items: center;
 		gap: 24px;
+	}
+	
+	.hero-new7 .card button{
+		margin: unset;
+		padding: 0px;
+		background: none;
+		border: none;
+		align-items: start;
+		color: #C2A058;;
+		font-size: 14px;
+	}
+	
+	
+	.hero-new8 h5{
+		color: #6D6D6D;
+		width: 550px;
+		color: var(--foundation-dark-mode-light-active, #B4B4B6);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px; 
+		margin-top: 30px;
+	}
+	
+	.hero-new8 button{
+		padding: 0px;
+		background: none;
+		border: none;
+		color: #C2A058;;
+		font-size: 18px;
+	}
+	
+	.hero-new8 .project-1{
+		padding-bottom: 24px;
+		width: 43%;
+		height: 140px;
+	}
+	
+	.hero-new8 .project-2{
+		width: 40%;
+		padding-bottom: 24px;
+		height: 120px;
+	}
+	.hero-new8 .project-3{
+		width: 40%;
+		height: 120px;
+	}
+
+	
+	.arrowup{
+		display: flex;
+		align-items: center;
+		gap: 9px;
+		text-decoration: none;
+	}
+	
+	.arrowup svg{
+		width: 8px;
+		height: 8px;
+		fill: none;
+		stroke: #5C5F66;
+		stroke-width: 1.575;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+	
+	.hero-new8 .brand-logo-gramercy img{
+		width: 40%;
+		height: 90px;
+	}
+	
+	
+	
+	
+	}
+	
+/* ====================================RESPONSIF HERO============================= */
+
+@media (min-width: 375px) and (max-width: 414px){
+	
+	.bulatan {
+		display: flex;
+		padding: 30px;
+	}
+	
+	
+	.bulatan-tombol svg{
+		width: 20px;
+		height: 20px;
+		color: #161616;
+		margin-left: 10px; 
+	}
+	.bannertext{
+		font-family: 'GambettaLight';
+		font-size: 25px;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 35px; /* 100% */
+		letter-spacing: 0.3px;
+		color: #161616;
+	}
+	
+	
+	.baristwo .bannertext{
+		text-align: right;
+	}
+	
+	
+	.baristwo .my-text {
+		width: 957px;
+		color: #6D6D6D;
+		margin-left: 71px;
+		margin-right: 41px;
+		font-family: 'Satoshi', sans-serif;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px;
+	}
+	
+	.baristree .bannertext{
+		text-align: right;
+	}
+	
+	/* Nex section 2 (hero-new-2) */
+	.hero-new2{
+		width: 100%;
+		height: 300px;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 60.07%, #000 96.53%), url(../../core-images/arma.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#hero-new3 {
+		display: flex;
+		width: 100%;
+		height: 700px;
+		padding: 0px 88px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+		background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 13.72%),linear-gradient(180deg, rgba(0, 0, 0, 0.00) 78.3%, #000 91.32%), url(../../core-images/taman-jalan.png);
+		background-color: lightgray;
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+	
+	.hero-new3 .brand-logo-gramercy {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+	}
+	.hero-new3 .brand-logo-gramercy img {
+		display: block;
+		margin: 0 auto; 
+		width: 80%;
+		height: 80px;
+	}
+	
+	.ourservice {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	.ourservice .col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	.ourservice .col h3 {
+		color: #FFF;
+		font-family: 'GambettaMedium';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 150% */
+		letter-spacing: 0.50px;
+		text-transform: uppercase;
+	}
+	
+	.ourservice .col h5 {
+		color: #B4B4B6;
+		width: 220px;
+		color: var(--foundation-dark-mode-light-active, #B4B4B6);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px; /* 150% */
+	}
+	
+	
+	.ourservice p {
+		color: var(--foundation-dark-mode-light-active, #B4B4B6);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 8px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 18px; /* 342.857% */
+	}
+	
+	
+	#hero-new4 {
+		display: flex;
+		width: 100%;
+		height: 1073px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 8.85%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 24.73%, #000 62.34%), url(../../core-images/bersepeda.png);
+		background-color: lightgray;
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		padding-left: 30px;
+		padding-right: 30px;
+	
+	}
+	
+	
+	.hero-new4 .lokasi iframe{
+		width: 100%;
+		height: 200px;
+	}
+	
+	.hero-new4 .brand-logo-gramercy img{
+		width: 60%;
+		height: 80px;
+	}
+	
+	
+	.tekslokasi {
+		color: var(--foundation-primary-green-light, #E6F6F4);
+		text-align: center;
+		font-family: 'SatoshiLight';
+		font-size: 16px;
+		font-style: normal;
+		line-height: 18px; /* 150% */
+	}
+	
+	.lokasi .btn{
+		color: #C2A058;;
+		font-size: 14px;
+	}
+	
+	.hero-new5 h2{
+		color: #C2A058;
+		font-size: 35px;
+	}
+	
+	.hero-new5 .panah {
+		line-height: 18px;
+	}
+	
+	
+	.hero-new5 .tombol-left a{
+		color: #999999;
+		width: 100px;
+		font-size: 12px;
+	}
+	.hero-new5 .tombol-right span{
+		color: #C2A058;
+		width: 100px;
+		font-size: 12px;
+	}
+	
+	.hero-new5 .tombol-left svg{
+		color: #999999;
+	}
+	.hero-new5 .tombol-right svg{
+		color: #C2A058;
+	}
+	
+	.hero-new5 .prenext .transparent-link {
+		background: none; /* Menghapus latar belakang */
+		border: none; /* Menghapus border */
+		text-decoration: none; /* Menghapus efek underline pada tautan */
+	}
+	#hero-new5 {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+	#hero-new6{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.hero-new6 p{
+		font-size: 12px;
+	}
+	
+	.hero-new6 button{
+		margin-left: 10px;
+		align-items: start;
+		color: #C2A058;;
+		font-size: 14px;
+	}
+	
+	.hero-new6 .brand{
+		margin:inherit;
+		width: 60%;
+		height: 100px;
+		align-items: start;
+	}
+	
+	.hero-new6 h1{
+		font-size: 18px;
+	}
+	
+	.hero-new6 .unitalca{
+		width: 100%;
+		justify-items: center;
+		height: 100px;
+	}
+	
+	#hero-new7 {
+		width: 100%;
+		height: 700px;
+		background: linear-gradient(279deg, rgba(0, 0, 0, 0.00) 43.67%, #000 100.01%), url(../../core-images/lush.png) center / cover no-repeat, lightgray 50% / cover no-repeat;
+		/* Ganti '<path-to-image>' dengan URL gambar yang sesuai */
+	}
+
+	.hero-new7 .brand{
+		margin: 0px 150px;
+		width: 40%;
+		height: 70px;
+		position: relative;
+		right: 90px;
+	}
+	
+	.hero-new7 h1{
+		font-size: 30px;
+		text-align: center;
+		margin: 0px 150px;
+		color: #ffffff;
+		position: relative;
+		right: 120px;
+	}
+	
+	.hero-new7 p{
+		font-size: 10;
+		color: #333333;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px;
+		font-family: 'SatoshiLight';
+		align-self: stretch;
+	}
+	
+	.hero-new7 .card{
+		display: flex;
+		width: 300px;
+		margin: 0px 40px;
+		padding: 2px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+		position: relative;
+		right: 70px;
 	}
 	
 	.hero-new7 .card button{
@@ -2908,6 +3391,9 @@ section {
 		font-size: 55px;
 		line-height: 70px;
 	}
+	.unittype2 .slidetextcenter h1{
+		font-size: 70px;
+	}
 }
 
 @media (min-width: 375px) and (max-width: 543px) {
@@ -2925,6 +3411,9 @@ section {
 	.unittype3 h1{
 		position: relative;
 		left: 30px;
+	}
+	.unittype2 .slidetextcenter h1{
+		font-size: 70px;
 	}
 }
 
@@ -4340,6 +4829,7 @@ section {
 	}
 
 	.projects1 h1{
+		margin-top: 60px;
 		color: #fff;
 		text-align: center;
 		font-size: 62px;
@@ -4415,9 +4905,10 @@ section {
 	}
 
 	.projects1 h1{
+		margin-top: 80px;
 		color: #fff;
 		text-align: center;
-		font-size: 62px;
+		font-size: 66px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 60px; /* 125% */
@@ -4426,7 +4917,7 @@ section {
 
 	.projects1 p{
 		color: #E7E7E7;
-		font-size: 18px;
+		font-size: 20px;
 		font-style: normal;
 		text-align: center;
 		font-weight: 400;
@@ -4464,7 +4955,7 @@ section {
 		align-items: center;
 		text-align: center;
 		position: relative;
-		right: 0px;
+		left: 10px;
 	}
 	.siteplan7 p{
 		font-size: 18px;
@@ -4472,17 +4963,17 @@ section {
 		align-items: center;
 		text-align: center;
 		position: relative;
-		right: 0px;
+		left: 20px;
 	}
 	.siteplan7 img{
 		width: 200%;
 		height: 400px;
 		position: relative;
-		right: 80px;
+		right: 140px;
 	}
 	.siteplan7 .arrow{
 		position: relative;
-		left: 150px;
+		right: 100px;
 	}
 }
 
@@ -4497,6 +4988,7 @@ section {
 	}
 
 	.projects1 h1{
+		margin-top: 70px;
 		color: #fff;
 		text-align: center;
 		font-size: 42px;
@@ -4508,7 +5000,7 @@ section {
 
 	.projects1 p{
 		color: #E7E7E7;
-		font-size: 14px;
+		font-size: 16px;
 		font-style: normal;
 		text-align: center;
 		font-weight: 400;
@@ -4554,11 +5046,11 @@ section {
 		width: 200%;
 		height: 400px;
 		position: relative;
-		right: 80px;
+		right: 140px;
 	}
 	.siteplan7 .arrow{
 		position: relative;
-		left: 150px;
+		right: 100px;
 	}
 }
 
@@ -5555,7 +6047,7 @@ section {
 
 	.developer2 p{
 		color: #A3A3A3;
-		font-size: 16px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 25px; /* 160% */
@@ -5598,38 +6090,36 @@ section {
 		height: 100%;
 	}
 
-	.developer1 p{
+	.developer1 .row p{
 		color: #E7E7E7;
 		text-align: center;
-		font-size: 20px;
+		font-size: 22px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 42px; /* 175% */
 		letter-spacing: -0.3px;
-		width: 990px;
 		position: relative;
 		bottom: 250px;
-		padding-left: 250px;
-		padding-right: 250px;
+		padding-left: 270px;
+		padding-right: 270px;
 	}
 
 	.developer1 img{
 		position: relative;
 		left: 200px;
-		bottom: 230px;
 		width: 100px;
 		height: 100px;
 	}
-
 	.developer2{
-		padding-left: 80px;
-		padding-right: 80px;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
 	.developer2 img{
-		width: 70%;
-		height: 100px;
+		width: 90%;
+		height: 150px;
 		position: relative;
+		top: 50px;
 	}
 
 	.developer2 h1{
@@ -5640,29 +6130,28 @@ section {
 		line-height: 60px; /* 125% */
 		letter-spacing: -1.75px;
 		margin-top: 30px;
-
 	}
 
 
-	.developer2 p{
+
+	.developer2 .row p{
 		color: #A3A3A3;
-		font-size: 16px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 25px; /* 160% */
+		line-height: 32px; /* 160% */
 		letter-spacing: -0.3px;
 	}
 }
 
 
-/* Lebar 542px - 649px */
 @media (min-width: 375px) and (max-width: 543px) {
     .developer1 {
 		padding: 15px 0;
 		background: #040403;
 		margin-top: 100px;
 		width: 100%;
-		height: 500px;
+		height: 550px;
 		background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 17.88%, #000 74.51%), linear-gradient(180deg, #000 6.77%, rgba(0, 0, 0, 0.00) 57.47%), url(../../core-images/bannerdeveloper.png), lightgray 50% / cover no-repeat;
 	}
 
@@ -5680,7 +6169,7 @@ section {
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 50.5px;
+		line-height: 60.5px;
 		text-transform: uppercase;
 		margin-top: 90px;
 		margin-left: 20px;
@@ -5696,13 +6185,12 @@ section {
 		font-size: 20px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 42px; /* 175% */
+		line-height: 32px; /* 175% */
 		letter-spacing: -0.3px;
-		width: 990px;
 		position: relative;
 		bottom: 250px;
-		padding-left: 350px;
-		padding-right: 350px;
+		padding-left: 340px;
+		padding-right: 340px;
 	}
 
 	.developer1 img{
@@ -5715,14 +6203,13 @@ section {
 	}
 
 	.developer2{
-		padding-left: 80px;
-		padding-right: 80px;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
 	.developer2 img{
-		width: 70%;
-		height: 100px;
-		position: relative;
+		width: 90%;
+		height: 150px;
 	}
 
 	.developer2 h1{
@@ -5739,15 +6226,11 @@ section {
 
 	.developer2 p{
 		color: #A3A3A3;
-		font-size: 16px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 25px; /* 160% */
 		letter-spacing: -0.3px;
-	}
-	.developer2 img{
-		width: 100%;
-		height: 90px;
 	}
 }
 
