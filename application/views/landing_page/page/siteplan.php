@@ -139,22 +139,22 @@
         <div class="container barisone md-12">
             <div class="row ourservice justify-content-center text-center">
                     <div class="col-md-4 bagian">
-                        <h3 class="mb-4">GRATITUDE</h3>
+                        <h3>GRATITUDE</h3>
                         <h5>Alam Sutere gives back to it’s  greater community by developing a sanctuary for serene living. A surprise gift for gratitude</h5>
                     </div>
                     <div class="col-md-4 bagian">
-                        <h3 class="mb-4">FELLOWSHIP</h3>
+                        <h3>FELLOWSHIP</h3>
                         <h5>Build Opennes of heart with others who share common interest to learn. Grow and enjoy life</h5>
                     </div>
                     <div class="col-md-4 bagian">
-                        <h3 class="mb-4">FREEDOM</h3>
+                        <h3>FREEDOM</h3>
                         <h5>Creation of curated gratitude community and well designed environment</h5>
                     </div>
                 </div>
         </div>
         <div class="container">
             <div class="row ourservice justify-content-center text-center mt-5">
-                <p class="mt-5">The last and most prestigious cluster locatedin favourite place of Alam Sutera “Green Tunnel”</p>
+                <p>The last and most prestigious cluster locatedin favourite place of Alam Sutera “Green Tunnel”</p>
             </div>
         </div>
     </section>
@@ -170,7 +170,7 @@
                         <p>We are committed to providing top quality creations. from complete facilities to enjoyable entertainment centers. Reimagine your life at a higher standard.</p>
                     </div>
                     <div class="row dev">
-                        <a href="<?php echo site_url('developer'); ?>"><button type="button">About Developers <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <a class="arrow" href="<?php echo site_url('developer'); ?>"><button type="button">About Developers <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                             </svg>
                         </button>

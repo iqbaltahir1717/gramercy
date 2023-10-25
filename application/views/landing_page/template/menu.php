@@ -15,7 +15,7 @@
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="https://api.whatsapp.com/send?phone=<?= $setting[0]->setting_phone ?>&text=Halo,%20saya%20ingin%20mendapatkan%20informasi%20lebih%20lanjut%20mengenai%20produk%20The%20Gramercy." target="_blank">
-                            <img src="<?php echo base_url(); ?>assets/core-images/whatapp.svg" alt="Logo">
+                            <img src="<?php echo base_url(); ?>assets/core-images/whatapp.svg" alt="Logo" class="social">
                         </a>
                     </li>
                     <li class="nav-item">
@@ -62,7 +62,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= $setting[0]->setting_instagram; ?>" target="_blank">
-                            <img src="<?php echo base_url(); ?>assets/core-images/icon/instagram.svg" alt="Logo">
+                            <img src="<?php echo base_url(); ?>assets/core-images/icon/instagram.svg" alt="Logo" class="social">
                         </a>
                     </li>
                 </ul>

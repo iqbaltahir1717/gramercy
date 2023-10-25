@@ -61,7 +61,7 @@
     </section>
 
     <section id="unittype4" class="unittype4" style="padding-bottom: 200px !important;">
-        <div class="container md-12">
+        <div class="container">
             <div class="row">
                 <!-- <div class="col-md-5">
                     <img src="<?php echo base_url(); ?>upload/unit/<?= $unit[0]->unit_preview1?>" style="object-fit: cover;" alt="Preview 1" class="mb-5 glightbox">

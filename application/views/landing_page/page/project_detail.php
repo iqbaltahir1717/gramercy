@@ -50,9 +50,9 @@
     <section id="unittype3" class="unittype3" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 39.24%, #000 91.32%), linear-gradient(180deg, #000 8.67%, rgba(0, 0, 0, 0.00) 53.35%), url(<?= base_url()."/upload/project/". $project[0]->project_cover.")"?> no-repeat center center fixed; background-size: cover; width: 100%;">
     </section>
     <section id="unittype4" class="unittype4" style="padding-bottom: 200px !important;">
-        <div class="container md-12">
+        <div class="container">
             
-            <div class="col-md-12">
+            <div class="col">
                 <div class="row align-items-center mb-4 flex-wrap" style="gap: 10px;">
                     <div class="label">
                         <div class="d-flex align-items-center justify-content-center">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="row mb-5 justify-content-center">
-                        <div class="col-md-12">
+                        <div class="col">
                         <p class="text"><?= $project[0]->project_description; ?></p>
                         </div>
                     </div>

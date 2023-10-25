@@ -8,7 +8,7 @@
                             <h1>A Great<br>Place to Call<br>“HOME”</h1>
                         <div class="row d-flex justify-content-end">
                             <div class="col">
-                                <img  class="ml-auto d-block" src="<?php echo base_url(); ?>assets/core-images/mouse-indicator.svg" alt="Logo">
+                                <img  class="ml-auto d-block mouser" src="<?php echo base_url(); ?>assets/core-images/mouse-indicator.svg" alt="Logo">
                             </div>
                         </div>
                         <div class="row">
@@ -42,15 +42,15 @@
             </div>
             <!-- batas -->
             <div class="row mt-5 justify-content-center">
-                <div class="col-md-6">
+                <div class="col-md-6 left">
                     <div class="row">
                         <h1>Vision Alam Sutera</h1>
                     </div>
-                    <div class="row mt-3">
+                    <div class="row visi mt-3">
                         <p>To become the best property developer in Indonesia. Focusin on innovation to improve quality of life.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 right">
                     <div class="row">
                         <h1>Mission Alam Sutera</h1>
                     </div>

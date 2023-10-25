@@ -10,12 +10,12 @@
         </div>
     </section>
 
-    <section id="projects2" class="projects2">
+    <section id="projects2" class="projects2 justify-content-center">
         <div class="container">
             <div class="row mt-5 justify-content-center">
                 <img class="logobrand" src="<?php echo base_url(); ?>assets/core-images/alamsutera3.png" alt="Logo">
             </div>
-            <div class="row mt-3 justify-content-center">
+            <div class="row cardnya mt-3 justify-content-center">
                 <?php if($project){ foreach($project as $p) { ?>
                 <!-- batas -->
                 <div class="col-md-6">
