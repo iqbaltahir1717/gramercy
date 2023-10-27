@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="container baristwo mb-4">
-            <div class="row align-items-start">
+            <div class="row align-items-center">
                 <div class="col-md-7">
                     <h1 class="bannertext" Data-aos="fade-right">LUXURY HOMES</h1>
                 </div>
@@ -45,8 +45,6 @@
             <div class="row brand-logo-gramercy justify-content-center text-center">
                 <div class="col">
                     <img src="assets/core-images/alam-sutera.png" alt="Image 1">
-                </div>
-                <div class="col">
                     <img src="assets/core-images/thegramercy.png" alt="Image 2">
                 </div>
             </div>
@@ -120,7 +118,7 @@
                             <img class="brand" src="assets/core-images/thegramercyhitam.png" alt="Image 2">
                         </div>
                         <div class="col-md-7 justify-content-start align-items-start  text-left">
-                            <h1 style="font-size: 56px;">UNIT <?= strtoupper( $u->unit_name);?></h1>
+                            <h1>UNIT <?= strtoupper( $u->unit_name);?></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -146,21 +144,21 @@
 
     <!-- --------------------------Section 7----------------------------------- -->
     <section id="hero-new7" class="hero-new7" style="background: url(<?= base_url()."/assets/core-images/home/sanctuary.jpg)"?> no-repeat center center fixed; background-size: cover; width: 100%;">
-            <div class="container-md-12 pl-5 align-items-start">
-                <div class="row pl-5 align-items-start justify-align-start">
+            <div class="container-md-12 align-items-start">
+                <div class="row align-items-start justify-align-start">
                     <div class="col-md-12">
-                        <div class="row mt-5">
+                        <div class="row mt-0">
                             <img class="brand" src="assets/core-images/thegramercyputih.png" alt="Image 2">
                         </div>
                         <div class="row mt-5">
                             <h1>LUSH COURTYARD<br>SANCTUARY</h1>
                         </div>
                         <div class="row mt-5">
-                            <div class="col pl-2">
+                            <div class="col">
                                 <div class="card">
                                 <div class="card-body">
-                                    <p class="mb-3">A home where you want to be. Surround yourself with lush greenery that captivates your life’s gratitude. Brought to life by Karl Princic, the landscape architect with experience over 30 years in planning and designing of resorts, residential and hospitality projects worldwide. Now the paradise is yours.</p>
-                                    <button>Download Brochure <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <p>A home where you want to be. Surround yourself with lush greenery that captivates your life’s gratitude. Brought to life by Karl Princic, the landscape architect with experience over 30 years in planning and designing of resorts, residential and hospitality projects worldwide. Now the paradise is yours.</p>
+                                    <button class="mt-3">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                                     </svg>
                                     </button>
@@ -174,7 +172,7 @@
     </section>
     <!-- --------------------------Section 8----------------------------------- -->
     <section id="hero-new8" class="hero-new8 mt-0">
-        <div class="container-md-12 pl-5 pr-5 section8 justify-content-center text-center">
+        <div class="container-md-12 section8 justify-content-center text-center">
             <div class="row brand-logo-gramercy justify-content-center text-center">
                 <div class="col">
                     <img src="assets/core-images/thegramercyhitam2.png" alt="Image 2">
@@ -183,11 +181,11 @@
             <div class="row brand-logo-gramercy justify-content-center text-center">
                 <h5>A center of development and a desirable place for better living due to its well-planned infrastructure, comprehensive amenities and a focus on creating a harmonious and green community</h5>
             </div>
-            <div class="row pl-5 g-5 project justify-content-center text-center mt-5">
+            <div class="row project justify-content-center text-center mt-5">
                 <div class="col-md-6">
                     <img class="project-1" src="assets/core-images/project-1.png" alt="Image 2">
                 </div>
-                <div class="col-md-6 pr-5 justify-content-center">
+                <div class="col-md-6 justify-content-center">
                     <div class="row g-5 justify-content-center">
                         <img class="project-2" src="assets/core-images/project-2.png" alt="Image 2">
                     </div>
